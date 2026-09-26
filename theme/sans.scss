@@ -1,0 +1,7 @@
+/*-- scss:defaults --*/
+
+// Last layer in the sans profile: headings use the same family as body text.
+$presentation-heading-font: "Visby CF", "Inter", "Helvetica Neue", Arial, sans-serif;
+
+/*-- scss:rules --*/
+.reveal { --r-heading-font: "Visby CF", Inter, "Helvetica Neue", Arial, sans-serif; }

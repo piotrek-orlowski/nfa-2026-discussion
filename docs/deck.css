@@ -1,0 +1,308 @@
+/* Slide-specific styles for discussion.qmd. The HEC theme files stay unmodified. */
+
+/* --- Title slide: paper and its author, then the occasion ------------------ */
+
+/* The paper's author belongs to the title; the author block below is the discussant. */
+.reveal #title-slide .title { text-wrap: balance; }
+
+.reveal #title-slide .title .paper-author {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.55em;
+  font-weight: 500;
+}
+
+.reveal #title-slide .subtitle {
+  margin-top: 1.1em;
+  color: #002855;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.reveal #title-slide .subtitle .talk-kind {
+  display: block;
+  margin-bottom: 0.25em;
+  color: #0072ce;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* --- N-PORT slide: timeline, two columns, takeaway ------------------------- */
+
+.reveal .nport-slide .nport-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Collapses with the heading's bottom margin; large enough to part the two rules. */
+  margin: 1.7em 0 1.1em;
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+/* One continuous rule across the four events, with a dot at each. */
+.reveal .nport-slide .nport-timeline > .event {
+  position: relative;
+  padding: 0.8em 1em 0 0;
+  border-top: 2px solid #d9d9d6;
+}
+
+.reveal .nport-slide .nport-timeline > .event::before {
+  content: "";
+  position: absolute;
+  top: calc(-0.3em - 1px);
+  left: 0;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: #002855;
+}
+
+.reveal .nport-slide .nport-timeline p { margin: 0; }
+
+.reveal .nport-slide .nport-timeline .when {
+  display: block;
+  margin-bottom: 0.1em;
+  font-weight: 700;
+}
+
+.reveal .nport-slide .columns { justify-content: space-between; }
+
+/* Quarto indents the children of a last column by 0.5rem, which pushed the full-width table past
+   the margin and the one-column heading off the timeline's left edge. */
+.reveal .nport-slide .columns > .column > :not(ul, ol) { margin-left: 0; margin-right: 0; }
+
+/* The timeline's own heading sits right above the rule. */
+.reveal .nport-slide .columns:has(+ .nport-timeline) h3 { margin-bottom: 0; }
+.reveal .nport-slide .columns + .nport-timeline { margin-top: 0.9em; }
+/* One type scale for the slide: body text, timeline and table at 0.8em (22.4px); labels and the
+   takeaway at 24px; only the sources line is smaller. */
+.reveal .nport-slide .column { font-size: 0.8em; line-height: 1.35; }
+.reveal .nport-slide .column p { margin: 0 0 0.55em; }
+
+/* Column labels in the theme's h3 style, a step above the text: never smaller than the table. */
+.reveal .nport-slide .column h3 {
+  margin: 0 0 0.35em;
+  font-size: 1.07em;
+  font-weight: 700;
+}
+
+/* The theme sets tables at 0.72em; here the table matches the text around it. */
+.reveal .nport-slide table {
+  width: 100%;
+  margin: 0 0 0.5em;
+  font-size: 1em;
+}
+
+/* Pandoc fixes column widths from the separator dashes once a source row passes 72 characters;
+   size the columns to their content instead. */
+.reveal .nport-slide table col { width: auto !important; }
+
+/* Flush with the column edges; names and sizes never wrap, only the scope may. */
+.reveal .nport-slide :is(th, td):first-child { padding-left: 0; }
+.reveal .nport-slide :is(th, td):last-child { padding-right: 0; }
+.reveal .nport-slide :is(th, td):not(:last-child) { white-space: nowrap; }
+
+.reveal .nport-slide .takeaway { margin: 1em 0 0.8em; font-size: 0.86em; line-height: 1.35; }
+.reveal .nport-slide .takeaway p { margin: 0; }
+
+/* On click, an alarm frame unfolds over the takeaway from left to right. It covers the whole
+   frame, borders included, and repeats the theme's frame geometry in red. */
+.reveal .nport-slide .missing-clients { position: relative; }
+.reveal .nport-slide .missing-clients .alarm-switch { position: absolute; width: 0; height: 0; }
+
+.reveal .nport-slide .missing-clients .alarm {
+  --alarm: #c62828;
+  position: absolute;
+  inset: calc(-1 * var(--takeaway-frame-border-width));
+  left: calc(-1 * var(--takeaway-frame-accent-width));
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.9em;
+  border: var(--takeaway-frame-border-width) solid var(--alarm);
+  border-left: var(--takeaway-frame-accent-width) solid #7f1d1d;
+  border-radius: 0 6px 6px 0;
+  background: var(--alarm);
+  color: #ffffff;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 600ms ease-in-out;
+}
+
+.reveal .nport-slide .missing-clients .alarm strong { color: inherit; }
+
+.reveal .nport-slide .missing-clients:has(.alarm-switch.visible) .alarm {
+  clip-path: inset(0 0 0 0);
+}
+
+/* --- Paper slide: one row per idea, the result beside it ------------------ */
+
+.reveal .paper-slide .takeaway { margin: 1em 0 0; font-size: 0.86em; line-height: 1.35; }
+.reveal .paper-slide .takeaway p { margin: 0; }
+
+.reveal .paper-slide table {
+  width: 100%;
+  margin: 0.4em 0 0;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.reveal .paper-slide th { padding: 0.3em 1em 0.3em 0; color: #536574; font-weight: 700; }
+.reveal .paper-slide td { padding: 0.65em 1em 0.65em 0; vertical-align: top; }
+.reveal .paper-slide td p { margin: 0; }
+.reveal .paper-slide tbody tr { border-bottom: 1px solid #d9d9d6; }
+.reveal .paper-slide td:first-child { font-weight: 600; }
+
+.reveal .paper-slide td ul { margin: 0; padding-left: 1.1em; }
+/* Outranks the theme's .reveal .slide ul li spacing. */
+.reveal .paper-slide td ul li { margin: 0; }
+.reveal .paper-slide td ul li + li { margin-top: 0.3em; }
+
+/* --- N-PORT underlyings: one table, same type scale as the N-PORT slide ---- */
+
+.reveal .underlyings-slide .lead { margin: 0.2em 0 0.9em; font-size: 0.86em; line-height: 1.35; }
+.reveal .underlyings-slide .lead p { margin: 0; }
+
+.reveal .underlyings-slide table {
+  width: 100%;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/* Pandoc fixes widths from the separator dashes when the header passes 72 characters. */
+.reveal .underlyings-slide table col { width: auto !important; }
+.reveal .underlyings-slide :is(th, td) { padding: 0.45em 0 0.45em 1.2em; white-space: nowrap; }
+.reveal .underlyings-slide :is(th, td):first-child { padding-left: 0; }
+.reveal .underlyings-slide tbody tr { border-bottom: 1px solid #d9d9d6; }
+.reveal .underlyings-slide tbody tr:last-child { border-top: 2px solid #002855; border-bottom: 0; }
+
+/* The scope and sources line sits just below the table. */
+.reveal .underlyings-slide .smaller { margin-top: 0.9em; }
+
+/* --- Index-swap laboratory: three points, one per beat --------------------- */
+
+/* Same type scale as the N-PORT slides: 24px lead lines, 22.4px bullets. */
+.reveal .index-lab-slide .lab-point { margin: 0.25em 0 0.5em; }
+.reveal .index-lab-slide .lab-point > p { margin: 0 0 0.15em; font-size: 0.86em; line-height: 1.3; }
+/* Bullets start at the lead line's edge instead of hanging in the margin. */
+.reveal .index-lab-slide .lab-point ul { margin: 0; padding-left: 1.1em; font-size: 0.8em; line-height: 1.25; }
+/* Outranks the theme's .reveal .slide ul li spacing. */
+.reveal .index-lab-slide .lab-point ul li { margin: 0.05em 0; }
+/* Sub-bullets keep the bullets' size instead of shrinking again. */
+.reveal .index-lab-slide .lab-point ul ul { margin: 0; font-size: 1em; }
+
+/* MathJax 4 may split inline math across lines; keep each formula whole. */
+.reveal .index-lab-slide mjx-container { white-space: nowrap; }
+
+/* --- Cross-asset hedging: native fragments replace the inventory penalty. --- */
+.reveal .factor-slide { font-size: 0.87em; }
+.reveal .factor-slide > p { margin: 0.6em 0; }
+.reveal .factor-model { position: relative; margin: 0.65em 0 0.9em; }
+.reveal .factor-model .factor-switch { position: absolute; width: 0; height: 0; }
+.reveal .factor-model > p:has(.factor-switch) { margin: 0; height: 0; }
+.reveal .factor-labels, .reveal .factor-definitions { display: grid; }
+.reveal .factor-labels > p, .reveal .factor-definitions > p { display: contents; }
+.reveal .factor-labels span, .reveal .factor-definitions span { grid-area: 1 / 1; }
+.reveal .factor-labels { font-weight: 700; color: #002855; }
+.reveal .factor-definitions { font-size: 0.86em; min-height: 1.6em; }
+/* Auto columns: each takes the wider of its two layers, so nothing moves in the crossfade. */
+.reveal .factor-equation > p {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 0.2em;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0.55em 0 0.35em;
+  min-height: 3.6em;
+  font-size: 1.2em;
+}
+.reveal .factor-equation .factor-objective { grid-area: 1 / 1; text-align: right; }
+.reveal .factor-equation .factor-fixed { grid-area: 1 / 2; text-align: center; }
+.reveal .factor-equation .factor-penalty { grid-area: 1 / 3; text-align: left; }
+/* Crossfade: a layer becomes visible at the start of its fade-in and hidden only after its
+   fade-out, so both directions (and Back) show the full 450 ms. */
+.reveal .factor-model :is(.factor-old, .factor-new) {
+  transition: opacity 450ms ease, transform 450ms ease, visibility 0s linear 0s;
+}
+.reveal .factor-model .factor-new { opacity: 0; visibility: hidden; transform: translateY(0.16em); transition-delay: 0s, 0s, 450ms; }
+.reveal .factor-model:has(.factor-switch.visible) .factor-old { opacity: 0; visibility: hidden; transform: translateY(-0.16em); transition-delay: 0s, 0s, 450ms; }
+.reveal .factor-model:has(.factor-switch.visible) .factor-new { opacity: 1; visibility: visible; transform: translateY(0); transition-delay: 0s; }
+/* This slide explicitly demonstrates the requested equation transition. */
+
+/* --- Small comments: short remarks for the author ------------------------- */
+
+.reveal .comments-slide { font-size: 0.9em; line-height: 1.35; }
+.reveal .comments-slide p { margin: 0.5em 0; }
+
+.reveal .comments-slide table {
+  width: 100%;
+  margin: 0.6em 0;
+  font-size: 0.8em;
+}
+
+/* Clients long in Tol blue, clients short in Tol red, as in the figures. */
+.reveal .comments-slide tbody tr:nth-child(1) td:first-child { border-left: 4px solid var(--tol-1); }
+.reveal .comments-slide tbody tr:nth-child(2) td:first-child { border-left: 4px solid var(--tol-2); }
+
+.reveal .comments-slide p:has(+ .typo-list) { margin: 1em 0 0.3em; }
+
+/* Nine short items in two newspaper columns. */
+.reveal .comments-slide .typo-list ul {
+  columns: 2;
+  column-gap: 2em;
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.72em;
+}
+
+.reveal .comments-slide .typo-list li { margin: 0 0 0.25em; break-inside: avoid; }
+
+/* --- Shared: keep a hyphenated term on one line ---------------------------- */
+
+.reveal .nowrap { white-space: nowrap; }
+
+/* --- Shared: a fragment that unfolds from left to right -------------------- */
+
+/* A frame marked .fragment.unfold wipes in on click, as the N-PORT alarm does. The clip
+   replaces reveal's fade, so the fragment stays opaque and visible throughout. */
+.reveal .slides .unfold.fragment {
+  opacity: 1;
+  visibility: inherit;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 600ms ease-in-out;
+}
+
+.reveal .slides .unfold.fragment.visible { clip-path: inset(0 0 0 0); }
+
+/* --- Shared: economic terms, coloured as in the TRS figure ----------------- */
+
+/* Spreads Tol purple, funding and borrowing costs Tol green. Tol red is too light for
+   text, so the long and short sides are marked by underlines in the side colours. */
+.reveal .term-spread { color: var(--tol-6); font-weight: 700; }
+.reveal .term-cost { color: var(--tol-3); font-weight: 700; }
+
+.reveal :is(.term-long, .term-short) {
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.12em;
+  /* Below the descenders, so the "g" in "long" does not break the line. */
+  text-underline-offset: 0.3em;
+  text-decoration-skip-ink: none;
+}
+
+.reveal .term-long { text-decoration-color: var(--tol-1); }
+.reveal .term-short { text-decoration-color: var(--tol-2); }
+
+/* --- The Paper: four points, centred in the space below the title ---------- */
+
+/* The title and its rule end 52px down the 1280 x 780 slide; the page chrome needs the
+   bottom 30px. The side insets narrow the text block. */
+.reveal .intro-slide .intro-points {
+  position: absolute;
+  inset: 52px 6% 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal .intro-slide .intro-points ul { margin: 0; }
+.reveal .intro-slide .intro-points ul li + li { margin-top: 0.8em; }

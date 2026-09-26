@@ -1,0 +1,40 @@
+<!-- AGENT NOTE: Do not read or edit this math-rendering file unless the user explicitly asks about the deck's mathematics font or renderer. -->
+<!-- MathJax 4 renders ordinary deck builds with New Computer Modern SVG.
+     Runtime paths are local; TeX class annotations remain available so the
+     deck's semantic attention colors continue to work inside equations. -->
+<script>
+window.MathJax = {
+  loader: {
+    paths: {
+      mathjax: 'vendor/mathjax',
+      'mathjax-newcm': 'vendor/mathjax-fonts/mathjax-newcm-font',
+      sre: '[mathjax]/sre',
+      mathmaps: '[sre]/mathmaps'
+    }
+  },
+  svg: {
+    dynamicPrefix: '[mathjax-newcm]/svg/dynamic'
+  },
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: false
+  },
+  options: {
+    worker: {
+      path: 'vendor/mathjax/sre'
+    }
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(() => {
+        if (window.Reveal) {
+          if (Reveal.isReady()) Reveal.layout();
+          else Reveal.on('ready', () => Reveal.layout());
+        }
+      });
+    }
+  }
+};
+</script>
+<script defer src="vendor/mathjax/tex-svg.js"></script>

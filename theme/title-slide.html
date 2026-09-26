@@ -1,0 +1,25 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+  <div class="hec-authors">
+$for(by-author)$
+    <div class="hec-author">
+      <p class="author">$by-author.name.literal$</p>
+$for(by-author.affiliations)$
+      <p class="affiliation">$it.name$</p>
+$endfor$
+    </div>
+$endfor$
+  </div>
+$if(presenter)$
+  <p class="hec-presenter">Presented by $presenter$</p>
+$endif$
+$for(institute)$
+  <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+</section>

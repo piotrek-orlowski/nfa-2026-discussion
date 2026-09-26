@@ -1,0 +1,140 @@
+<script>
+// Hover explanations for the Quarto deck.
+//
+// Pure CSS cannot keep a tooltip on screen: a trigger near an edge pushes the
+// bubble off, and reveal.js clips it at the slide boundary. This positions the
+// bubble in viewport coordinates instead, clamped to the window, flipping below
+// the trigger when there is no room above.
+//
+// Two authoring forms, both handled here:
+//   [term]{.tip tip="plain explanation"}
+//   [term]{.tip}[explanation with $\ev{\sdf R}=1$]{.tipbody}
+// Add tip-size="match" to use the trigger's visible font size and font family.
+//
+// The second keeps its bubble in the document so MathJax typesets it on load;
+// this moves that node to <body> on first hover, which preserves the rendered math.
+
+(() => {
+  const MARGIN = 12 // keep this far from the window edge
+  const GAP = 10 // between trigger and bubble
+
+  // Bubble text is sized to match the deck's body prose rather than a fixed px
+  // value, so it reads at the same size as the slide instead of shrinking away
+  // beside it. TIP_EM is a fraction of the reveal root font size (30px here);
+  // 0.62 is what .beat uses, so a tooltip is exactly as large as the narrative
+  // it explains. Raise it if you want the bubbles louder.
+  const TIP_EM = 0.62
+  const FALLBACK_ROOT_PX = 30
+
+  function rootFontPx() {
+    const reveal = document.querySelector('.reveal')
+    const px = reveal ? parseFloat(getComputedStyle(reveal).fontSize) : NaN
+    return Number.isFinite(px) && px > 0 ? px : FALLBACK_ROOT_PX
+  }
+
+  let plainBubble = null
+
+  function getPlainBubble() {
+    if (!plainBubble) {
+      plainBubble = document.createElement('div')
+      plainBubble.className = 'tipbody tipbody-floating'
+      document.body.appendChild(plainBubble)
+    }
+    return plainBubble
+  }
+
+  function place(trigger, bubble) {
+    // Lay the bubble out at the origin first so its size can be measured.
+    bubble.style.visibility = 'hidden'
+    bubble.style.left = '0px'
+    bubble.style.top = '0px'
+    bubble.classList.add('is-open')
+
+    const t = trigger.getBoundingClientRect()
+
+    // reveal.js scales the slide with a CSS transform; the bubble is outside it,
+    // so match the factor or the tooltip is the wrong size on a projector.
+    const slides = trigger.closest('.slides')
+    const scale = slides?.offsetWidth
+      ? slides.getBoundingClientRect().width / slides.offsetWidth
+      : trigger.offsetHeight ? t.height / trigger.offsetHeight : 1
+
+    // Size BEFORE measuring. Font size drives both width (the em-based
+    // max-width) and height, so measuring first and resizing after positions
+    // the bubble from stale dimensions — it lands off-centre, and near an edge
+    // it grows straight off the screen.
+    const matchSize = (trigger.getAttribute('data-tip-size') || trigger.getAttribute('tip-size')) === 'match'
+    const triggerStyle = getComputedStyle(trigger)
+    const fontSize = matchSize ? parseFloat(triggerStyle.fontSize) : rootFontPx() * TIP_EM
+    bubble.style.fontSize = `${(fontSize * scale).toFixed(1)}px`
+    bubble.style.fontFamily = matchSize ? triggerStyle.fontFamily : ''
+    bubble.style.fontStyle = matchSize ? 'normal' : ''
+    bubble.style.fontWeight = matchSize ? '400' : ''
+    bubble.style.boxSizing = 'border-box'
+    bubble.style.maxWidth = `min(26em, 50vw, ${Math.max(0, window.innerWidth - 2 * MARGIN)}px)`
+    bubble.style.maxHeight = `${Math.max(0, window.innerHeight - 2 * MARGIN)}px`
+    bubble.style.overflow = 'auto'
+    const b = bubble.getBoundingClientRect()
+
+    const clamp = (value, maximum) => Math.max(MARGIN, Math.min(value, Math.max(MARGIN, maximum)))
+    const left = clamp(t.left + t.width / 2 - b.width / 2, window.innerWidth - b.width - MARGIN)
+    const above = t.top - b.height - GAP
+    const top = clamp(above < MARGIN ? t.bottom + GAP : above, window.innerHeight - b.height - MARGIN)
+
+    bubble.style.left = `${Math.round(left)}px`
+    bubble.style.top = `${Math.round(top)}px`
+    bubble.style.visibility = 'visible'
+  }
+
+  function hide(bubble) {
+    bubble.classList.remove('is-open')
+    bubble.style.visibility = ''
+  }
+
+  function bind(trigger) {
+    // The rich form: a .tipbody immediately after the trigger.
+    let rich = trigger.nextElementSibling
+    if (!rich || !rich.classList.contains('tipbody')) rich = null
+
+    const show = () => {
+      let bubble
+      if (rich) {
+        if (rich.parentElement !== document.body) {
+          rich.classList.add('tipbody-floating')
+          document.body.appendChild(rich)
+        }
+        bubble = rich
+      } else {
+        bubble = getPlainBubble()
+        // Quarto rewrites non-standard span attributes to data-*, so the
+        // authored `tip="..."` reaches the DOM as `data-tip="..."`. Accept both
+        // rather than silently showing an empty bubble.
+        bubble.textContent =
+          trigger.getAttribute('data-tip') || trigger.getAttribute('tip') || ''
+      }
+      trigger._bubble = bubble
+      place(trigger, bubble)
+    }
+
+    const off = () => {
+      if (trigger._bubble) hide(trigger._bubble)
+    }
+
+    trigger.addEventListener('mouseenter', show)
+    trigger.addEventListener('mouseleave', off)
+    trigger.addEventListener('focus', show)
+    trigger.addEventListener('blur', off)
+    if (!trigger.hasAttribute('tabindex')) trigger.setAttribute('tabindex', '0')
+  }
+
+  function init() {
+    document.querySelectorAll('.tip').forEach(bind)
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init)
+  } else {
+    init()
+  }
+})()
+</script>

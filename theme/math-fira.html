@@ -1,0 +1,40 @@
+<!-- MathJax 4 is loaded independently because this Quarto Reveal template
+     otherwise selects the legacy MathJax 2 plugin. All runtime paths are local;
+     see vendor/mathjax/PROVENANCE.md. Animation code is unchanged. -->
+<script>
+window.MathJax = {
+  loader: {
+    paths: {
+      mathjax: 'vendor/mathjax',
+      fonts: 'vendor/mathjax-fonts',
+      sre: '[mathjax]/sre',
+      mathmaps: '[sre]/mathmaps'
+    }
+  },
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: false
+  },
+  output: {
+    font: 'mathjax-fira',
+    fontPath: '[fonts]/%%FONT%%-font'
+  },
+  options: {
+    worker: {
+      path: 'vendor/mathjax/sre'
+    }
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(() => {
+        if (window.Reveal) {
+          if (Reveal.isReady()) Reveal.layout();
+          else Reveal.on('ready', () => Reveal.layout());
+        }
+      });
+    }
+  }
+};
+</script>
+<script defer src="vendor/mathjax/tex-chtml-nofont.js"></script>

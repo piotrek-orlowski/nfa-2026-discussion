@@ -1,0 +1,280 @@
+/*-- scss:defaults --*/
+
+// Visual layer only. custom.scss owns slide geometry and animation states.
+$font-family-sans-serif: "Visby CF", "Inter", "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-font: "Visby Slab CF", "Rockwell", Georgia, serif;
+$presentation-heading-font-weight: 600;
+$ink: #002855;
+$paper: #ffffff;
+$accent: #0072ce;
+$highlight: #0072ce;
+$muted: #536574;
+$rule: #d9d9d6;
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $accent;
+$selection-bg: rgba(#00aec7, 0.22);
+$presentation-heading-color: $ink;
+$code-color: $accent;
+// Authoring aid: set to true to show the exact Reveal slide boundary.
+$show-slide-canvas-frame: false;
+
+/*-- scss:rules --*/
+
+.reveal {
+  --r-main-font: "Visby CF", Inter, "Helvetica Neue", Arial, sans-serif;
+  --r-main-color: #002855;
+  --r-background-color: #ffffff;
+  --r-heading-color: #002855;
+  --r-heading-font: "Visby Slab CF", Rockwell, Georgia, serif;
+  --r-link-color: #0072ce;
+  --r-link-color-hover: #002855;
+  font-weight: 500;
+}
+
+body, .reveal-viewport { background-color: #ffffff; }
+
+@if $show-slide-canvas-frame {
+  // Trace the scaled slide canvas without changing its layout or clipping content.
+  .reveal .slides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(#002855, 0.2);
+    z-index: 100;
+    pointer-events: none;
+  }
+  .reveal.overview .slides::after,
+  html.print-pdf .reveal .slides::after { display: none; }
+  @media print {
+    .reveal .slides::after { display: none; }
+  }
+}
+
+.tipbody {
+  font-family: "Visby CF", Inter, "Helvetica Neue", Arial, sans-serif;
+  background: #002855;
+  color: #ffffff;
+}
+.tipbody mjx-container { color: #ffffff; }
+.reveal .tip { border-bottom-color: #0072ce; }
+.reveal .accent, .reveal .hl, .reveal .citation a { color: #0072ce; }
+.reveal .citation a { border-bottom-color: rgba(#0072ce, 0.5); }
+.reveal .muted, .reveal .group-label { color: #536574; }
+.reveal .firewall { border-color: #d9d9d6; background: rgba(#002855, 0.02); }
+.reveal .firewall .key, .reveal .coda { color: #536574; }
+.reveal .firewall .no { color: #0072ce; }
+.reveal .todo { border-color: #0072ce; color: #536574; }
+.reveal .todo strong, .reveal .todo::before { color: #0072ce; }
+.reveal .todo::before { font-family: var(--r-heading-font); }
+.reveal .beat { border-left-color: #0072ce; }
+.reveal .beat.visible { border-left-color: #002855; }
+.reveal .beat > p:first-child > strong:first-child {
+  font-family: var(--r-heading-font);
+  color: #0072ce;
+}
+.reveal .mathstack, .reveal .annot { border-color: #d9d9d6; }
+.reveal .annot { color: #002855; }
+.reveal .annot .sym, .reveal .annot .sym mjx-container { color: #0072ce; }
+.reveal .annot .sym { background: rgba(#0072ce, 0.09); }
+
+.reveal h1, .reveal h2, .reveal h3 {
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.reveal h3 { font-family: "Visby CF", Arial, sans-serif; }
+.reveal mjx-container { font-weight: 400; }
+
+.reveal h2 { border-bottom-color: #d9d9d6; }
+.reveal strong { font-weight: 700; }
+.reveal a:hover { color: #002855; }
+.reveal .takeaway {
+  background: rgba(#00aec7, 0.07);
+  border-left-color: #00aec7;
+  border-radius: 0;
+}
+.reveal .slide-number { color: #002855; opacity: 0.7; }
+.reveal .footer { color: #536574; }
+
+// Title metadata has its own layout; content slides retain their dimensions.
+.reveal #title-slide {
+  text-align: left;
+  padding-top: 0.3em;
+}
+// Quarto supplies one persistent logo; override its default footer placement.
+.reveal.has-logo .slide-logo {
+  top: clamp(12px, 2vw, 24px);
+  right: clamp(12px, 2vw, 24px);
+  bottom: auto;
+  width: clamp(40px, 5vw, 64px);
+  height: auto;
+  max-height: none;
+  margin: 0;
+}
+// A native logo otherwise moves the slide number into the upper-right corner.
+body .reveal.has-logo .slide-number {
+  top: auto;
+  bottom: 16px;
+}
+.reveal #title-slide .title {
+  font-size: 1.95em;
+  line-height: 1.08;
+  max-width: 19em;
+  margin: 0 0 0.35em;
+}
+.reveal #title-slide .subtitle {
+  color: #536574;
+  font-size: 0.8em;
+  line-height: 1.35;
+  max-width: 38em;
+  margin: 0 0 1.25em;
+}
+.reveal #title-slide .hec-authors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em 1.8em;
+  border-top: 2px solid #0072ce;
+  padding-top: 0.7em;
+}
+.reveal #title-slide .hec-author { flex: 1 1 25%; }
+.reveal #title-slide .author {
+  font-size: 0.74em;
+  font-weight: 600;
+  margin: 0 0 0.2em;
+}
+.reveal #title-slide .affiliation {
+  color: #536574;
+  font-size: 0.61em;
+  line-height: 1.35;
+  margin: 0;
+}
+.reveal #title-slide .hec-presenter {
+  color: #0072ce;
+  font-size: 0.55em;
+  margin: 0.3em 0 0;
+}
+.reveal #title-slide .date {
+  color: #536574;
+  font-size: 0.6em;
+  margin-top: 1.1em;
+}
+
+// Opt-in editorial helpers; never applied to animation or content wrappers.
+.reveal .hec-kicker {
+  color: #0072ce;
+  font-size: 0.55em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.reveal .hec-lead {
+  font-family: var(--r-heading-font);
+  font-size: 1.55em;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 24em;
+}
+
+// Section boundaries share the title slide's quiet, left-aligned hierarchy.
+.reveal .slides section.section-divider,
+.reveal .slides section.title-slide.level1 {
+  box-sizing: border-box;
+  height: 780px;
+  padding: 3em 3.2em;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ffffff;
+
+  &::before { content: none; }
+
+  > .section-kicker {
+    order: 0;
+    margin: 0 0 1.15em;
+    color: #536574;
+    font-family: var(--r-main-font);
+    font-size: 0.62em;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  > h1, > h2 {
+    order: 1;
+    max-width: 17em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #002855;
+    font-size: 2.35em;
+    line-height: 1.12;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.3em;
+      height: 3px;
+      margin-top: 0.48em;
+      background: #00aec7;
+    }
+  }
+
+  > .section-cue {
+    order: 2;
+    max-width: 32em;
+    margin: 1.15em 0 0;
+    color: #536574;
+    font-size: 0.86em;
+    line-height: 1.45;
+  }
+
+  > .section-kicker > p, > .section-cue > p { margin: 0; }
+}
+
+.reveal .slides section.section-divider.present,
+.reveal .slides section.title-slide.level1.present { display: flex !important; }
+
+.reveal .hec-section-progress {
+  position: absolute;
+  z-index: 31;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65em;
+  padding-right: 0.8em;
+  border-right: 1px solid #d9d9d6;
+  box-sizing: border-box;
+  font-family: var(--r-main-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #536574;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.reveal .hec-section-progress[hidden] { display: none; }
+.reveal .hec-section-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reveal .hec-section-position {
+  flex: none;
+  color: #002855;
+  font-variant-numeric: tabular-nums;
+}
+.reveal .slide-number.hec-number {
+  top: auto;
+  bottom: 16px;
+  right: 16px;
+  font-size: 12px;
+  line-height: 1.3;
+  background: transparent;
+}
+@media print {
+  .reveal .hec-section-progress { display: none !important; }
+  .reveal .slides section.section-divider,
+  .reveal .slides section.title-slide.level1 { display: flex !important; }
+}

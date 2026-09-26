@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="discussion_files/libs/clipboard/clipboard.min.js"></script>
+<script src="discussion_files/libs/quarto-html/tabby.min.js"></script>
+<script src="discussion_files/libs/quarto-html/popper.min.js"></script>
+<script src="discussion_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="discussion_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="discussion_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="discussion_files/libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.27">
+
+  <meta name="author" content="Piotr Orłowski">
+  <title>The Cost of Leverage: Evidence from Swaps by Pekka Honkanen</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="discussion_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="discussion_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="discussion_files/libs/revealjs/dist/theme/quarto-687eb0ee877b178cd4bb446e11c8449b.css">
+  <link rel="stylesheet" href="figure-zoom/figure-zoom.css">
+  <link rel="stylesheet" href="deck.css">
+  <link href="discussion_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="discussion_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="discussion_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="discussion_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="discussion_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="discussion_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link rel="stylesheet" href="theme/fonts.css">
+  <!-- AGENT NOTE: Do not read or edit this math-rendering file unless the user explicitly asks about the deck's mathematics font or renderer. -->
+  <!-- MathJax 4 renders ordinary deck builds with New Computer Modern SVG.
+       Runtime paths are local; TeX class annotations remain available so the
+       deck's semantic attention colors continue to work inside equations. -->
+  <script>
+  window.MathJax = {
+    loader: {
+      paths: {
+        mathjax: 'vendor/mathjax',
+        'mathjax-newcm': 'vendor/mathjax-fonts/mathjax-newcm-font',
+        sre: '[mathjax]/sre',
+        mathmaps: '[sre]/mathmaps'
+      }
+    },
+    svg: {
+      dynamicPrefix: '[mathjax-newcm]/svg/dynamic'
+    },
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']],
+      processEscapes: false
+    },
+    options: {
+      worker: {
+        path: 'vendor/mathjax/sre'
+      }
+    },
+    startup: {
+      pageReady() {
+        return MathJax.startup.defaultPageReady().then(() => {
+          if (window.Reveal) {
+            if (Reveal.isReady()) Reveal.layout();
+            else Reveal.on('ready', () => Reveal.layout());
+          }
+        });
+      }
+    }
+  };
+  </script>
+  <script defer="" src="vendor/mathjax/tex-svg.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">The Cost of Leverage: Evidence from Swaps <span class="paper-author">by Pekka Honkanen</span></h1>
+  <p class="subtitle"><span class="talk-kind">Discussion</span> 2026 Annual Meeting of the Northern Finance Association</p>
+  <div class="hec-authors">
+    <div class="hec-author">
+      <p class="author">Piotr Orłowski</p>
+      <p class="affiliation">HEC Montréal</p>
+    </div>
+  </div>
+</section>
+<section id="the-paper" class="slide level2 intro-slide">
+<h2>The Paper</h2>
+<div class="intro-points">
+<ul>
+<li>Derives <span class="term-spread">equilibrium spreads</span> in a static swap market where the dealer <strong>nets opposing client trades</strong> and <strong>hedges the residual</strong>.</li>
+<li>Concludes that <span class="term-long">net long</span> and <span class="term-short">net short</span> demand are priced differently: spreads reflect a <span class="term-cost"><span class="nowrap">dealer-specific</span> funding cost</span> and an <span class="term-cost"><span class="nowrap">asset-specific</span> borrowing cost</span>, respectively.</li>
+<li>Tests the <strong>pricing, hedging and competition</strong> predictions on <span class="nowrap">contract-level</span> spreads and dealer positions.</li>
+<li>Introduces a relatively recent dataset: funds’ swap holdings from <strong>SEC Form N-PORT</strong>, with each contract’s spread and dealer.</li>
+</ul>
+</div>
+</section>
+<section id="trs-market" class="slide level2">
+<h2>How the TRS market works</h2>
+<div class="figure-zoom" data-extent="18 10.125">
+<p><img data-src="trs_market.svg" class="img-fluid" alt="Schematic of the equity total return swap market"></p>
+<p><span class="zoom-step fragment" data-view="0.30 2.76 11.08 8.82"></span> <span class="zoom-step fragment" data-view="6.93 2.72 18.00 8.95"></span> <span class="zoom-step fragment" data-view="0.50 0.25 17.50 9.80" data-keep="6.93 3.62 11.07 6.22; 0.45 0.20 17.55 3.70"></span></p>
+</div>
+</section>
+<section id="paper" class="slide level2 paper-slide">
+<h2>How dealers price leverage</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Idea</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spread sensitivity</td>
+<td>In stocks intermediated by <strong>many dealers</strong>, spreads track the <span class="term-cost">dealer’s funding cost</span> under <span class="term-long">net long</span> demand and the <span class="term-cost">stock’s borrowing cost</span> under <span class="term-short">net short</span> demand.</td>
+</tr>
+<tr class="even">
+<td>Spreads and net exposure</td>
+<td>Spreads show a <span class="term-spread">significant discontinuity</span> where <strong>net exposure changes sign</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Internal hedging</td>
+<td>Dealers quote <span class="term-spread">lower spreads</span> to new counterparties when the trade <strong>offsets their net exposure</strong>.</td>
+</tr>
+<tr class="even">
+<td>Marginal hedging</td>
+<td>Dealers’ <strong>13F stock holdings</strong> track their <strong>residual positions</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Competition</td>
+<td><ul>
+<li>Spreads lie closer to <span class="term-cost">funding and borrowing costs</span> where <strong>competition is strong</strong>.</li>
+<li>After <strong>Credit Suisse’s exit</strong>, <span class="term-spread">spreads rise</span> where competition weakens.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<div class="takeaway fragment unfold">
+<p><strong>Caveat.</strong> These are cross-sectional patterns that <strong>explain little</strong> of the observed <span class="term-spread">variation in spreads</span>. Where R<sup>2</sup>s are high, they come from <strong>fixed effects</strong>; <strong>within R<sup>2</sup>s</strong> would show how much the mechanism itself explains.</p>
+</div>
+</section>
+<section id="data-schema" class="slide level2">
+<h2>The data schema</h2>
+
+<img data-src="data_schema.svg" class="img-fluid r-stretch" alt="Data sources and how they are matched into the analysis panel"></section>
+<section id="nport" class="slide level2 nport-slide">
+<h2>N-PORT: relatively new, “incomplete” dataset</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<h3 id="datasets-history">Dataset’s history</h3>
+</div></div>
+<div class="nport-timeline">
+<div class="event">
+<p><span class="when">2016</span> Rules adopted</p>
+</div>
+<div class="event">
+<p><span class="when">Late 2019</span> Public XML filings on EDGAR</p>
+</div>
+<div class="event">
+<p><span class="when">2020</span> Smaller fund groups enter</p>
+</div>
+<div class="event">
+<p><span class="when">July 2024</span> <strong>Easy to download</strong> complete history</p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:37%;">
+<h3 id="whats-new-in-n-port">What’s new in N-PORT?</h3>
+<p><strong>Before:</strong></p>
+<ul>
+<li>holdings in N-Q / N-CSR;</li>
+<li>no unified handling of swaps.</li>
+</ul>
+<p><strong>Now:</strong> standardized contracts: <strong>financing terms, notional, underlying, dealer</strong>.</p>
+</div><div class="column" style="width:58%;">
+<h3 id="coveragehow-big-is-the-trs-market">Coverage–how big is the TRS market?</h3>
+<table class="caption-top">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 14%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Size</th>
+<th style="text-align: left;">Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>N-PORT</strong></td>
+<td style="text-align: right;"><strong>$0.38tn</strong></td>
+<td style="text-align: left;">Equity swap notional in Q2 2026</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SEC</strong></td>
+<td style="text-align: right;"><strong>$3.33tn</strong></td>
+<td style="text-align: left;">Equity TRS with a US connection, excl. broad indices</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>BIS</strong></td>
+<td style="text-align: right;"><strong>$6.30tn</strong></td>
+<td style="text-align: left;">Global equity swap and fwd market</td>
+</tr>
+</tbody>
+</table>
+<p><span class="muted">SEC and BIS: December 2025.</span></p>
+<p><strong>N-PORT / SEC = 11.3%, N-PORT / BIS = 6.0%.</strong></p>
+</div></div>
+<div class="takeaway missing-clients fragment unfold">
+<p><strong>Missing hedge funds, family offices and prop desks → how representative is dealer net exposure?</strong><span class="fragment alarm-switch"></span></p>
+<div class="alarm">
+<p><strong>Missing hedge funds, family offices and prop desks → why does this even work?!</strong></p>
+</div>
+</div>
+<div class="smaller muted">
+<p>Sources: <a href="https://www.sec.gov/rules/final/2016/33-10231.pdf">SEC reform</a>, <a href="https://www.sec.gov/rules-regulations/staff-guidance/investment-company-reporting-modernization-frequently-asked-questions">reporting timeline</a>, <a href="https://www.sec.gov/newsroom/whats-new/2407-form-nport-data-sets">bulk-data launch</a>; own N-PORT calculation; <a href="https://www.sec.gov/files/tm/report-security-based-swaps-062626.pdf">SEC Table D.1</a>; <a href="https://data.bis.org/topics/OTC_DER/BIS,WS_OTC_DERIV2,1.0/H.A.C.E.5J.A.5J.A.TO1.TO1.A.A.3.C">BIS</a>.</p>
+</div>
+</section>
+<section id="separate-books" class="slide level2 separate-books-slide">
+<h2>Strong qualitative support for theory—despite incomplete coverage</h2>
+<p>Could registered funds trade with <span class="tol-blue"><strong>separate dealer books</strong></span>?<br>
+N-PORT might capture the <strong>relevant</strong> inventory.</p>
+<h3 id="anecdotal-evidence">Anecdotal evidence…</h3>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">In support</th>
+<th style="text-align: left;">Against</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Banks separate trading desks by <strong>product and geography</strong>.</td>
+<td style="text-align: left;"><strong>No established separation</strong> between registered funds and hedge funds.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="term-cost">Desk-specific constraints</span> could shape quotes.</td>
+<td style="text-align: left;"><strong>Shared inventory</strong> and <span class="term-cost">internal funding</span> connect desks.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Invesco describes hedge-fund demand <span class="term-spread">improving ETF swap pricing</span>.*</td>
+</tr>
+</tbody>
+</table>
+<div class="takeaway fragment unfold">
+<p>The central concern is about the <strong>sign of net demand</strong>.</p>
+</div>
+<div class="smaller muted">
+<p>*Invesco example: European synthetic ETFs / China exposure. Sources: <a href="https://www.sec.gov/Archives/edgar/data/1053092/000137036822000019/cs-20211231.htm">CS</a>, <a href="https://www.sec.gov/Archives/edgar/data/230611/000183988224033103/xslATS-N_X01/primary_doc.xml">UBS</a>, <a href="https://www.islaamericas.org/isla-events/isla-americas-2nd-annual-securities-finance-collateral-management-conference/speakers/">BofA</a>, <a href="https://www.invesco.com/content/dam/invesco/emea/en/pdf/why-structure-matters-when-choosing-an-ETF-retail.pdf">Invesco, p.&nbsp;4</a>.</p>
+</div>
+</section>
+<section id="nport-underlyings" class="slide level2 underlyings-slide">
+<h2>N-PORT, 2026 Q2: underlying assets</h2>
+<div class="lead">
+<p>Single stocks are 89% of positions but 22% of gross notional; indices and baskets more economically important at 71%.</p>
+</div>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Underlying</th>
+<th style="text-align: right;">Positions</th>
+<th style="text-align: right;">Gross</th>
+<th style="text-align: right;">Fund long</th>
+<th style="text-align: right;">Fund short</th>
+<th style="text-align: right;">Unresolved</th>
+<th style="text-align: right;">Net demand</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Indices / baskets</td>
+<td style="text-align: right;">2,869</td>
+<td style="text-align: right;">269.0</td>
+<td style="text-align: right;">225.2</td>
+<td style="text-align: right;">35.1</td>
+<td style="text-align: right;">8.6</td>
+<td style="text-align: right;">190.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Other ETFs</td>
+<td style="text-align: right;">617</td>
+<td style="text-align: right;">22.9</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">15.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Single-name stocks</td>
+<td style="text-align: right;">29,509</td>
+<td style="text-align: right;">83.8</td>
+<td style="text-align: right;">65.1</td>
+<td style="text-align: right;">11.3</td>
+<td style="text-align: right;">7.4</td>
+<td style="text-align: right;">53.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Unclassified / other</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>All</strong></td>
+<td style="text-align: right;"><strong>33,092</strong></td>
+<td style="text-align: right;"><strong>376.5</strong></td>
+<td style="text-align: right;"><strong>309.3</strong></td>
+<td style="text-align: right;"><strong>50.2</strong></td>
+<td style="text-align: right;"><strong>17.0</strong></td>
+<td style="text-align: right;"><strong>259.1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="smaller muted">
+<p>Notional in $bn. Data from 2026 Q2, 1,120 funds reporting between February and April 2026. Data source: <a href="https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets">SEC N-PORT data</a>, <a href="https://www.sec.gov/files/formn-port.pdf">Form N-PORT</a>; own calculation.</p>
+</div>
+</section>
+<section id="index-lab" class="slide level2 index-lab-slide">
+<h2>Request for more granular evidence</h2>
+<div class="lab-point">
+<p><strong>Benchmark index swaps can be hedged with futures (dealer chars don’t matter)</strong></p>
+<ul>
+<li>Futures margin: a <strong>very low %</strong> of notional–cheap leverage</li>
+<li>→ the <span class="term-cost">futures basis</span> should price them rather than the dealer’s own <span class="term-cost">CDS</span></li>
+<li>Paper’s §3.3 bounds (eqs. 9–12): ½<span class="math inline">\((c_L+c_S)\)</span> ≤ <span class="term-spread">jump</span> ≤ <span class="math inline">\(c_L+c_S\)</span> → with futures, <span class="nowrap"><strong>≤ the bid–ask</strong></span></li>
+</ul>
+</div>
+<div class="lab-point fragment">
+<p><strong>Additional tests with futures-hedgeable indices</strong></p>
+<ul>
+<li><strong>Table 2</strong> · jump in spreads when <span class="term-long">net demand crosses zero</span> → the <span class="term-spread">discontinuity almost vanishes</span> for indices hedged with futures</li>
+<li><strong>Table 3</strong> · pass-through of dealer funding costs → add the <span class="term-cost">futures basis</span> alongside dealer <span class="term-cost">CDS</span>; the basis should <span class="nowrap"><strong>win the horse race</strong></span></li>
+<li><strong>Table 4</strong> · discount on <span class="term-long">offsetting trades</span> → a <span class="term-spread">smaller discount</span> for index swaps</li>
+<li><strong>Table 5</strong> · dealer hedging in 13F holdings → futures <strong>aren’t reported in 13F</strong>, so pass-through could be zero, unless dealers hedge with ETFs</li>
+<li>Use indices <strong>without futures</strong> as a control group</li>
+</ul>
+</div>
+<div class="lab-point fragment">
+<p><strong>Additional tests</strong></p>
+<ul>
+<li><strong>Hedge-cost ladder:</strong> hard-to-borrow → easy-to-borrow stocks → ETFs → indices; we should see effects <strong>shrink</strong></li>
+<li><strong>Table 2: compare dealers serving both long and short clients</strong> in the same asset. Does the <span class="term-spread">spread difference</span> between <span class="term-long">net long</span> and <span class="term-short">net short</span> demand persist with <span class="nowrap">asset × quarter FE</span>?</li>
+<li><strong>Leveraged and inverse ETFs:</strong> bull and bear funds on <strong>one index, one sponsor, shared dealers</strong>
+<ul>
+<li><span class="term-long">bull</span> demand dominates → <span class="term-short">bear</span> funds should <span class="term-spread">pay the least</span>, or even be paid</li>
+<li>bear funds should <strong>route their swaps</strong> to the dealers whose books lean long</li>
+<li>the bull–bear <span class="term-spread">pricing gap</span> should widen from index funds to single-stock funds</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="factor-hedging" class="slide level2 factor-slide">
+<h2>An asset-pricer’s question</h2>
+<p>Stock returns have common factors: <span class="math display">\[
+R = bF + \varepsilon
+\]</span></p>
+<ul>
+<li>Hedge the <strong>factor part at the book level</strong>:
+<ul>
+<li><strong>net</strong> factor exposure across client positions in different stocks</li>
+<li>hedge the rest with <strong>factor portfolios</strong>; keep a <strong>partial</strong> stock hedge for the residual</li>
+</ul></li>
+<li>More likely for:
+<ul>
+<li>dealers with high <span class="term-cost">cost of leverage</span> when <span class="term-long">net long</span> → less gross balance sheet</li>
+<li>stocks with high <span class="term-cost">borrow cost</span> <strong>relative to residual risk</strong> when <span class="term-short">net short</span> → short cheap-to-borrow stocks with the same loadings</li>
+</ul></li>
+</ul>
+<div class="factor-model">
+<p><span class="fragment factor-switch" data-fragment-index="0"></span></p>
+<div class="factor-labels">
+<p><span class="factor-old">Honkanen, equation (4): single-asset inventory cost</span> <span class="factor-new">Proposed extension: penalize remaining portfolio risk</span></p>
+</div>
+<div class="factor-equation">
+<p><span class="factor-objective factor-old"><span class="math inline">\(O(H_L,H_S)\)</span></span> <span class="factor-objective factor-new"><span class="math inline">\(O(\mathbf H_L,\mathbf H_S)\)</span></span> <span class="factor-fixed"><span class="math inline">\(=\Pi-\)</span></span> <span class="factor-penalty factor-old"><span class="math inline">\(\gamma P^2\)</span></span> <span class="factor-penalty factor-new tol-red"><span class="math inline">\(\frac{\rho}{2}\underbrace{\mathbf P^\top\Sigma\mathbf P}_{\mkern-36mu\text{portfolio variance}\mkern-36mu}\)</span></span></p>
+</div>
+<div class="factor-definitions">
+<p><span class="factor-old"><span class="math inline">\(P\)</span>: remaining exposure after hedging</span> <span class="factor-new"><span class="math inline">\(\mathbf P\)</span>: stacked dealer positions for every stock; <span class="math inline">\(\Sigma\)</span>: return covariance; <span class="math inline">\(\rho\)</span>: risk aversion</span></p>
+</div>
+</div>
+</section>
+<section id="small-comments" class="slide level2 comments-slide">
+<h2>Small comments</h2>
+<p><strong>Whose sign is “net exposure”?</strong> <span class="math inline">\(N_L - N_S\)</span> is signed from the <strong>clients’ side</strong> (Table 1). The dealer’s swap book has the <strong>opposite sign</strong> (eq. 3).</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Clients’ net notional</th>
+<th style="text-align: left;">Paper’s label</th>
+<th style="text-align: left;">Dealer’s swaps</th>
+<th style="text-align: left;">Hedge</th>
+<th style="text-align: left;">Marginal cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(N_L - N_S &gt; 0\)</span></td>
+<td style="text-align: left;"><span class="term-long">“net long”</span></td>
+<td style="text-align: left;">short the stock</td>
+<td style="text-align: left;">buys the stock</td>
+<td style="text-align: left;"><span class="term-cost">own funding</span>, <span class="math inline">\(c_L\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(N_L - N_S &lt; 0\)</span></td>
+<td style="text-align: left;"><span class="term-short">“net short”</span></td>
+<td style="text-align: left;">long the stock</td>
+<td style="text-align: left;">short-sells</td>
+<td style="text-align: left;"><span class="term-cost">borrow fee</span>, <span class="math inline">\(c_S\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>In many places, the <strong>language of the paper is ambiguous</strong>: statements like “dealer has positive exposure” refer to “dealer supplies traders who are <span class="term-long">net long</span>, hence the dealer is <span class="term-short">net short</span>.”</p>
+<p>Dealer <strong>“faces”</strong> net long demand seems better. Referring to <strong>demand</strong> seems best.</p>
+<p><strong>Typos</strong></p>
+<div class="typo-list">
+<ul>
+<li><span class="muted">p.&nbsp;2, fn. 4</span> “Eisfeldt et al.&nbsp;(2022) finds” → <em>find</em></li>
+<li><span class="muted">p.&nbsp;6</span> “the traded would pay” → <em>trader</em></li>
+<li><span class="muted">p.&nbsp;7</span> “the trades pays” → <em>trader pays</em></li>
+<li><span class="muted">p.&nbsp;19</span> “the dealer’s switches” → <em>dealer switches</em></li>
+<li><span class="muted">p.&nbsp;21</span> “fixed fixed” → <em>fixed effects</em></li>
+<li><span class="muted">p.&nbsp;21</span> “coefficients this identify” → <em>thus</em></li>
+<li><span class="muted">p.&nbsp;24, fn. 20</span> “between, S&amp;P 500” → <em>no comma</em></li>
+<li><span class="muted">p.&nbsp;33</span> Geczy et al.: stray “Limits on Arbitrage.”</li>
+<li><span class="muted">p.&nbsp;33</span> Goodman and Fabozzi: “2005, Sept.&nbsp;2005”
+<ul>
+<li>But hey: this is definitely an organic, artisanal, human-written paper!</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="closing" class="slide level2 intro-slide">
+<h2>An engaging paper on the cost of leverage</h2>
+<div class="intro-points">
+<ul>
+<li>A <strong>clear economic mechanism</strong>: matching client demand links swap spreads to <span class="term-cost">dealers’ hedging costs</span>.</li>
+<li>A <strong>clever empirical implementation</strong>, using regulatory disclosures to study a market that is otherwise difficult to observe.</li>
+<li><strong>Remarkably consistent qualitative evidence</strong> across pricing, hedging and competition.</li>
+<li><strong>I learned a great deal—and enjoyed reading the paper.</strong></li>
+</ul>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="theme/assets/logo_carre_hec_montreal_bleu_web.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="discussion_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="discussion_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="discussion_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="discussion_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"numbers":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 5,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 780,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 6.0e-2,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script>
+    // Hover explanations for the Quarto deck.
+    //
+    // Pure CSS cannot keep a tooltip on screen: a trigger near an edge pushes the
+    // bubble off, and reveal.js clips it at the slide boundary. This positions the
+    // bubble in viewport coordinates instead, clamped to the window, flipping below
+    // the trigger when there is no room above.
+    //
+    // Two authoring forms, both handled here:
+    //   [term]{.tip tip="plain explanation"}
+    //   [term]{.tip}[explanation with $\ev{\sdf R}=1$]{.tipbody}
+    // Add tip-size="match" to use the trigger's visible font size and font family.
+    //
+    // The second keeps its bubble in the document so MathJax typesets it on load;
+    // this moves that node to <body> on first hover, which preserves the rendered math.
+
+    (() => {
+      const MARGIN = 12 // keep this far from the window edge
+      const GAP = 10 // between trigger and bubble
+
+      // Bubble text is sized to match the deck's body prose rather than a fixed px
+      // value, so it reads at the same size as the slide instead of shrinking away
+      // beside it. TIP_EM is a fraction of the reveal root font size (30px here);
+      // 0.62 is what .beat uses, so a tooltip is exactly as large as the narrative
+      // it explains. Raise it if you want the bubbles louder.
+      const TIP_EM = 0.62
+      const FALLBACK_ROOT_PX = 30
+
+      function rootFontPx() {
+        const reveal = document.querySelector('.reveal')
+        const px = reveal ? parseFloat(getComputedStyle(reveal).fontSize) : NaN
+        return Number.isFinite(px) && px > 0 ? px : FALLBACK_ROOT_PX
+      }
+
+      let plainBubble = null
+
+      function getPlainBubble() {
+        if (!plainBubble) {
+          plainBubble = document.createElement('div')
+          plainBubble.className = 'tipbody tipbody-floating'
+          document.body.appendChild(plainBubble)
+        }
+        return plainBubble
+      }
+
+      function place(trigger, bubble) {
+        // Lay the bubble out at the origin first so its size can be measured.
+        bubble.style.visibility = 'hidden'
+        bubble.style.left = '0px'
+        bubble.style.top = '0px'
+        bubble.classList.add('is-open')
+
+        const t = trigger.getBoundingClientRect()
+
+        // reveal.js scales the slide with a CSS transform; the bubble is outside it,
+        // so match the factor or the tooltip is the wrong size on a projector.
+        const slides = trigger.closest('.slides')
+        const scale = slides?.offsetWidth
+          ? slides.getBoundingClientRect().width / slides.offsetWidth
+          : trigger.offsetHeight ? t.height / trigger.offsetHeight : 1
+
+        // Size BEFORE measuring. Font size drives both width (the em-based
+        // max-width) and height, so measuring first and resizing after positions
+        // the bubble from stale dimensions — it lands off-centre, and near an edge
+        // it grows straight off the screen.
+        const matchSize = (trigger.getAttribute('data-tip-size') || trigger.getAttribute('tip-size')) === 'match'
+        const triggerStyle = getComputedStyle(trigger)
+        const fontSize = matchSize ? parseFloat(triggerStyle.fontSize) : rootFontPx() * TIP_EM
+        bubble.style.fontSize = `${(fontSize * scale).toFixed(1)}px`
+        bubble.style.fontFamily = matchSize ? triggerStyle.fontFamily : ''
+        bubble.style.fontStyle = matchSize ? 'normal' : ''
+        bubble.style.fontWeight = matchSize ? '400' : ''
+        bubble.style.boxSizing = 'border-box'
+        bubble.style.maxWidth = `min(26em, 50vw, ${Math.max(0, window.innerWidth - 2 * MARGIN)}px)`
+        bubble.style.maxHeight = `${Math.max(0, window.innerHeight - 2 * MARGIN)}px`
+        bubble.style.overflow = 'auto'
+        const b = bubble.getBoundingClientRect()
+
+        const clamp = (value, maximum) => Math.max(MARGIN, Math.min(value, Math.max(MARGIN, maximum)))
+        const left = clamp(t.left + t.width / 2 - b.width / 2, window.innerWidth - b.width - MARGIN)
+        const above = t.top - b.height - GAP
+        const top = clamp(above < MARGIN ? t.bottom + GAP : above, window.innerHeight - b.height - MARGIN)
+
+        bubble.style.left = `${Math.round(left)}px`
+        bubble.style.top = `${Math.round(top)}px`
+        bubble.style.visibility = 'visible'
+      }
+
+      function hide(bubble) {
+        bubble.classList.remove('is-open')
+        bubble.style.visibility = ''
+      }
+
+      function bind(trigger) {
+        // The rich form: a .tipbody immediately after the trigger.
+        let rich = trigger.nextElementSibling
+        if (!rich || !rich.classList.contains('tipbody')) rich = null
+
+        const show = () => {
+          let bubble
+          if (rich) {
+            if (rich.parentElement !== document.body) {
+              rich.classList.add('tipbody-floating')
+              document.body.appendChild(rich)
+            }
+            bubble = rich
+          } else {
+            bubble = getPlainBubble()
+            // Quarto rewrites non-standard span attributes to data-*, so the
+            // authored `tip="..."` reaches the DOM as `data-tip="..."`. Accept both
+            // rather than silently showing an empty bubble.
+            bubble.textContent =
+              trigger.getAttribute('data-tip') || trigger.getAttribute('tip') || ''
+          }
+          trigger._bubble = bubble
+          place(trigger, bubble)
+        }
+
+        const off = () => {
+          if (trigger._bubble) hide(trigger._bubble)
+        }
+
+        trigger.addEventListener('mouseenter', show)
+        trigger.addEventListener('mouseleave', off)
+        trigger.addEventListener('focus', show)
+        trigger.addEventListener('blur', off)
+        if (!trigger.hasAttribute('tabindex')) trigger.setAttribute('tabindex', '0')
+      }
+
+      function init() {
+        document.querySelectorAll('.tip').forEach(bind)
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init)
+      } else {
+        init()
+      }
+    })()
+    </script>
+    <script>
+    (() => {
+      const start = () => {
+        const deck = window.Reveal;
+        if (!deck || document.querySelector('.hec-section-progress')) return;
+        const root = deck.getRevealElement();
+        const indicator = document.createElement('div');
+        indicator.className = 'hec-section-progress';
+        indicator.hidden = true;
+        const label = document.createElement('span');
+        label.className = 'hec-section-label';
+        const position = document.createElement('span');
+        position.className = 'hec-section-position';
+        indicator.append(label, position);
+        root.append(indicator);
+
+        const contexts = new Map();
+        let section;
+        for (const slide of deck.getSlides()) {
+          if (slide.matches('.section-divider, .title-slide.level1')) {
+            const heading = slide.querySelector(':scope > h1, :scope > h2');
+            section = {
+              label: slide.dataset.sectionLabel || heading?.textContent.trim() || '',
+              total: 0
+            };
+            contexts.set(slide, { section, index: 0 });
+          } else if (section && slide.id !== 'title-slide') {
+            contexts.set(slide, { section, index: ++section.total });
+          }
+        }
+
+        const intersects = (a, b) => a.top < b.bottom && a.bottom > b.top;
+        const place = () => {
+          const number = root.querySelector('.slide-number');
+          if (!number || !number.offsetWidth || !number.offsetHeight) {
+            indicator.hidden = true;
+            return;
+          }
+          const context = contexts.get(deck.getCurrentSlide());
+          number.classList.toggle('hec-number', Boolean(context));
+          number.style.removeProperty('right');
+          number.style.removeProperty('bottom');
+          indicator.hidden = !context;
+          if (!context) return;
+          label.textContent = context.section.label;
+          position.textContent = context.index ? `${context.index}/${context.section.total}` : '';
+          indicator.title = `${context.section.label}${context.index ? ` · ${context.index} of ${context.section.total}` : ''}`;
+          const bounds = root.getBoundingClientRect();
+          let nr = number.getBoundingClientRect();
+          // Quarto's edge controls container spans the viewport; only the actual
+          // visible buttons are obstacles, and only when their rectangles overlap.
+          for (const button of root.querySelectorAll('.controls button')) {
+            const style = getComputedStyle(button);
+            const cr = button.getBoundingClientRect();
+            if (style.display !== 'none' && style.visibility !== 'hidden' &&
+                Number(style.opacity) > 0 && cr.width && cr.height &&
+                intersects(nr, cr) && nr.left < cr.right && nr.right > cr.left) {
+              number.style.right = `${Math.max(16, bounds.right - cr.left + 14)}px`;
+              nr = number.getBoundingClientRect();
+            }
+          }
+          let left = bounds.left + 16;
+          const footer = root.querySelector('.footer');
+          if (footer && footer.offsetHeight) {
+            const range = document.createRange();
+            range.selectNodeContents(footer);
+            const fr = range.getBoundingClientRect();
+            if (intersects(nr, fr)) {
+              left = Math.max(left, fr.right + 20);
+              if (nr.left - left < 230) {
+                number.style.bottom = `${bounds.bottom - fr.top + 12}px`;
+                nr = number.getBoundingClientRect();
+                left = bounds.left + 16;
+              }
+            }
+          }
+          indicator.style.maxWidth = `${Math.max(0, Math.min(420, nr.left - left - 10))}px`;
+          indicator.style.right = `${bounds.right - nr.left + 10}px`;
+          indicator.style.bottom = `${bounds.bottom - nr.bottom + (nr.height - indicator.offsetHeight) / 2}px`;
+        };
+        let frame;
+        const update = () => {
+          cancelAnimationFrame(frame);
+          frame = requestAnimationFrame(place);
+        };
+        deck.on('slidechanged', update);
+        deck.on('resize', update);
+        window.addEventListener('resize', update);
+        document.fonts?.ready.then(update);
+        update();
+      };
+      const connect = () => {
+        if (window.Reveal?.isReady()) start();
+        else window.Reveal?.on('ready', start);
+      };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', connect, { once: true });
+      else connect();
+    })();
+    </script>
+    <script>
+    // Click-driven zoom into a static figure. Author markup:
+    //
+    //   ::: {.figure-zoom data-extent="W H"}
+    //   ![](figure.svg)
+    //
+    //   []{.zoom-step .fragment data-view="x0 y0 x1 y1"}
+    //   []{.zoom-step .fragment data-view="x0 y0 x1 y1" data-keep="x0 y0 x1 y1; x0 y0 x1 y1"}
+    //   :::
+    //
+    // Coordinates are the figure's own units, origin at the bottom left (matplotlib data
+    // coordinates for trs_market.svg). The latest visible step sets the view, fitted and
+    // centred in the frame; data-keep washes out everything outside its rectangles.
+    // Back and slide re-entry recompute from the fragments' state.
+    (() => {
+      const SVG = 'http://www.w3.org/2000/svg'
+      const IDENTITY = 'translate(0%, 0%) scale(1)'
+      const numbers = text => text.trim().split(/[\s,]+/).map(Number)
+      const rects = text => (text || '').split(';').filter(part => part.trim()).map(numbers)
+      const zooms = new Map()
+
+      function rect(x, y, width, height, fill) {
+        const node = document.createElementNS(SVG, 'rect')
+        for (const [key, value] of Object.entries({ x, y, width, height, fill })) node.setAttribute(key, value)
+        return node
+      }
+
+      function build(stage, serial) {
+        const [W, H] = numbers(stage.dataset.extent)
+        const img = stage.querySelector('img')
+        const holder = img.parentElement
+        const canvas = document.createElement('div')
+        canvas.className = 'zoom-canvas'
+        canvas.style.transform = IDENTITY
+        canvas.append(img)
+        if (holder !== stage && !holder.textContent.trim() && !holder.children.length) holder.remove()
+
+        const id = `figure-zoom-mask-${serial}`
+        const dim = document.createElementNS(SVG, 'svg')
+        dim.setAttribute('class', 'zoom-dim')
+        dim.setAttribute('viewBox', `0 0 ${W} ${H}`)
+        dim.setAttribute('preserveAspectRatio', 'none')
+        dim.setAttribute('aria-hidden', 'true')
+        const mask = document.createElementNS(SVG, 'mask')
+        mask.id = id
+        mask.setAttribute('maskUnits', 'userSpaceOnUse')
+        const wash = rect(0, 0, W, H, '')
+        wash.removeAttribute('fill')
+        wash.setAttribute('mask', `url(#${id})`)
+        dim.append(mask, wash)
+        canvas.append(dim)
+
+        stage.prepend(canvas)
+        stage.style.setProperty('--zoom-aspect', `${W} / ${H}`)
+        zooms.set(stage, { stage, canvas, dim, mask, W, H })
+      }
+
+      function transform({ W, H }, view) {
+        if (!view) return IDENTITY
+        const [x0, y0, x1, y1] = view
+        const scale = 1 / Math.max((x1 - x0) / W, (y1 - y0) / H)
+        // Centre the view, but never pull an edge of the figure inside the frame.
+        const shift = centre => Math.min(0, Math.max(1 - scale, 0.5 - scale * centre))
+        const tx = shift((x0 + x1) / 2 / W)
+        const ty = shift(1 - (y0 + y1) / 2 / H)
+        return `translate(${tx * 100}%, ${ty * 100}%) scale(${scale})`
+      }
+
+      function apply(zoom) {
+        const visible = [...zoom.stage.querySelectorAll('.zoom-step.visible')]
+        const step = visible.reduce((latest, el) =>
+          !latest || Number(el.dataset.fragmentIndex) >= Number(latest.dataset.fragmentIndex) ? el : latest, null)
+        zoom.canvas.style.transform = transform(zoom, step?.dataset.view && numbers(step.dataset.view))
+        const keep = rects(step?.dataset.keep)
+        // Leave the old mask in place while the wash fades out.
+        if (keep.length) {
+          zoom.mask.replaceChildren(rect(0, 0, zoom.W, zoom.H, 'white'),
+            ...keep.map(([x0, y0, x1, y1]) => rect(x0, zoom.H - y1, x1 - x0, y1 - y0, 'black')))
+        }
+        zoom.dim.classList.toggle('is-on', keep.length > 0)
+      }
+
+      function update() {
+        const slide = window.Reveal.getCurrentSlide()
+        for (const zoom of zooms.values()) if (slide?.contains(zoom.stage)) apply(zoom)
+      }
+
+      function start() {
+        document.querySelectorAll('.reveal .figure-zoom').forEach((stage, i) => build(stage, i))
+        const deck = window.Reveal
+        for (const event of ['fragmentshown', 'fragmenthidden', 'slidechanged']) deck.on(event, update)
+        if (deck.isReady()) update()
+        else deck.on('ready', update)
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true })
+      else start()
+    })()
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

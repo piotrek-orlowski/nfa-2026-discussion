@@ -1,0 +1,121 @@
+<!-- AGENT NOTE: Do not read or edit this math-rendering file unless the user explicitly asks about the deck's standalone mathematics font or renderer. -->
+<!-- The single-file builds use MathJax's bundled NewCM SVG component. SVG
+     glyphs need no external webfonts. Optional worker-backed UI is disabled. -->
+<script>
+window.MathJax = {
+  loader: {
+    paths: {
+      'mathjax-newcm': 'vendor/mathjax-fonts/mathjax-newcm-font'
+    }
+  },
+  svg: {
+    dynamicPrefix: 'vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic'
+  },
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']],
+    processEscapes: false,
+    packages: {'[-]': ['autoload']},
+    // The directory build retains MathJax's HTML extension and colored class
+    // spans. The one-file backup keeps the enclosed mathematics but does not
+    // dynamically request that extension.
+    macros: {
+      class: ['#2', 2],
+      mathbb: ['\\mathbf{#1}', 1],
+      mathcal: ['\\mathit{#1}', 1],
+      boldsymbol: ['\\mathbf{#1}', 1]
+    }
+  },
+  options: {
+    enableMenu: false,
+    enableExplorer: false,
+    enableSpeech: false,
+    enableBraille: false,
+    enableEnrichment: false,
+    enableComplexity: false,
+    a11y: {
+      speech: false,
+      braille: false,
+      keyMagnifier: false,
+      mouseMagnifier: false,
+      subtitles: false,
+      viewBraille: false
+    }
+  },
+  startup: {
+    ready() {
+      MathJax.startup.defaultReady();
+      // MathJax 4's combined component installs accessibility document
+      // defaults after reading the top-level options. Override the constructed
+      // document before pageReady/typesetting so it never starts the SRE worker.
+      Object.assign(MathJax.startup.document.options, {
+        enableMenu: false,
+        enableExplorer: false,
+        enableSpeech: false,
+        enableBraille: false,
+        enableEnrichment: false,
+        enableComplexity: false
+      });
+    },
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(() => {
+        const remoteResources = performance.getEntriesByType('resource')
+          .map(entry => entry.name)
+          .filter(name => /^https?:\/\//i.test(name) && new URL(name).origin !== location.origin);
+        if (remoteResources.length) {
+          throw new Error(`offline runtime fetched external resources: ${remoteResources.join(', ')}`);
+        }
+        document.documentElement.dataset.offlineRuntime = 'pass';
+        if (window.Reveal) {
+          if (Reveal.isReady()) Reveal.layout();
+          else Reveal.on('ready', () => Reveal.layout());
+        }
+      });
+    }
+  }
+};
+</script>
+<script defer src="vendor/mathjax/tex-svg.js"></script>
+<!-- Quarto inlines the complete pinned NewCM SVG dynamic subset below. The
+     final helper marks the registered tables as satisfied before typesetting. -->
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/PUA.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/accents-b-i.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/accents.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/arabic.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/arrows.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/braille-d.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/braille.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/calligraphic.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/cherokee.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/cyrillic-ss.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/cyrillic.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/devanagari.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/double-struck.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/fraktur.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/greek-ss.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/greek.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/hebrew.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/latin-b.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/latin-bi.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/latin-i.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/latin.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/marrows.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/math.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/monospace-ex.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/monospace-l.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/monospace.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/mshapes.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/phonetics-ss.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/phonetics.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif-b.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif-bi.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif-ex.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif-i.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif-r.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/sans-serif.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/script.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/shapes.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/symbols-b-i.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/symbols.js"></script>
+<script defer src="vendor/mathjax-fonts/mathjax-newcm-font/svg/dynamic/variants.js"></script>
+<script defer src="theme/math-newcm-dynamic-ready.js"></script>

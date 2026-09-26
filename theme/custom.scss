@@ -1,0 +1,1299 @@
+/*-- scss:defaults --*/
+
+// The final HEC layer supplies local Visby webfonts. These generic stacks remain
+// useful when custom.scss is used without that layer and require no network.
+
+$font-family-sans-serif: Inter, -apple-system, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "SF Mono", Menlo, monospace !default;
+// Deck-wide body baseline, calibrated to the minimum-variance slide.
+$presentation-font-size-root: 28px;
+$presentation-line-height: 1.35;
+
+// Palette. One accent, one warm highlight, one muted grey — three colours is
+// enough for a research talk and keeps figures readable when projected.
+$ink:        #14181f;
+$paper:      #fbfaf8;
+$accent:     #1f5c8b;   // links, structure, "this is the point"
+$highlight:  #c1592a;   // the one thing on the slide that moves or matters
+$muted:      #6b7280;
+$rule:       #e2e0dc;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $accent;
+$selection-bg: rgba($accent, 0.18);
+
+$presentation-heading-font: "Source Serif 4", Georgia, serif;
+$presentation-heading-color: $ink;
+$presentation-heading-font-weight: 600;
+$presentation-h1-font-size: 2.0em;
+$presentation-h2-font-size: 1.25em;
+$presentation-h3-font-size: 1.0em;
+
+$code-block-font-size: 0.62em;
+$code-color: $highlight;
+
+/*-- scss:rules --*/
+
+// Paul Tol bright palette: https://sronpersonalpages.nl/~pault/
+// Markdown: [text]{.tol-red}; CSS: color: var(--tol-2).
+:root {
+  --tol-bright-blue: #4477AA;
+  --tol-bright-red: #EE6677;
+  --tol-bright-green: #228833;
+  --tol-bright-yellow: #CCBB44;
+  --tol-bright-cyan: #66CCEE;
+  --tol-bright-purple: #AA3377;
+  --tol-bright-grey: #BBBBBB;
+  // Paul Tol muted indigo: a dedicated, high-contrast identity for the
+  // conditioning state. It stays distinct from portfolio blue and SDF green.
+  --tol-muted-indigo: #332288;
+  --conditioning-color: var(--tol-muted-indigo);
+  --tol-1: var(--tol-bright-blue);
+  --tol-2: var(--tol-bright-red);
+  --tol-3: var(--tol-bright-green);
+  --tol-4: var(--tol-bright-yellow);
+  --tol-5: var(--tol-bright-cyan);
+  --tol-6: var(--tol-bright-purple);
+  --tol-7: var(--tol-bright-grey);
+  --takeaway-frame-color: var(--tol-5);
+  --takeaway-frame-border-width: 1.5px;
+  --takeaway-frame-accent-width: 8px;
+  --optimality-star-scale: 1.75;
+  --optimality-star-offset: -0.16em;
+}
+
+// Closing synthesis: echo the deck's semantic roles without adding a new visual grammar.
+.reveal .slides section#what-we-learn {
+  .close-identity {
+    font-size: 1.12em;
+    margin: 0.15em 0 0.65em;
+    text-align: center;
+  }
+
+  .close-lessons ul { margin: 0.15em 0 0.72em; }
+  .close-lessons li { margin: 0.34em 0; }
+
+  .close-beat-label {
+    color: $muted;
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+    margin-right: 0.18em;
+    text-transform: uppercase;
+  }
+}
+.tol-blue, .tol-1 { color: var(--tol-1); }
+.tol-red, .tol-2 { color: var(--tol-2); }
+.tol-green, .tol-3 { color: var(--tol-3); }
+.tol-yellow, .tol-4 { color: var(--tol-4); }
+.tol-cyan, .tol-5 { color: var(--tol-5); }
+.tol-purple, .tol-6 { color: var(--tol-6); }
+.tol-grey, .tol-7 { color: var(--tol-7); }
+
+// Deck-wide attention grammar. These names encode an economic role rather than
+// a palette slot, so later styling passes do not have to remember which Tol
+// number means candidate, pricing failure, portfolio response, or restraint.
+.concept-given { color: var(--tol-1); }
+.concept-error { color: var(--tol-2); }
+.concept-response { color: var(--tol-3); }
+.concept-choice { color: var(--tol-6); }
+.concept-information { color: var(--conditioning-color); }
+.sdf-world-term { color: var(--tol-1); }
+.portfolio-world-term { color: var(--tol-3); }
+.world-term-label { color: #536574; }
+.world-seam {
+  color: $ink;
+  text-decoration: underline;
+  text-decoration-color: var(--tol-5);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.12em;
+}
+
+// Optical adjustment only: MathJax retains the unscaled symbol's layout box.
+.reveal mjx-container .optimality-star {
+  display: inline-block;
+  transform: translateX(var(--optimality-star-offset)) scale(var(--optimality-star-scale));
+  transform-origin: left center;
+}
+
+// Macro definitions from slides/_shared/macros.json live in a hidden block at
+// the top of every deck. MathJax still reads and registers them.
+.mathdefs { display: none; }
+
+.reveal {
+  -webkit-font-smoothing: antialiased;
+}
+
+.reveal .slides section {
+  // Slides read top-down, not centred; long derivations look wrong centred.
+  text-align: left;
+}
+
+.reveal h2 {
+  border-bottom: 1px solid $rule;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+// --- two-column slides ------------------------------------------------------
+// Quarto's own rule for ::: {.columns} does not reach this deck: the container
+// computes to `display: inline`, so both columns stack full-width and every
+// two-column slide overflows. Verified in the browser, not assumed. State the
+// layout here rather than depending on Quarto's.
+.reveal .slides section .columns {
+  display: flex;
+  align-items: stretch;   // so .mathstack's divider runs the full column height
+}
+
+.reveal .slides section .columns > .column {
+  flex: 0 0 auto;      // honour the width= set on the div
+  min-width: 0;        // let a wide equation shrink rather than push the row out
+}
+
+// Keep the accumulated minimum-variance derivation within one slide.
+.reveal .slides section.min-var-sdf.smaller {
+  font-size: var(--r-main-font-size);
+
+  h2 { font-size: 1.25em; }
+}
+
+.reveal .slides section.min-var-sdf {
+  h2 { margin-bottom: 0.45em; }
+  p { margin: 0.15em 0; }
+  li { margin: 0.05em 0; }
+
+  mjx-container[display="true"] { margin: 0.3em 0; }
+
+  > .fragment {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  > .fragment.attention-beat {
+    line-height: 1.14;
+    transition: opacity 500ms ease;
+  }
+
+  &:has(.attention-beat-2.visible) .attention-beat-1.visible,
+  &:has(.attention-beat-3.visible) .attention-beat-1.visible,
+  &:has(.attention-beat-3.visible) .attention-beat-2.visible {
+    opacity: 0.38;
+  }
+
+  // On this slide, blue identifies portfolio-return objects and green identifies
+  // the recovered SDF. The normalized return alternates between them because it
+  // is literally the same object viewed through the portfolio and SDF lenses.
+  .minvar-portfolio-term { color: var(--tol-1); }
+  .minvar-sdf-term { color: var(--tol-3); }
+
+  .minvar-dual-link {
+    color: var(--tol-1);
+    font-weight: 650;
+    text-decoration: underline;
+    text-decoration-color: var(--tol-5);
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 0.13em;
+  }
+
+  &.present .attention-beat-2.visible .minvar-dual-link {
+    animation: minvar-dual-link-color 6s ease-in-out infinite;
+  }
+}
+
+@keyframes minvar-dual-link-color {
+  0%, 34% { color: var(--tol-1); }
+  50%, 84% { color: var(--tol-3); }
+  100% { color: var(--tol-1); }
+}
+
+@media print {
+  .reveal .slides section.min-var-sdf .minvar-dual-link {
+    animation: none;
+    color: var(--tol-3);
+  }
+}
+
+// Typography answers two different questions: labels orient the audience;
+// bold inside the content marks the claim being spoken now.
+.reveal .slides section.attention-system {
+  .attention-group-label {
+    display: inline-block;
+    color: #536574;
+    font-family: var(--r-main-font);
+    font-size: 0.58em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.1;
+    margin: 0 0.62em 0 0;
+    text-transform: uppercase;
+    vertical-align: 0.12em;
+  }
+
+  .attention-route-label,
+  .attention-list-label {
+    color: $ink;
+    font-family: var(--r-heading-font);
+    font-weight: 700;
+  }
+
+  .attention-route-label {
+    display: inline-block;
+    margin-bottom: 0.12em;
+  }
+}
+
+.reveal .slides section.literature-map {
+  > ul > li { margin-bottom: 0.34em; }
+
+  // Tol yellow is intentionally reserved for this literature-map beat. It is
+  // too light for body text on white, so use it as a categorical underline and
+  // marker while the labels themselves retain high-contrast ink.
+  > ul > li::marker { color: var(--tol-4); }
+
+  .attention-list-label {
+    color: $ink;
+    text-decoration: underline;
+    text-decoration-color: var(--tol-4);
+    text-decoration-thickness: 0.16em;
+    text-underline-offset: 0.14em;
+  }
+}
+
+.reveal .slides section.conditioning-optimization-slide.attention-system {
+  .conditioning-accent { color: var(--conditioning-color); }
+
+  .contribution-columns > .column {
+    border-top: 3px solid color-mix(in srgb, var(--tol-1) 62%, white);
+    padding-top: 0.3em;
+  }
+
+  .contribution-column-caveat {
+    border-left: 4px solid var(--tol-2);
+    color: var(--tol-2);
+    font-weight: 700;
+    padding-left: 0.5em;
+  }
+}
+
+// --- emphasis helpers -------------------------------------------------------
+.accent    { color: $accent; }
+.hl        { color: $highlight; font-weight: 600; }
+.muted     { color: $muted; }
+.small     { font-size: 0.78em; }
+.smaller   { font-size: 0.62em; }
+
+// A boxed "so what" line. Use as ::: {.takeaway} ... :::
+.takeaway {
+  border-left: 4px solid $highlight;
+  background: rgba($highlight, 0.06);
+  padding: 0.5em 0.9em;
+  margin: 0.7em 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.reveal .slides .takeaway {
+  border: var(--takeaway-frame-border-width) dashed var(--takeaway-frame-color);
+  border-left: var(--takeaway-frame-accent-width) solid var(--takeaway-frame-color);
+  background: color-mix(in srgb, var(--takeaway-frame-color) 8%, transparent);
+}
+
+// --- hover explanations -----------------------------------------------------
+// Two authoring forms:
+//
+// 1. Plain text:
+//      [term]{.tip tip="the explanation"}
+//
+// 2. Rich content that may contain math, as two adjacent spans:
+//      [term]{.tip}[explanation with $\ev{\sdf R}=1$]{.tipbody}
+//    MathJax typesets .tipbody because it is in the DOM from the start.
+//
+// theme/tooltips.js does the positioning. Pure CSS cannot keep a bubble on
+// screen — a trigger near an edge pushes it off, and reveal.js clips it at the
+// slide boundary — so the script places it in viewport coordinates, clamped.
+
+.tip {
+  border-bottom: 1.5px dotted $accent;
+  cursor: help;
+}
+
+.reveal .tip.tip-underline {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: .15em;
+}
+
+.tipbody {
+  // The bubble is moved to <body>, outside .reveal, so it inherits none of the
+  // deck's typography — without this it renders in the browser default (Times).
+  font-family: $font-family-sans-serif;
+  background: $ink;
+  color: $paper;
+  border-radius: 6px;
+  padding: 0.6em 0.85em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: left;
+}
+
+// Hidden until the script moves it to <body> and opens it. The rich form starts
+// life inline in the document so MathJax can typeset it.
+.tipbody:not(.tipbody-floating) { display: none; }
+
+.tipbody-floating {
+  position: fixed;
+  z-index: 9999;
+  // In em, not rem: the script sets font-size in px to match the slide, so an
+  // em cap keeps the line length constant in characters as the deck scales.
+  max-width: min(26em, 50vw);
+  display: none;
+  pointer-events: none;
+}
+
+.tipbody-floating.is-open { display: block; }
+
+// MathJax inside a dark tooltip must invert too.
+.tipbody mjx-container { color: $paper; }
+
+// --- misc -------------------------------------------------------------------
+.reveal .slide-number { font-family: $font-family-sans-serif; opacity: 0.5; }
+
+.reveal blockquote {
+  border-left: 3px solid $rule;
+  font-style: normal;
+  color: $muted;
+}
+
+.reveal table {
+  font-size: 0.72em;
+  th { border-bottom: 2px solid $ink; }
+  td, th { padding: 0.3em 0.6em; }
+}
+
+// Citations get a subtle marker so the hover affordance is discoverable.
+.reveal .citation a {
+  color: $accent;
+  border-bottom: 1px dotted rgba($accent, 0.5);
+}
+
+// ============================================================================
+// Beat pattern: left column narrates, right column formalises.
+//
+// Left  — statements accumulate. Each appears, then dims and its rule turns
+//         from highlight to accent once we have moved past it ("addressed").
+// Right — math is stacked and each block is .fade-in-then-out, so only the
+//         current beat's formalism is on screen. The column therefore cannot
+//         grow past the slide, however many beats there are.
+//
+// Authoring, per beat with statement at index 1 and math at index 2:
+//
+//   ::::: {.fragment .fade-in fragment-index=1}
+//   :::: {.fragment .settled .beat fragment-index=3}
+//   **Question.** Statement.
+//   ::::
+//   :::::
+//
+// The outer fragment controls appearance; the inner one is a *custom* fragment
+// (reveal.js custom-fragment API) that starts visible and changes at its index.
+// A custom class must restate the visible-from-the-start state, or reveal's
+// base .fragment rule hides it.
+// ============================================================================
+
+.reveal .slides section .fragment.settled {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .slides section .fragment.settled.visible {
+  opacity: 0.4;
+}
+
+// Sized here rather than with a {.smaller} on the slide: that would also shrink
+// the right column, and the annotations are already the smallest type on the
+// slide. Four beats at full size overflow a 780px canvas.
+.beat {
+  font-size: 0.62em;
+  border-left: 3px solid $highlight;
+  padding-left: 0.7em;
+  margin: 0 0 0.8em 0;
+
+  // Addressed: the rule cools from "we are here" to "we have dealt with this".
+  &.visible { border-left-color: $accent; }
+
+  p { margin: 0.15em 0; }
+}
+
+// The question that opens a beat.
+.beat > p:first-child > strong:first-child {
+  font-family: $presentation-heading-font;
+  font-weight: 600;
+  color: $accent;
+}
+
+// Group label above a beat: GEOMETRY / STATISTICS / ECONOMICS.
+// A span, not a div: the beat's own nesting has no room left for another
+// fenced div, and this has to sit *inside* the beat so it dims with it.
+.group-label {
+  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7em;   // of .beat, which is already 0.62em
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $muted;
+  margin: 0 0 0.2em 0;
+}
+
+// --- right column -----------------------------------------------------------
+// Stacked math, anchored to the top so successive beats do not jump vertically.
+// Applied to the .column itself, so the fragments are its direct children and
+// there is one less level of fenced div to nest.
+//
+// The long selector is load-bearing: Quarto ships `div.column {display:
+// inline-block}`, which outranks a bare `.mathstack {display: grid}` and leaves
+// the math blocks stacking vertically until the last one falls off the slide.
+.reveal .slides section .columns > .column.mathstack {
+  display: grid;
+  align-items: start;
+}
+
+.mathstack {
+  font-size: 0.82em;   // keeps the widest display inside a 53% column
+  padding-left: 1.6em;
+  border-left: 1px solid $rule;
+}
+
+// Every block in the same cell, so only the current beat's math is on screen
+// and the column's height is the tallest block rather than their sum.
+.mathstack > * {
+  grid-area: 1 / 1;
+}
+
+.reveal .mathstack .math.display,
+.reveal .mathstack mjx-container[display="true"] {
+  margin: 0.15em 0 0.4em 0;
+}
+
+// Statement/math progression on the first theory slide, at the body baseline.
+.reveal .slides section.all-managed-payoffs {
+  > .contribution-stage > .contribution-column-body,
+  > .contribution-stage > .managed-sequence {
+    flex: 0 0 auto;
+  }
+
+  .managed-statements,
+  .managed-formalism { font-size: 1em; }
+
+  .managed-row {
+    position: relative;
+    margin-bottom: 0.2em;
+  }
+
+  .managed-statements { width: 40%; }
+
+  .managed-point {
+    margin: 0;
+    p { margin: 0; }
+  }
+
+  .managed-row > .managed-formalism {
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    width: 55%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+
+  // Keep the divider attached to the equation fragment. If it lives on the
+  // permanent positioning wrapper, empty rules remain after equations fade.
+  .managed-row > .managed-formalism > .fragment {
+    box-sizing: border-box;
+    padding-left: 0.8em;
+    border-left: 1px solid var(--tol-7);
+  }
+
+  .managed-formalism p { margin: 0; }
+  .managed-formalism mjx-container[display="true"] { margin: 0.2em 0; }
+
+  .managed-pricing-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.15em;
+    white-space: nowrap;
+  }
+
+  .managed-pricing-line > * { flex: 0 0 auto; }
+
+  .managed-pricing-line .math.display,
+  .managed-pricing-line mjx-container[display="true"] {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .pricing-requirement-flow,
+  .portfolio-test-flow {
+    position: relative;
+    border-top: 3px solid transparent;
+    background: transparent;
+    margin-top: 0.52em;
+    transition: background 500ms ease, border-color 500ms ease;
+  }
+
+  .pricing-requirement-flow {
+    border-top-color: var(--tol-1);
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--tol-1) 5%, transparent),
+      transparent 72%
+    );
+  }
+
+  .portfolio-test-flow:has(.fragment.visible) {
+    border-top-color: var(--tol-3);
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--tol-3) 5%, transparent),
+      transparent 72%
+    );
+  }
+
+  .pricing-requirement-flow::before,
+  .portfolio-test-flow::before {
+    position: absolute;
+    top: -0.72em;
+    right: 0.45em;
+    z-index: 2;
+    padding: 0 0.42em;
+    background: white;
+    content: attr(data-world-label);
+    font-family: var(--r-main-font);
+    font-size: 0.5em;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .pricing-requirement-flow::before { color: var(--tol-1); }
+
+  .portfolio-test-flow::before {
+    color: var(--tol-3);
+    opacity: 0;
+    transition: opacity 500ms ease;
+  }
+
+  .portfolio-test-flow:has(.fragment.visible)::before { opacity: 1; }
+
+  &:has(.attention-beat-4.visible) .attention-beat-3.visible,
+  &:has(.attention-beat-5.visible) .attention-beat-4.visible {
+    opacity: 0.38;
+  }
+}
+
+// Alternate equivalent pricing constraints for 30 seconds on slide entry.
+// The shared grid reserves the widest expression without moving the RF term.
+.reveal .slides .hj-problem {
+  --hj-notation-cycle-duration: 10s;
+  margin: 0.6em 0;
+  font-size: 1em;
+
+  > p { margin: 0; }
+  > p mjx-container[display="true"] { margin: 0.35em 0; }
+
+  .hj-constraints {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0;
+    margin-top: 0.4em;
+    white-space: nowrap;
+  }
+
+  .hj-exact-constraint,
+  .hj-error-cycle { flex: 0 0 auto; }
+
+  .hj-error-cycle {
+    display: grid;
+    align-items: baseline;
+  }
+
+  .hj-error-cycle > * {
+    grid-area: 1 / 1;
+    justify-self: start;
+  }
+
+  .hj-constraints p { margin: 0; }
+  .hj-constraints .math.display,
+  .hj-constraints mjx-container[display="true"] {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .hj-error-norm { opacity: 1; }
+  .hj-error-sup { opacity: 0; }
+}
+
+// Primal and dual are recurring worlds, expressed as pale structural fields.
+// Semantic colors inside the fields continue to track objects and actions.
+.reveal .slides section.two-world-slide {
+  .sdf-world-panel,
+  .portfolio-world-panel {
+    position: relative;
+    border-top: 3px solid;
+    padding: 0.32em 0.44em 0.2em;
+  }
+
+  .sdf-world-panel {
+    border-top-color: var(--tol-1);
+    background: color-mix(in srgb, var(--tol-1) 5%, transparent);
+  }
+
+  .portfolio-world-panel {
+    border-top-color: var(--tol-3);
+    background: color-mix(in srgb, var(--tol-3) 5%, transparent);
+  }
+
+  .portfolio-world-shell { position: relative; }
+
+  .sdf-world-panel::before,
+  .portfolio-world-shell::before {
+    position: absolute;
+    top: -0.72em;
+    right: 0.48em;
+    padding: 0 0.42em;
+    background: white;
+    content: attr(data-world-label);
+    font-family: var(--r-main-font);
+    font-size: 0.5em;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .sdf-world-panel::before { color: var(--tol-1); }
+  .portfolio-world-shell::before { color: var(--tol-3); }
+}
+
+.reveal .slides #theory-policy-tolerance.two-world-slide {
+  .hj-problem { margin-top: 0.82em; }
+
+  .portfolio-world-panel {
+    margin-top: 0.78em;
+  }
+
+  // The recovered SDF is the bridge back from the portfolio solution. Set the
+  // sentence and identity side by side so the final two beats remain on canvas.
+  .hj-correction-reveal.visible {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 0.7em;
+    align-items: center;
+    margin-top: 0.42em;
+    padding: 0.24em 0.46em;
+    border-top: 2px solid color-mix(in srgb, var(--tol-3) 36%, transparent);
+
+    > p {
+      margin: 0;
+    }
+
+    > p:last-child {
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+
+  // The final scope statement is supporting context, not a fifth focal object.
+  .hj-scope-reveal.visible {
+    margin-top: 0.38em;
+    padding: 0.28em 0.62em;
+    border-left: 3px solid var(--text-muted);
+    color: var(--text-muted);
+    font-size: 0.7em;
+    line-height: 1.2;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li { margin: 0; }
+  }
+}
+
+.reveal .slides section.present .hj-error-norm,
+.reveal .slides section.present .hj-error-sup {
+  animation-duration: var(--hj-notation-cycle-duration, 10s);
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+  animation-fill-mode: both;
+}
+.reveal .slides section.present .hj-error-norm { animation-name: hj-notation-norm; }
+.reveal .slides section.present .hj-error-sup { animation-name: hj-notation-sup; }
+
+@keyframes hj-notation-norm {
+  0%, 10% { opacity: 1; }
+  19%, 60% { opacity: 0; }
+  69%, 100% { opacity: 1; }
+}
+@keyframes hj-notation-sup {
+  0%, 10% { opacity: 0; }
+  19%, 60% { opacity: 1; }
+  69%, 100% { opacity: 0; }
+}
+
+// This timed notation demonstration is explicitly requested by the author.
+// Keep it active without changing the viewer's system motion preference.
+@media print {
+  .reveal .slides section.present .hj-error-norm,
+  .reveal .slides section.present .hj-error-sup { animation: none; }
+}
+
+// Fold the interpretation before revealing the dual; the primal stays in place.
+.reveal .slides #theory-policy-tolerance .hj-duality-stage {
+  .contribution-column-body {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 1000ms ease 700ms;
+  }
+
+  .contribution-column-content {
+    min-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 600ms linear 1700ms;
+  }
+
+  .hj-dual-reveal.fragment {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 700ms linear,
+      grid-template-rows 0s 700ms, visibility 0s 700ms;
+  }
+
+  .hj-dual-content {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  &:has(.hj-dual-reveal.visible) {
+    .contribution-column-body {
+      grid-template-rows: 0fr;
+      transition-delay: 600ms;
+    }
+
+    .contribution-column-content {
+      opacity: 0;
+      transition-delay: 0s;
+    }
+
+    .hj-dual-reveal.fragment.visible {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 700ms linear 1600ms,
+        grid-template-rows 0s 1600ms, visibility 0s 1600ms;
+    }
+  }
+}
+
+// Keep the dual fixed while each click visibly replaces one mathematical block.
+.reveal .slides #estimation-correction-solve .kernel-dual-build {
+  position: relative;
+
+  .kernel-step {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .kernel-progress {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.35em;
+    margin: 0.15em 0 0.25em;
+  }
+
+  .kernel-progress-step {
+    --kernel-progress-color: var(--tol-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.8em;
+    padding: 0.08em 0.28em;
+    border: 1px solid $rule;
+    border-bottom-width: 4px;
+    border-radius: 5px;
+    color: $muted;
+    background: transparent;
+    font-size: 0.48em;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    white-space: nowrap;
+    transition: color 320ms ease, border-color 320ms ease,
+      background-color 320ms ease, box-shadow 320ms ease;
+  }
+
+  .progress-0 {
+    --kernel-progress-color: var(--tol-1);
+    color: $ink;
+    border-color: var(--kernel-progress-color);
+    background: color-mix(in srgb, var(--kernel-progress-color) 16%, white);
+    box-shadow: inset 0 -2px 0 var(--kernel-progress-color);
+  }
+
+  .progress-1 { --kernel-progress-color: var(--tol-2); }
+  .progress-2 { --kernel-progress-color: var(--tol-6); }
+  .progress-3 { --kernel-progress-color: var(--tol-3); }
+  .progress-4 { --kernel-progress-color: var(--tol-1); }
+  .progress-5 { --kernel-progress-color: var(--tol-3); }
+
+  &:has(.step-1.visible) .kernel-progress-step {
+    color: $muted;
+    border-color: $rule;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &:has(.step-1.visible):not(:has(.step-2.visible)) .progress-1,
+  &:has(.step-2.visible):not(:has(.step-3.visible)) .progress-2,
+  &:has(.step-3.visible):not(:has(.step-4.visible)) .progress-3,
+  &:has(.step-4.visible):not(:has(.step-5.visible)) .progress-4,
+  &:has(.step-5.visible) .progress-5 {
+    color: $ink;
+    border-color: var(--kernel-progress-color);
+    background: color-mix(in srgb, var(--kernel-progress-color) 16%, white);
+    box-shadow: inset 0 -2px 0 var(--kernel-progress-color);
+  }
+
+  .kernel-workspace {
+    display: grid;
+    min-height: 11.55em;
+  }
+
+  .kernel-derivation,
+  .kernel-foc {
+    grid-area: 1 / 1;
+    min-width: 0;
+    transition: opacity 440ms linear, transform 440ms ease,
+      visibility 0s 440ms;
+  }
+
+  .kernel-derivation {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .kernel-foc {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.2em);
+  }
+
+  &:has(.step-5.visible) {
+    .kernel-derivation {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-0.2em);
+    }
+
+    .kernel-foc {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition-delay: 140ms, 140ms, 0s;
+    }
+  }
+
+  .kernel-explanations {
+    display: grid;
+    min-height: 7.35em;
+    margin: 0.05em 0 0.12em;
+    align-items: center;
+  }
+
+  .kernel-note {
+    grid-area: 1 / 1;
+    min-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.16em);
+    transition: opacity 360ms linear, transform 360ms ease,
+      visibility 0s 360ms;
+
+    > p:first-child { margin-top: 0; }
+    > p:last-child { margin-bottom: 0; }
+  }
+
+  .note-0 {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  &:has(.step-1.visible) .note-0 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-0.16em);
+  }
+
+  &:has(.step-1.visible):not(:has(.step-2.visible)) .note-1,
+  &:has(.step-2.visible):not(:has(.step-3.visible)) .note-2,
+  &:has(.step-3.visible):not(:has(.step-4.visible)) .note-3,
+  &:has(.step-4.visible):not(:has(.step-5.visible)) .note-4 {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 100ms, 100ms, 0s;
+  }
+
+  .kernel-note-columns {
+    gap: 1em;
+    align-items: start;
+    margin: 0;
+    font-size: 0.82em;
+    line-height: 1.3;
+
+    p { margin: 0.16em 0; }
+    mjx-container[display="true"] { margin: 0.28em 0; }
+  }
+
+  .note-3 {
+    font-size: 0.82em;
+    line-height: 1.25;
+
+    > p { margin: 0.12em 0; }
+    mjx-container[display="true"] { margin: 0.18em 0; }
+  }
+
+  .kernel-equation-stage {
+    display: grid;
+    min-height: 3.2em;
+    align-items: center;
+  }
+
+  .kernel-expanded-objective,
+  .kernel-canonical-objective {
+    grid-area: 1 / 1;
+  }
+
+  .kernel-equation-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2em;
+    white-space: nowrap;
+    margin: 0.25em 0;
+    font-size: 1em;
+  }
+
+  .kernel-equation-row > * { flex: 0 0 auto; }
+  .kernel-equation-row p { margin: 0; }
+  .kernel-equation-row .math.display,
+  .kernel-equation-row mjx-container[display="true"] {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .variant-new,
+  .domain-coefficients,
+  .domain-stacked,
+  .kernel-canonical-objective {
+    display: none;
+  }
+
+  &:has(.step-1.visible) {
+    .domain-functions,
+    .term-rf .variant-old,
+    .term-policy .variant-old { display: none; }
+    .domain-coefficients,
+    .term-rf .variant-new,
+    .term-policy .variant-new { display: block; }
+  }
+
+  &:has(.step-2.visible) {
+    .term-penalty .variant-old { display: none; }
+    .term-penalty .variant-new { display: block; }
+  }
+
+  &:has(.step-3.visible) {
+    .domain-coefficients,
+    .term-payoff .variant-old { display: none; }
+    .domain-stacked,
+    .term-payoff .variant-new { display: block; }
+  }
+
+  &:has(.step-4.visible) {
+    .kernel-expanded-objective { display: none; }
+    .kernel-canonical-objective { display: block; }
+  }
+
+  .kernel-term {
+    color: $ink;
+    transition: color 360ms ease, transform 360ms ease;
+  }
+
+  &:has(.step-1.visible):not(:has(.step-2.visible)) {
+    .term-rf { color: var(--tol-2); transform: translateY(-0.04em); }
+    .term-policy { color: var(--tol-2); transform: translateY(-0.04em); }
+  }
+
+  &:has(.step-2.visible):not(:has(.step-3.visible)) .term-penalty {
+    color: var(--tol-6);
+    transform: translateY(-0.04em);
+  }
+
+  &:has(.step-3.visible):not(:has(.step-4.visible)) .term-payoff {
+    color: var(--tol-3);
+    transform: translateY(-0.04em);
+  }
+
+  .kernel-canonical-objective {
+    font-size: 1.08em;
+    text-align: center;
+
+    > p { margin: 0; }
+    mjx-container[display="true"] { margin: 0.2em 0; }
+  }
+
+  .kernel-definition-grid {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    gap: 0.7em;
+    align-items: center;
+  }
+
+  .kernel-definition {
+    min-width: 0;
+    padding: 0.18em 0.4em;
+    background: color-mix(in srgb, var(--tol-5) 7%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--tol-5) 55%, transparent);
+    font-size: 0.9em;
+    text-align: center;
+
+    > p { margin: 0; }
+    mjx-container[display="true"] { margin: 0.08em 0; }
+  }
+
+  .kernel-solve {
+    margin-top: 1em;
+    min-height: 5.8em;
+    display: grid;
+    align-content: center;
+    gap: 0.35em;
+    font-size: 1em;
+
+    > p { margin: 0; }
+    mjx-container[display="true"] { margin: 0.15em 0; }
+  }
+}
+
+// CV retains its bridge while the setup folds away for the validation formula.
+.reveal .slides section.cv-objective {
+  .cv-context {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 650ms ease;
+  }
+  .cv-context-inner {
+    min-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 650ms linear;
+  }
+  &:has(.cv-main.visible) {
+    .cv-context { grid-template-rows: 0fr; }
+    .cv-context-inner { opacity: 0; }
+  }
+
+  .cv-bridge { margin: 0.25em 0 0.5em; }
+  .cv-bridge > p { margin: 0; }
+
+  .cv-main.fragment {
+    transition-duration: 650ms;
+    transition-delay: 0s;
+  }
+  .cv-main.fragment.visible { transition-delay: 350ms; }
+  .cv-formula-intro > p { margin: 0.25em 0; }
+  .cv-equation {
+    text-align: center;
+    margin: 0.7em 0;
+  }
+  .cv-equation > p { margin: 0; }
+  .cv-equation mjx-container[display="true"] { margin: 0; }
+
+  // Secondary information uses whitespace, not a smaller type size or new box.
+  .cv-definitions { margin: 0.45em 0 0.65em; }
+  .cv-definitions ul { margin-top: 0; margin-bottom: 0; }
+  .cv-definitions li { margin: 0.2em 0; }
+  .cv-conclusion { margin-top: 0.45em; }
+  .cv-aggregation { margin-top: 0.35em; }
+  .cv-aggregation > p { margin: 0; }
+}
+
+// Annotation strip: one line per object in the equation above it.
+.annot {
+  font-size: 0.66em;   // of .mathstack's 0.82em — ~16px at slide scale 1
+  line-height: 1.4;
+  color: $ink;
+  border-top: 1px solid $rule;
+  padding-top: 0.45em;
+  margin-top: 0.3em;
+
+  // Hanging indent, so a gloss that runs to a second line aligns with the first
+  // rather than sliding back under the symbol chip. Flex or grid would be
+  // cleaner but would make every inline child — the math, the .tip spans — its
+  // own track. The offset matches .sym's width plus its right margin.
+  p {
+    margin: 0.3em 0;
+    padding-left: 2.9em;
+    text-indent: -2.9em;
+  }
+
+  // The symbol being glossed, set apart from its gloss.
+  .sym {
+    display: inline-block;
+    min-width: 2.4em;
+    padding: 0.02em 0.4em;
+    margin-right: 0.35em;
+    border-radius: 4px;
+    background: rgba($accent, 0.09);
+    color: $accent;
+    text-align: center;
+  }
+
+  .sym mjx-container { color: $accent; }
+}
+
+// The declaration box on slide 1: what this step may and may not look at.
+.firewall {
+  font-size: 0.62em;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  border: 1px solid $rule;
+  border-radius: 6px;
+  padding: 0.55em 0.75em;
+  background: rgba($ink, 0.02);
+
+  p { margin: 0.18em 0; }
+
+  .key {
+    display: inline-block;
+    min-width: 7.4em;
+    font-weight: 600;
+    color: $muted;
+  }
+
+  .no { color: $highlight; font-weight: 600; }
+}
+
+// A quiet closing line.
+.coda {
+  font-size: 0.48em;
+  color: $muted;
+  font-style: italic;
+  margin-top: 0.6em;
+}
+
+// --- scaffold marker --------------------------------------------------------
+// Deliberately loud: an unfinished section must be obvious on the projector,
+// not something you discover mid-talk. Delete the div, not this rule.
+.todo {
+  font-size: 0.6em;
+  border: 1px dashed $highlight;
+  border-left: 4px solid $highlight;
+  border-radius: 4px;
+  padding: 0.7em 0.9em;
+  margin: 0.8em 0;
+  color: $muted;
+
+  strong { color: $highlight; }
+
+  &::before {
+    content: "TODO";
+    display: block;
+    font-family: $presentation-heading-font;
+    font-size: 0.72em;
+    letter-spacing: 0.18em;
+    color: $highlight;
+    margin-bottom: 0.35em;
+  }
+}
+
+// --- section dividers -------------------------------------------------------
+// Opt-in only: ordinary slides keep their 28px baseline and top-down layout.
+.reveal .slides section.section-divider {
+  box-sizing: border-box;
+  height: 780px;
+  padding: 2em 4em 2em 5.25em;
+  background: #ffffff;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 3.5em;
+    top: 50%;
+    width: 4px;
+    height: 9em;
+    background: var(--tol-1);
+    transform: translateY(-50%);
+  }
+
+  > .section-kicker {
+    order: 0;
+    margin: 0 0 0.55em;
+    color: var(--tol-1);
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+
+    > p { margin: 0; }
+  }
+
+  > h2 {
+    order: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 2.2em;
+    line-height: 1.12;
+  }
+
+  > .section-cue {
+    order: 2;
+    max-width: 33em;
+    margin: 0.8em 0 0;
+    font-size: 1em;
+    line-height: 1.4;
+
+    > p { margin: 0; }
+  }
+}
+
+// Reveal controls which slides are displayed. Never expose past/future slides.
+.reveal .slides section.section-divider.present {
+  display: flex !important;
+}
+
+@media print {
+  .reveal .slides section.section-divider {
+    display: flex !important;
+  }
+}

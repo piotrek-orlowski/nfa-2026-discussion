@@ -1,0 +1,3770 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1296pt" height="640.8pt" viewBox="0 0 1296 640.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-25T21:15:24.109397</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 640.8 
+L 1296 640.8 
+L 1296 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 424.8 100.8 
+L 871.2 100.8 
+L 871.2 32.4 
+L 424.8 32.4 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #002855"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 424.8 132.48 
+L 871.2 132.48 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 424.8 164.16 
+L 871.2 164.16 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 424.8 195.84 
+L 871.2 195.84 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 424.8 227.52 
+L 871.2 227.52 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 424.8 259.2 
+L 871.2 259.2 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 424.8 290.88 
+L 871.2 290.88 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 46.8 132.48 
+L 360 132.48 
+L 360 87.84 
+L 46.8 87.84 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #e6eaee"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 46.8 164.16 
+L 360 164.16 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 46.8 195.84 
+L 360 195.84 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 936 100.8 
+L 1249.2 100.8 
+L 1249.2 56.16 
+L 936 56.16 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #e6eaee"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 936 132.48 
+L 1249.2 132.48 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 936 290.88 
+L 1249.2 290.88 
+L 1249.2 246.24 
+L 936 246.24 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #fdf0f1"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 936 322.56 
+L 1249.2 322.56 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 46.8 367.2 
+L 360 367.2 
+L 360 266.4 
+L 46.8 266.4 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #ffffff; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #536574; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 424.8 450 
+L 871.2 450 
+L 871.2 381.6 
+L 424.8 381.6 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #dbe1e7"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 424.8 481.68 
+L 871.2 481.68 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 424.8 513.36 
+L 871.2 513.36 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 424.8 545.04 
+L 871.2 545.04 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 424.8 576.72 
+L 871.2 576.72 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 46.8 450 
+L 360 450 
+L 360 405.36 
+L 46.8 405.36 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #ecf1f6"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 46.8 481.68 
+L 360 481.68 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 936 450 
+L 1249.2 450 
+L 1249.2 405.36 
+L 936 405.36 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #e6eaee"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 936 481.68 
+L 1249.2 481.68 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 936 513.36 
+L 1249.2 513.36 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 936 545.04 
+L 1249.2 545.04 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #d9d9d6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 46.8 550.8 
+L 97.2 550.8 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 46.8 576.72 
+L 97.2 576.72 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke-dasharray: 11,6.6; stroke-dashoffset: 0; stroke: #002855; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 46.8 602.64 
+L 97.2 602.64 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke-dasharray: 2.2,5.5; stroke-dashoffset: 0; stroke: #002855; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_22">
+    <path d="M 360 148.32 
+L 424.8 148.32 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_23">
+    <path d="M 871.2 116.64 
+L 936 116.64 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke-dasharray: 2.2,5.5; stroke-dashoffset: 0; stroke: #002855; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_24">
+    <path d="M 871.2 306.72 
+L 936 306.72 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #ee6677; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 648 326.88 
+Q 648 352.08 648 375.043932 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 651.6 367.843932 
+L 648 375.043932 
+L 644.4 367.843932 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: #002855; stroke: #002855; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_25">
+    <path d="M 360 465.84 
+L 424.8 465.84 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke-dasharray: 2.2,5.5; stroke-dashoffset: 0; stroke: #4477aa; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_26">
+    <path d="M 871.2 465.84 
+L 936 465.84 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke-dasharray: 11,6.6; stroke-dashoffset: 0; stroke: #002855; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_27">
+    <path d="M 871.2 497.52 
+L 936 497.52 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 871.2 529.2 
+L 936 529.2 
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <!-- same identifier -->
+    <g style="fill: #002855" transform="translate(111.6 554.925) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-147" d="M 1357 -64 
+Q 890 -64 576 176 
+Q 262 416 186 838 
+L 634 960 
+Q 704 691 893 537 
+Q 1082 384 1357 384 
+Q 1619 384 1801 515 
+Q 1984 646 1984 902 
+Q 1984 1101 1849 1225 
+Q 1715 1350 1408 1478 
+L 1107 1594 
+Q 326 1914 326 2522 
+Q 326 2906 620 3149 
+Q 915 3392 1357 3392 
+Q 1754 3392 2032 3190 
+Q 2310 2989 2400 2650 
+L 1971 2522 
+Q 1811 2950 1376 2950 
+Q 1152 2950 1005 2835 
+Q 858 2720 858 2515 
+Q 858 2355 970 2227 
+Q 1082 2099 1338 1997 
+L 1606 1888 
+Q 2061 1709 2288 1494 
+Q 2515 1280 2515 902 
+Q 2515 435 2179 185 
+Q 1843 -64 1357 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-c2" d="M 1850 -64 
+Q 1434 -64 1059 137 
+Q 685 339 451 729 
+Q 218 1120 218 1664 
+Q 218 2208 451 2598 
+Q 685 2989 1059 3190 
+Q 1434 3392 1850 3392 
+Q 2291 3392 2630 3187 
+Q 2970 2982 3098 2701 
+L 3117 2701 
+L 3117 3328 
+L 3654 3328 
+L 3654 0 
+L 3117 0 
+L 3117 627 
+L 3098 627 
+Q 2970 346 2630 141 
+Q 2291 -64 1850 -64 
+z
+M 755 1664 
+Q 755 1267 921 988 
+Q 1088 710 1360 569 
+Q 1632 429 1939 429 
+Q 2253 429 2525 569 
+Q 2797 710 2966 992 
+Q 3136 1274 3136 1664 
+Q 3136 2054 2966 2336 
+Q 2797 2618 2525 2758 
+Q 2253 2899 1939 2899 
+Q 1632 2899 1360 2758 
+Q 1088 2618 921 2339 
+Q 755 2061 755 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-121" d="M 2579 1920 
+Q 2579 2381 2371 2640 
+Q 2163 2899 1773 2899 
+Q 1370 2899 1142 2636 
+Q 915 2374 915 1920 
+L 915 0 
+L 378 0 
+L 378 3328 
+L 915 3328 
+L 915 2810 
+Q 1050 3066 1306 3229 
+Q 1562 3392 1933 3392 
+Q 2291 3392 2563 3225 
+Q 2835 3059 2982 2720 
+Q 3117 3008 3401 3200 
+Q 3686 3392 4115 3392 
+Q 4659 3392 4988 3033 
+Q 5318 2675 5318 1958 
+L 5318 0 
+L 4781 0 
+L 4781 1920 
+Q 4781 2381 4573 2640 
+Q 4365 2899 3974 2899 
+Q 3571 2899 3344 2636 
+Q 3117 2374 3117 1920 
+L 3117 0 
+L 2579 0 
+L 2579 1920 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-e8" d="M 1926 -64 
+Q 1472 -64 1078 141 
+Q 685 346 451 739 
+Q 218 1133 218 1664 
+Q 218 2202 451 2592 
+Q 685 2982 1065 3187 
+Q 1446 3392 1875 3392 
+Q 2285 3392 2653 3206 
+Q 3021 3021 3251 2646 
+Q 3482 2272 3482 1728 
+Q 3482 1645 3469 1466 
+L 730 1466 
+Q 787 960 1136 678 
+Q 1485 397 1984 397 
+Q 2278 397 2537 499 
+Q 2797 602 2976 800 
+L 3245 525 
+Q 3021 243 2675 89 
+Q 2330 -64 1926 -64 
+z
+M 2995 1875 
+Q 2976 2208 2819 2445 
+Q 2662 2682 2416 2803 
+Q 2170 2925 1882 2925 
+Q 1446 2925 1116 2649 
+Q 787 2374 730 1875 
+L 2995 1875 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-106" d="M 378 3328 
+L 915 3328 
+L 915 0 
+L 378 0 
+L 378 3328 
+z
+M 378 4544 
+L 915 4544 
+L 915 4045 
+L 378 4045 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-e3" d="M 3117 0 
+L 3117 627 
+L 3098 627 
+Q 2970 346 2630 141 
+Q 2291 -64 1850 -64 
+Q 1434 -64 1059 137 
+Q 685 339 451 729 
+Q 218 1120 218 1664 
+Q 218 2208 451 2598 
+Q 685 2989 1059 3190 
+Q 1434 3392 1850 3392 
+Q 2291 3392 2630 3187 
+Q 2970 2982 3098 2701 
+L 3117 2701 
+L 3117 4544 
+L 3654 4544 
+L 3654 0 
+L 3117 0 
+z
+M 755 1664 
+Q 755 1267 921 988 
+Q 1088 710 1360 569 
+Q 1632 429 1939 429 
+Q 2253 429 2525 569 
+Q 2797 710 2966 992 
+Q 3136 1274 3136 1664 
+Q 3136 2054 2966 2336 
+Q 2797 2618 2525 2758 
+Q 2253 2899 1939 2899 
+Q 1632 2899 1360 2758 
+Q 1088 2618 921 2339 
+Q 755 2061 755 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-122" d="M 378 3328 
+L 915 3328 
+L 915 2784 
+Q 1056 3046 1341 3219 
+Q 1626 3392 2029 3392 
+Q 2592 3392 2960 3030 
+Q 3328 2669 3328 1958 
+L 3328 0 
+L 2790 0 
+L 2790 1882 
+Q 2790 2368 2534 2633 
+Q 2278 2899 1862 2899 
+Q 1446 2899 1180 2633 
+Q 915 2368 915 1882 
+L 915 0 
+L 378 0 
+L 378 3328 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-150" d="M 1408 -38 
+Q 1062 -38 864 141 
+Q 666 320 666 678 
+L 666 2886 
+L 218 2886 
+L 218 3328 
+L 666 3328 
+L 666 4179 
+L 1203 4179 
+L 1203 3328 
+L 1862 3328 
+L 1862 2886 
+L 1203 2886 
+L 1203 781 
+Q 1203 448 1555 448 
+Q 1702 448 1856 506 
+L 1856 77 
+Q 1709 -38 1408 -38 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-186" d="M 538 3674 
+Q 538 4218 819 4445 
+Q 1101 4672 1466 4672 
+Q 1792 4672 1997 4544 
+L 1997 4115 
+Q 1824 4205 1594 4205 
+Q 1082 4205 1082 3629 
+L 1082 3328 
+L 2995 3328 
+L 2995 0 
+L 2458 0 
+L 2458 2886 
+L 1082 2886 
+L 1082 0 
+L 538 0 
+L 538 2886 
+L 154 2886 
+L 154 3328 
+L 538 3328 
+L 538 3674 
+z
+M 2458 4544 
+L 2995 4544 
+L 2995 4045 
+L 2458 4045 
+L 2458 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-143" d="M 378 3328 
+L 915 3328 
+L 915 2502 
+Q 1018 2893 1283 3142 
+Q 1549 3392 1984 3392 
+Q 2106 3392 2176 3366 
+L 2176 2861 
+Q 2093 2880 1990 2880 
+Q 1683 2880 1436 2733 
+Q 1190 2586 1052 2310 
+Q 915 2035 915 1670 
+L 915 0 
+L 378 0 
+L 378 3328 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-147"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(42.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(105.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(194.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(252.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(274.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(294.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(357.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(415.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(471.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(504.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-186" transform="translate(524.734375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(577.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(635.34375 0)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- name match -->
+    <g style="fill: #002855" transform="translate(111.6 580.845) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-dd" d="M 1946 -64 
+Q 1504 -64 1107 141 
+Q 710 346 464 739 
+Q 218 1133 218 1664 
+Q 218 2195 464 2588 
+Q 710 2982 1107 3187 
+Q 1504 3392 1946 3392 
+Q 2387 3392 2768 3181 
+Q 3149 2970 3366 2573 
+L 2957 2330 
+Q 2797 2598 2531 2748 
+Q 2266 2899 1952 2899 
+Q 1645 2899 1369 2752 
+Q 1094 2605 924 2323 
+Q 755 2042 755 1664 
+Q 755 1286 924 1004 
+Q 1094 723 1369 576 
+Q 1645 429 1952 429 
+Q 2266 429 2531 579 
+Q 2797 730 2957 998 
+L 3366 755 
+Q 3142 358 2764 147 
+Q 2387 -64 1946 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-102" d="M 378 4544 
+L 915 4544 
+L 915 2784 
+Q 1056 3046 1341 3219 
+Q 1626 3392 2029 3392 
+Q 2592 3392 2960 3030 
+Q 3328 2669 3328 1958 
+L 3328 0 
+L 2790 0 
+L 2790 1882 
+Q 2790 2368 2534 2633 
+Q 2278 2899 1862 2899 
+Q 1446 2899 1180 2633 
+Q 915 2368 915 1882 
+L 915 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-122"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(57.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(120.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(209.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(267.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(289.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(378.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(441.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-dd" transform="translate(473.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(529.71875 0)"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- key not stated -->
+    <g style="fill: #002855" transform="translate(111.6 606.765) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-118" d="M 378 4544 
+L 915 4544 
+L 915 1562 
+L 2515 3328 
+L 3174 3328 
+L 1773 1805 
+L 3328 0 
+L 2701 0 
+L 1434 1440 
+L 915 877 
+L 915 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-175" d="M 1555 32 
+L 154 3328 
+L 710 3328 
+L 1818 666 
+L 2925 3328 
+L 3482 3328 
+L 2067 0 
+L 1536 -1216 
+L 1005 -1216 
+L 1555 32 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-128" d="M 1946 -64 
+Q 1504 -64 1107 141 
+Q 710 346 464 739 
+Q 218 1133 218 1664 
+Q 218 2195 464 2588 
+Q 710 2982 1107 3187 
+Q 1504 3392 1946 3392 
+Q 2387 3392 2784 3187 
+Q 3181 2982 3427 2588 
+Q 3674 2195 3674 1664 
+Q 3674 1133 3427 739 
+Q 3181 346 2784 141 
+Q 2387 -64 1946 -64 
+z
+M 755 1664 
+Q 755 1286 921 1004 
+Q 1088 723 1360 576 
+Q 1632 429 1946 429 
+Q 2259 429 2531 576 
+Q 2803 723 2969 1004 
+Q 3136 1286 3136 1664 
+Q 3136 2042 2969 2323 
+Q 2803 2605 2531 2752 
+Q 2259 2899 1946 2899 
+Q 1632 2899 1360 2752 
+Q 1088 2605 921 2323 
+Q 755 2042 755 1664 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-118"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(48.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-175" transform="translate(103.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(160.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(182.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(239.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(299.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(332.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(353.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(395.328125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(427.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(490.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(523.328125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(581.234375 0)"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- SEC N-PORT -->
+    <g style="fill: #ffffff" transform="translate(440.64 59.395) scale(0.17 -0.17)">
+     <defs>
+      <path id="VisbyCF-Bold-85" d="M 1766 -64 
+Q 1376 -64 1040 80 
+Q 704 224 473 480 
+Q 243 736 166 1069 
+L 877 1395 
+Q 979 1107 1203 918 
+Q 1427 730 1754 730 
+Q 2042 730 2230 880 
+Q 2419 1030 2419 1312 
+Q 2419 1549 2272 1689 
+Q 2125 1830 1760 1978 
+L 1472 2086 
+Q 934 2304 636 2598 
+Q 339 2893 339 3373 
+Q 339 3744 528 4025 
+Q 717 4307 1037 4457 
+Q 1357 4608 1741 4608 
+Q 2285 4608 2656 4333 
+Q 3027 4058 3200 3648 
+L 2547 3283 
+Q 2259 3827 1773 3827 
+Q 1517 3827 1360 3705 
+Q 1203 3584 1203 3366 
+Q 1203 3174 1340 3030 
+Q 1478 2886 1837 2752 
+L 2144 2630 
+Q 2765 2381 3049 2077 
+Q 3334 1773 3334 1306 
+Q 3334 864 3110 557 
+Q 2886 250 2524 93 
+Q 2163 -64 1766 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-28" d="M 326 4544 
+L 2899 4544 
+L 2899 3738 
+L 1203 3738 
+L 1203 2682 
+L 2630 2682 
+L 2630 1888 
+L 1203 1888 
+L 1203 806 
+L 2957 806 
+L 2957 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-1d" d="M 2605 -64 
+Q 1965 -64 1427 227 
+Q 890 518 576 1049 
+Q 262 1581 262 2272 
+Q 262 2963 579 3494 
+Q 896 4026 1430 4317 
+Q 1965 4608 2605 4608 
+Q 3136 4608 3625 4381 
+Q 4115 4154 4448 3622 
+L 3808 3181 
+Q 3597 3482 3289 3629 
+Q 2982 3776 2630 3776 
+Q 2227 3776 1891 3590 
+Q 1555 3405 1356 3062 
+Q 1158 2720 1158 2272 
+Q 1158 1824 1356 1481 
+Q 1555 1139 1894 953 
+Q 2234 768 2637 768 
+Q 2995 768 3296 912 
+Q 3597 1056 3808 1363 
+L 4448 922 
+Q 4115 390 3625 163 
+Q 3136 -64 2605 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-1" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-5f" d="M 326 4544 
+L 1203 4544 
+L 3290 1440 
+L 3322 1440 
+L 3322 4544 
+L 4198 4544 
+L 4198 0 
+L 3322 0 
+L 1235 3104 
+L 1203 3104 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-22c" d="M 288 2118 
+L 2272 2118 
+L 2272 1402 
+L 288 1402 
+L 288 2118 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-7e" d="M 326 4544 
+L 1933 4544 
+Q 2419 4544 2787 4352 
+Q 3155 4160 3356 3811 
+Q 3558 3462 3558 3002 
+Q 3558 2541 3356 2192 
+Q 3155 1843 2787 1651 
+Q 2419 1459 1933 1459 
+L 1203 1459 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+M 1856 2266 
+Q 2234 2266 2451 2445 
+Q 2669 2624 2669 3002 
+Q 2669 3379 2451 3558 
+Q 2234 3738 1856 3738 
+L 1203 3738 
+L 1203 2266 
+L 1856 2266 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-65" d="M 2598 -64 
+Q 1965 -64 1430 230 
+Q 896 525 579 1059 
+Q 262 1594 262 2272 
+Q 262 2950 579 3484 
+Q 896 4019 1430 4313 
+Q 1965 4608 2598 4608 
+Q 3232 4608 3769 4313 
+Q 4307 4019 4624 3484 
+Q 4941 2950 4941 2272 
+Q 4941 1594 4624 1059 
+Q 4307 525 3769 230 
+Q 3232 -64 2598 -64 
+z
+M 1158 2272 
+Q 1158 1830 1353 1488 
+Q 1549 1146 1878 957 
+Q 2208 768 2598 768 
+Q 2989 768 3318 953 
+Q 3648 1139 3843 1481 
+Q 4038 1824 4038 2272 
+Q 4038 2720 3843 3062 
+Q 3648 3405 3318 3590 
+Q 2989 3776 2598 3776 
+Q 2208 3776 1878 3587 
+Q 1549 3398 1353 3056 
+Q 1158 2714 1158 2272 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-81" d="M 1882 1504 
+L 1203 1504 
+L 1203 0 
+L 326 0 
+L 326 4544 
+L 1920 4544 
+Q 2400 4544 2765 4352 
+Q 3130 4160 3328 3811 
+Q 3526 3462 3526 3002 
+Q 3526 2515 3305 2169 
+Q 3085 1824 2688 1651 
+L 3750 0 
+L 2816 0 
+L 1882 1504 
+z
+M 1830 2266 
+Q 2208 2266 2422 2442 
+Q 2637 2618 2637 3002 
+Q 2637 3379 2422 3558 
+Q 2208 3738 1830 3738 
+L 1203 3738 
+L 1203 2266 
+L 1830 2266 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-8f" d="M 1261 3738 
+L 166 3738 
+L 166 4544 
+L 3232 4544 
+L 3232 3738 
+L 2138 3738 
+L 2138 0 
+L 1261 0 
+L 1261 3738 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-85"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(54.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(100.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(172.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(193.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-22c" transform="translate(264.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(304.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-65" transform="translate(362.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(443.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(500.09375 0)"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- 211,560 swap positions · 2019Q4–2024Q2 -->
+    <g style="fill: #ffffff; opacity: 0.85" transform="translate(440.64 86.925) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-1eb" d="M 1728 1862 
+Q 1766 1914 1804 1962 
+Q 1843 2010 1882 2061 
+Q 2246 2509 2390 2758 
+Q 2534 3008 2534 3309 
+Q 2534 3693 2300 3897 
+Q 2067 4102 1715 4102 
+Q 1344 4102 1091 3875 
+Q 838 3648 838 3206 
+L 838 3091 
+L 294 3091 
+L 294 3251 
+Q 294 3642 467 3949 
+Q 640 4256 963 4432 
+Q 1286 4608 1722 4608 
+Q 2138 4608 2451 4448 
+Q 2765 4288 2931 4006 
+Q 3098 3725 3098 3373 
+Q 3098 2989 2925 2678 
+Q 2752 2368 2432 1984 
+L 2323 1850 
+L 1216 486 
+L 3104 486 
+L 3104 0 
+L 250 0 
+L 1728 1862 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1ea" d="M 1011 4038 
+L 365 4038 
+L 365 4544 
+L 1555 4544 
+L 1555 0 
+L 1011 0 
+L 1011 4038 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-21e" d="M 678 557 
+L 1165 557 
+L 653 -883 
+L 173 -883 
+L 678 557 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1ee" d="M 1715 -64 
+Q 1184 -64 800 195 
+Q 416 454 250 858 
+L 672 1094 
+Q 774 826 1052 627 
+Q 1331 429 1709 429 
+Q 2003 429 2249 557 
+Q 2496 685 2643 925 
+Q 2790 1165 2790 1491 
+Q 2790 1811 2649 2057 
+Q 2509 2304 2269 2438 
+Q 2029 2573 1734 2573 
+Q 1434 2573 1190 2438 
+Q 947 2304 800 2093 
+L 365 2266 
+L 672 4544 
+L 2874 4544 
+L 2874 4064 
+L 1094 4064 
+L 896 2662 
+Q 1024 2822 1273 2924 
+Q 1523 3027 1830 3027 
+Q 2234 3027 2573 2838 
+Q 2912 2650 3117 2304 
+Q 3322 1958 3322 1498 
+Q 3322 1030 3110 675 
+Q 2899 320 2531 128 
+Q 2163 -64 1715 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1ef" d="M 1754 -64 
+Q 1350 -64 1014 115 
+Q 678 294 480 627 
+Q 282 960 282 1402 
+Q 282 1728 390 2016 
+Q 499 2304 614 2486 
+Q 730 2669 966 3002 
+L 2074 4544 
+L 2682 4544 
+L 1325 2643 
+Q 1568 2765 1862 2765 
+Q 2240 2765 2553 2592 
+Q 2867 2419 3052 2102 
+Q 3238 1786 3238 1376 
+Q 3238 947 3036 620 
+Q 2835 294 2496 115 
+Q 2157 -64 1754 -64 
+z
+M 800 1357 
+Q 800 941 1075 678 
+Q 1350 416 1760 416 
+Q 2170 416 2445 678 
+Q 2720 941 2720 1357 
+Q 2720 1779 2445 2038 
+Q 2170 2298 1760 2298 
+Q 1350 2298 1075 2038 
+Q 800 1779 800 1357 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1e9" d="M 2605 -64 
+Q 1984 -64 1459 230 
+Q 934 525 624 1059 
+Q 314 1594 314 2272 
+Q 314 2950 624 3484 
+Q 934 4019 1459 4313 
+Q 1984 4608 2605 4608 
+Q 3226 4608 3750 4313 
+Q 4275 4019 4585 3484 
+Q 4896 2950 4896 2272 
+Q 4896 1594 4585 1059 
+Q 4275 525 3750 230 
+Q 3226 -64 2605 -64 
+z
+M 864 2272 
+Q 864 1734 1101 1318 
+Q 1338 902 1738 672 
+Q 2138 442 2605 442 
+Q 3072 442 3472 672 
+Q 3872 902 4109 1318 
+Q 4346 1734 4346 2272 
+Q 4346 2810 4109 3226 
+Q 3872 3642 3472 3872 
+Q 3072 4102 2605 4102 
+Q 2138 4102 1738 3872 
+Q 1338 3642 1101 3226 
+Q 864 2810 864 2272 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-16f" d="M 2950 2675 
+L 1907 0 
+L 1408 0 
+L 154 3328 
+L 698 3328 
+L 1664 672 
+L 2694 3328 
+L 3206 3328 
+L 4237 672 
+L 5203 3328 
+L 5747 3328 
+L 4493 0 
+L 3994 0 
+L 2950 2675 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-140" d="M 378 3328 
+L 915 3328 
+L 915 2701 
+L 934 2701 
+Q 1062 2982 1401 3187 
+Q 1741 3392 2182 3392 
+Q 2598 3392 2972 3190 
+Q 3347 2989 3580 2598 
+Q 3814 2208 3814 1664 
+Q 3814 1120 3580 729 
+Q 3347 339 2972 137 
+Q 2598 -64 2182 -64 
+Q 1741 -64 1401 141 
+Q 1062 346 934 627 
+L 915 627 
+L 915 -1216 
+L 378 -1216 
+L 378 3328 
+z
+M 896 1664 
+Q 896 1274 1065 992 
+Q 1235 710 1507 569 
+Q 1779 429 2093 429 
+Q 2400 429 2672 569 
+Q 2944 710 3110 988 
+Q 3277 1267 3277 1664 
+Q 3277 2061 3110 2339 
+Q 2944 2618 2672 2758 
+Q 2400 2899 2093 2899 
+Q 1779 2899 1507 2758 
+Q 1235 2618 1065 2336 
+Q 896 2054 896 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-226" d="M 627 1414 
+Q 486 1414 393 1507 
+Q 301 1600 301 1740 
+Q 301 1881 393 1970 
+Q 486 2060 627 2060 
+Q 768 2060 857 1970 
+Q 947 1881 947 1740 
+Q 947 1600 857 1507 
+Q 768 1414 627 1414 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1f2" d="M 1766 4608 
+Q 2170 4608 2506 4429 
+Q 2842 4250 3040 3917 
+Q 3238 3584 3238 3142 
+Q 3238 2816 3129 2528 
+Q 3021 2240 2905 2057 
+Q 2790 1875 2554 1542 
+L 1446 0 
+L 838 0 
+L 2195 1901 
+Q 1952 1779 1658 1779 
+Q 1280 1779 966 1952 
+Q 653 2125 467 2441 
+Q 282 2758 282 3168 
+Q 282 3597 483 3923 
+Q 685 4250 1024 4429 
+Q 1363 4608 1766 4608 
+z
+M 800 3187 
+Q 800 2765 1075 2505 
+Q 1350 2246 1760 2246 
+Q 2170 2246 2445 2505 
+Q 2720 2765 2720 3187 
+Q 2720 3603 2445 3865 
+Q 2170 4128 1760 4128 
+Q 1350 4128 1075 3865 
+Q 800 3603 800 3187 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-80" d="M 3853 282 
+Q 3302 -64 2624 -64 
+Q 2003 -64 1475 230 
+Q 947 525 630 1059 
+Q 314 1594 314 2272 
+Q 314 2950 630 3484 
+Q 947 4019 1475 4313 
+Q 2003 4608 2624 4608 
+Q 3238 4608 3766 4313 
+Q 4294 4019 4611 3484 
+Q 4928 2950 4928 2272 
+Q 4928 1760 4745 1331 
+Q 4563 902 4243 589 
+L 4717 0 
+L 4083 0 
+L 3853 282 
+z
+M 877 2272 
+Q 877 1741 1117 1328 
+Q 1357 915 1757 691 
+Q 2157 467 2624 467 
+Q 3104 467 3507 704 
+L 2541 1894 
+L 3181 1894 
+L 3891 1018 
+Q 4115 1254 4240 1574 
+Q 4365 1894 4365 2272 
+Q 4365 2803 4125 3216 
+Q 3885 3629 3485 3853 
+Q 3085 4077 2624 4077 
+Q 2157 4077 1757 3853 
+Q 1357 3629 1117 3216 
+Q 877 2803 877 2272 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-1ed" d="M 2259 1158 
+L 282 1158 
+L 282 1638 
+L 2259 4544 
+L 2810 4544 
+L 2810 1638 
+L 3290 1638 
+L 3290 1158 
+L 2810 1158 
+L 2810 0 
+L 2259 0 
+L 2259 1158 
+z
+M 2259 1638 
+L 2259 3776 
+L 838 1638 
+L 2259 1638 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-22e" d="M 288 2010 
+L 3552 2010 
+L 3552 1562 
+L 288 1562 
+L 288 2010 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-1eb"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(53.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(86.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(118.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ee" transform="translate(139.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ef" transform="translate(195.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(249.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(331.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(352.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-16f" transform="translate(392.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(481.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(544.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(607.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(629.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(692.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(751.328125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(794.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(814.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(847.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(867.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(928.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(986.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1028.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-226" transform="translate(1050.25 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1069.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(1091.15625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(1144.5625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(1222.96875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1f2" transform="translate(1254.96875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-80" transform="translate(1309.96875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ed" transform="translate(1391.875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-22e" transform="translate(1447.171875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(1507.171875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(1560.578125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(1641.984375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ed" transform="translate(1695.390625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-80" transform="translate(1750.6875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(1832.59375 0)"/>
+    </g>
+   </g>
+   <g id="text_6">
+    <!-- fund -->
+    <g style="fill: #002855" transform="translate(440.64 121.04) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-fa" d="M 525 3546 
+Q 525 4198 861 4441 
+Q 1197 4685 1645 4685 
+Q 2022 4685 2240 4557 
+L 2240 3885 
+Q 2093 3955 1901 3955 
+Q 1382 3955 1382 3450 
+L 1382 3328 
+L 2240 3328 
+L 2240 2643 
+L 1382 2643 
+L 1382 0 
+L 525 0 
+L 525 2643 
+L 102 2643 
+L 102 3328 
+L 525 3328 
+L 525 3546 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-156" d="M 3462 0 
+L 2605 0 
+L 2605 454 
+Q 2458 218 2202 77 
+Q 1946 -64 1587 -64 
+Q 1037 -64 681 294 
+Q 326 653 326 1370 
+L 326 3328 
+L 1184 3328 
+L 1184 1510 
+Q 1184 1139 1373 921 
+Q 1562 704 1894 704 
+Q 2221 704 2413 925 
+Q 2605 1146 2605 1510 
+L 2605 3328 
+L 3462 3328 
+L 3462 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-122" d="M 326 3328 
+L 1184 3328 
+L 1184 2874 
+Q 1331 3110 1587 3251 
+Q 1843 3392 2202 3392 
+Q 2752 3392 3107 3033 
+Q 3462 2675 3462 1958 
+L 3462 0 
+L 2605 0 
+L 2605 1818 
+Q 2605 2189 2416 2406 
+Q 2227 2624 1894 2624 
+Q 1568 2624 1376 2403 
+Q 1184 2182 1184 1818 
+L 1184 0 
+L 326 0 
+L 326 3328 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-e3" d="M 2848 0 
+L 2848 448 
+L 2829 448 
+Q 2784 346 2640 224 
+Q 2496 102 2269 19 
+Q 2042 -64 1766 -64 
+Q 1363 -64 995 134 
+Q 627 333 396 723 
+Q 166 1114 166 1664 
+Q 166 2214 396 2604 
+Q 627 2995 995 3193 
+Q 1363 3392 1766 3392 
+Q 2042 3392 2269 3309 
+Q 2496 3226 2640 3104 
+Q 2784 2982 2829 2880 
+L 2848 2880 
+L 2848 4544 
+L 3706 4544 
+L 3706 0 
+L 2848 0 
+z
+M 1011 1664 
+Q 1011 1363 1139 1145 
+Q 1267 928 1481 816 
+Q 1696 704 1939 704 
+Q 2182 704 2396 816 
+Q 2611 928 2739 1145 
+Q 2867 1363 2867 1664 
+Q 2867 1965 2739 2182 
+Q 2611 2400 2396 2512 
+Q 2182 2624 1939 2624 
+Q 1696 2624 1481 2512 
+Q 1267 2400 1139 2182 
+Q 1011 1965 1011 1664 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-fa"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(35.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(94.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e3" transform="translate(153.5 0)"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <!-- 820 -->
+    <g style="fill: #536574" transform="translate(826.874063 120.765) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-1f1" d="M 1766 -64 
+Q 1370 -64 1030 105 
+Q 691 275 486 585 
+Q 282 896 282 1306 
+Q 282 1734 496 2048 
+Q 710 2362 1062 2522 
+Q 826 2675 688 2924 
+Q 550 3174 550 3469 
+Q 550 3776 700 4035 
+Q 851 4294 1126 4451 
+Q 1402 4608 1766 4608 
+Q 2131 4608 2406 4451 
+Q 2682 4294 2832 4035 
+Q 2982 3776 2982 3469 
+Q 2982 3174 2844 2928 
+Q 2707 2682 2464 2522 
+Q 2816 2362 3030 2048 
+Q 3245 1734 3245 1306 
+Q 3245 896 3040 585 
+Q 2835 275 2496 105 
+Q 2157 -64 1766 -64 
+z
+M 832 1331 
+Q 832 1069 960 864 
+Q 1088 659 1299 547 
+Q 1510 435 1766 435 
+Q 2016 435 2230 547 
+Q 2445 659 2569 864 
+Q 2694 1069 2694 1331 
+Q 2694 1734 2425 1984 
+Q 2157 2234 1766 2234 
+Q 1370 2234 1101 1984 
+Q 832 1734 832 1331 
+z
+M 1043 3430 
+Q 1043 3130 1251 2922 
+Q 1459 2714 1766 2714 
+Q 2074 2714 2278 2922 
+Q 2483 3130 2483 3430 
+Q 2483 3725 2284 3929 
+Q 2086 4134 1766 4134 
+Q 1446 4134 1244 3929 
+Q 1043 3725 1043 3430 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-1f1"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(55.09375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(108.5 0)"/>
+    </g>
+   </g>
+   <g id="text_8">
+    <!-- dealer LEI -->
+    <g style="fill: #002855" transform="translate(440.64 152.72) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-e8" d="M 1901 -64 
+Q 1434 -64 1037 141 
+Q 640 346 403 739 
+Q 166 1133 166 1664 
+Q 166 2202 403 2592 
+Q 640 2982 1027 3187 
+Q 1414 3392 1850 3392 
+Q 2266 3392 2640 3209 
+Q 3014 3027 3254 2640 
+Q 3494 2253 3494 1683 
+Q 3494 1574 3469 1331 
+L 979 1331 
+Q 1069 998 1341 819 
+Q 1613 640 1997 640 
+Q 2509 640 2854 941 
+L 3245 525 
+Q 3034 256 2682 96 
+Q 2330 -64 1901 -64 
+z
+M 2707 1958 
+Q 2669 2298 2425 2483 
+Q 2182 2669 1856 2669 
+Q 1542 2669 1292 2486 
+Q 1043 2304 966 1958 
+L 2707 1958 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-c2" d="M 1766 -64 
+Q 1363 -64 995 134 
+Q 627 333 396 723 
+Q 166 1114 166 1664 
+Q 166 2214 396 2604 
+Q 627 2995 995 3193 
+Q 1363 3392 1766 3392 
+Q 2042 3392 2269 3309 
+Q 2496 3226 2640 3104 
+Q 2784 2982 2829 2880 
+L 2848 2880 
+L 2848 3328 
+L 3706 3328 
+L 3706 0 
+L 2848 0 
+L 2848 448 
+L 2829 448 
+Q 2784 346 2640 224 
+Q 2496 102 2269 19 
+Q 2042 -64 1766 -64 
+z
+M 1011 1664 
+Q 1011 1363 1139 1145 
+Q 1267 928 1481 816 
+Q 1696 704 1939 704 
+Q 2182 704 2396 816 
+Q 2611 928 2739 1145 
+Q 2867 1363 2867 1664 
+Q 2867 1965 2739 2182 
+Q 2611 2400 2396 2512 
+Q 2182 2624 1939 2624 
+Q 1696 2624 1481 2512 
+Q 1267 2400 1139 2182 
+Q 1011 1965 1011 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-11b" d="M 326 4544 
+L 1184 4544 
+L 1184 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-143" d="M 326 3328 
+L 1184 3328 
+L 1184 2464 
+Q 1280 2880 1539 3136 
+Q 1798 3392 2227 3392 
+Q 2349 3392 2451 3366 
+L 2451 2547 
+Q 2336 2566 2234 2566 
+Q 1754 2566 1469 2262 
+Q 1184 1958 1184 1453 
+L 1184 0 
+L 326 0 
+L 326 3328 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-58" d="M 326 4544 
+L 1203 4544 
+L 1203 806 
+L 2976 806 
+L 2976 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-45" d="M 326 4544 
+L 1203 4544 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-e3"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(63 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(120.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-11b" transform="translate(183.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(206.6875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(263.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(302.578125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(323.171875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(372.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(422.375 0)"/>
+    </g>
+   </g>
+   <g id="text_9">
+    <!-- dealer name -->
+    <g style="fill: #002855" transform="translate(440.64 184.4) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-11b" d="M 378 4544 
+L 915 4544 
+L 915 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-e3"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(63 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(120.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(183.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(204.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(262.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(297.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(318.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(376.734375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(439.734375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(528.734375 0)"/>
+    </g>
+   </g>
+   <g id="text_10">
+    <!-- leg: long or short -->
+    <g style="fill: #002855" transform="translate(440.64 216.08) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-fb" d="M 1978 -1331 
+Q 1664 -1331 1395 -1264 
+Q 1126 -1197 998 -1101 
+L 998 -646 
+Q 1133 -736 1369 -803 
+Q 1606 -870 1894 -870 
+Q 2426 -870 2771 -611 
+Q 3117 -352 3117 179 
+L 3117 627 
+L 3085 627 
+Q 2963 346 2624 141 
+Q 2285 -64 1850 -64 
+Q 1434 -64 1059 137 
+Q 685 339 451 729 
+Q 218 1120 218 1664 
+Q 218 2208 451 2598 
+Q 685 2989 1059 3190 
+Q 1434 3392 1850 3392 
+Q 2285 3392 2624 3187 
+Q 2963 2982 3085 2701 
+L 3117 2701 
+L 3117 3328 
+L 3654 3328 
+L 3654 186 
+Q 3654 -365 3408 -704 
+Q 3162 -1043 2784 -1187 
+Q 2406 -1331 1978 -1331 
+z
+M 755 1664 
+Q 755 1267 921 988 
+Q 1088 710 1360 569 
+Q 1632 429 1939 429 
+Q 2246 429 2521 569 
+Q 2797 710 2966 992 
+Q 3136 1274 3136 1664 
+Q 3136 2054 2966 2336 
+Q 2797 2618 2521 2758 
+Q 2246 2899 1939 2899 
+Q 1632 2899 1360 2758 
+Q 1088 2618 921 2339 
+Q 755 2061 755 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-21f" d="M 659 -64 
+Q 518 -64 425 29 
+Q 333 122 333 262 
+Q 333 403 425 492 
+Q 518 582 659 582 
+Q 800 582 889 492 
+Q 979 403 979 262 
+Q 979 122 889 29 
+Q 800 -64 659 -64 
+z
+M 659 2611 
+Q 518 2611 425 2704 
+Q 333 2797 333 2937 
+Q 333 3078 425 3167 
+Q 518 3257 659 3257 
+Q 800 3257 889 3167 
+Q 979 3078 979 2937 
+Q 979 2797 889 2704 
+Q 800 2611 659 2611 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-11b"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(20.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(78.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21f" transform="translate(141.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(161.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(182.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(202.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(263.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(321.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(384.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(405.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(466.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(502.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(523.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(566.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(624.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(684.9375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(722.34375 0)"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <!-- notional -->
+    <g style="fill: #002855" transform="translate(440.64 247.76) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Medium-122"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(57.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(117.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(150.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(170.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(231.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(289.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(352.109375 0)"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <!-- spread over reference rate -->
+    <g style="fill: #002855" transform="translate(440.64 279.44) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-16e" d="M 154 3328 
+L 710 3328 
+L 1818 666 
+L 2925 3328 
+L 3482 3328 
+L 2067 0 
+L 1568 0 
+L 154 3328 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-fa" d="M 538 3693 
+Q 538 4237 819 4454 
+Q 1101 4672 1478 4672 
+Q 1792 4672 1997 4544 
+L 1997 4115 
+Q 1811 4205 1594 4205 
+Q 1082 4205 1082 3629 
+L 1082 3328 
+L 1997 3328 
+L 1997 2886 
+L 1082 2886 
+L 1082 0 
+L 538 0 
+L 538 2886 
+L 154 2886 
+L 154 3328 
+L 538 3328 
+L 538 3693 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-147"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(42.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(105.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(141.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(199.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(262.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(325.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(346.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-16e" transform="translate(404.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(458.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(516.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(551.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(573.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(609.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fa" transform="translate(667.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(699.640625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(757.546875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(793.453125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(851.359375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-dd" transform="translate(909.265625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(963.671875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1021.578125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(1042.984375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(1078.890625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(1141.890625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1174.390625 0)"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- reference asset, CUSIP -->
+    <g style="fill: #002855" transform="translate(440.64 311.12) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-dd" d="M 1920 -64 
+Q 1466 -64 1066 137 
+Q 666 339 416 732 
+Q 166 1126 166 1664 
+Q 166 2202 416 2595 
+Q 666 2989 1066 3190 
+Q 1466 3392 1920 3392 
+Q 2368 3392 2742 3184 
+Q 3117 2976 3354 2573 
+L 2726 2170 
+Q 2592 2374 2384 2496 
+Q 2176 2618 1926 2618 
+Q 1683 2618 1472 2502 
+Q 1261 2387 1136 2169 
+Q 1011 1952 1011 1664 
+Q 1011 1376 1136 1158 
+Q 1261 941 1472 825 
+Q 1683 710 1926 710 
+Q 2176 710 2384 832 
+Q 2592 954 2726 1158 
+L 3354 755 
+Q 3117 358 2742 147 
+Q 2368 -64 1920 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-147" d="M 1382 -64 
+Q 877 -64 544 176 
+Q 211 416 134 870 
+L 819 1056 
+Q 877 870 1011 742 
+Q 1146 614 1370 614 
+Q 1549 614 1673 704 
+Q 1798 794 1798 960 
+Q 1798 1082 1712 1171 
+Q 1626 1261 1434 1331 
+L 1024 1485 
+Q 627 1626 435 1875 
+Q 243 2125 243 2438 
+Q 243 2726 396 2944 
+Q 550 3162 816 3277 
+Q 1082 3392 1395 3392 
+Q 1843 3392 2153 3158 
+Q 2464 2925 2547 2541 
+L 1875 2368 
+Q 1760 2720 1434 2720 
+Q 1267 2720 1171 2637 
+Q 1075 2554 1075 2432 
+Q 1075 2195 1421 2080 
+L 1792 1939 
+Q 2176 1798 2413 1577 
+Q 2650 1357 2650 960 
+Q 2650 480 2288 208 
+Q 1926 -64 1382 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-150" d="M 1613 -38 
+Q 1165 -38 902 195 
+Q 640 429 640 922 
+L 640 2643 
+L 166 2643 
+L 166 3328 
+L 640 3328 
+L 640 4179 
+L 1504 4179 
+L 1504 3328 
+L 2189 3328 
+L 2189 2643 
+L 1504 2643 
+L 1504 1062 
+Q 1504 915 1593 819 
+Q 1683 723 1882 723 
+Q 2035 723 2195 774 
+L 2195 115 
+Q 2106 32 1949 -3 
+Q 1792 -38 1613 -38 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-21e" d="M 736 819 
+L 1478 819 
+L 883 -851 
+L 147 -851 
+L 736 819 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-95" d="M 2042 -64 
+Q 1555 -64 1168 141 
+Q 781 346 553 742 
+Q 326 1139 326 1690 
+L 326 4544 
+L 1203 4544 
+L 1203 1690 
+Q 1203 1203 1446 982 
+Q 1690 762 2042 762 
+Q 2387 762 2633 982 
+Q 2880 1203 2880 1690 
+L 2880 4544 
+L 3757 4544 
+L 3757 1690 
+Q 3757 1139 3529 742 
+Q 3302 346 2915 141 
+Q 2528 -64 2042 -64 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-143"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(39.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-fa" transform="translate(96.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(131.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(189.078125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(228.375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(285.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-dd" transform="translate(344.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(397.171875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(454.265625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(474.859375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(537.859375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(581.765625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(625.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(681.265625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-21e" transform="translate(718.5625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(743.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(764.0625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-95" transform="translate(836.5625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(900.265625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(954.859375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(978.65625 0)"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <!-- 10,500 -->
+    <g style="fill: #536574" transform="translate(804.071719 310.845) scale(0.15 -0.15)">
+     <use xlink:href="#VisbyCF-Medium-1ea"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(32 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(102.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ee" transform="translate(123.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(180.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(260.515625 0)"/>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 424.8 322.56 
+L 871.2 322.56 
+L 871.2 32.4 
+L 424.8 32.4 
+L 424.8 322.56 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_15">
+    <!-- GLEIF GOLDEN COPY -->
+    <g style="fill: #002855" transform="translate(62.64 114.835) scale(0.17 -0.17)">
+     <defs>
+      <path id="VisbyCF-Bold-3a" d="M 2592 -64 
+Q 1958 -64 1427 227 
+Q 896 518 579 1052 
+Q 262 1587 262 2272 
+Q 262 2963 579 3494 
+Q 896 4026 1437 4317 
+Q 1978 4608 2618 4608 
+Q 3142 4608 3632 4381 
+Q 4122 4154 4454 3622 
+L 3821 3181 
+Q 3603 3488 3299 3632 
+Q 2995 3776 2630 3776 
+Q 2221 3776 1885 3593 
+Q 1549 3411 1353 3068 
+Q 1158 2726 1158 2272 
+Q 1158 1818 1353 1469 
+Q 1549 1120 1885 931 
+Q 2221 742 2630 742 
+Q 3085 742 3408 976 
+Q 3731 1210 3827 1709 
+L 2739 1709 
+L 2739 2445 
+L 4678 2445 
+Q 4704 2266 4704 2054 
+Q 4704 1408 4419 928 
+Q 4134 448 3654 192 
+Q 3174 -64 2592 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-39" d="M 326 4544 
+L 2880 4544 
+L 2880 3744 
+L 1203 3744 
+L 1203 2656 
+L 2765 2656 
+L 2765 1907 
+L 1203 1907 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-23" d="M 326 4544 
+L 1971 4544 
+Q 2592 4544 3094 4256 
+Q 3597 3968 3881 3449 
+Q 4166 2931 4166 2272 
+Q 4166 1613 3881 1094 
+Q 3597 576 3094 288 
+Q 2592 0 1971 0 
+L 326 0 
+L 326 4544 
+z
+M 1939 826 
+Q 2573 826 2912 1219 
+Q 3251 1613 3251 2272 
+Q 3251 2931 2912 3324 
+Q 2573 3718 1939 3718 
+L 1203 3718 
+L 1203 826 
+L 1939 826 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-b4" d="M 1779 1818 
+L 134 4544 
+L 1126 4544 
+L 2214 2643 
+L 3309 4544 
+L 4301 4544 
+L 2656 1818 
+L 2656 0 
+L 1779 0 
+L 1779 1818 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-3a"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(77.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(127 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(176.703125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-39" transform="translate(200.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(249 0)"/>
+     <use xlink:href="#VisbyCF-Bold-3a" transform="translate(269.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-65" transform="translate(346.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(427.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-23" transform="translate(476.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(544.890625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(594.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(665.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(685.890625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-65" transform="translate(756.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(837.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-b4" transform="translate(893.296875 0)"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <!-- LEI -->
+    <g style="fill: #002855" transform="translate(62.64 152.72) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Bold-58"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(49.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(99.203125 0)"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <!-- parent LEI -->
+    <g style="fill: #002855" transform="translate(62.64 184.4) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-58" d="M 378 4544 
+L 928 4544 
+L 928 512 
+L 2918 512 
+L 2918 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-28" d="M 378 4544 
+L 2816 4544 
+L 2816 4032 
+L 928 4032 
+L 928 2534 
+L 2534 2534 
+L 2534 2029 
+L 928 2029 
+L 928 512 
+L 2874 512 
+L 2874 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-45" d="M 378 4544 
+L 928 4544 
+L 928 0 
+L 378 0 
+L 378 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-140"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(63 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(126 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(161.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(219.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(276.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(309.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-58" transform="translate(330.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-28" transform="translate(380.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-45" transform="translate(429.421875 0)"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <!-- 41 dealers -->
+    <g style="fill: #536574" transform="translate(276.685781 184.125) scale(0.15 -0.15)">
+     <use xlink:href="#VisbyCF-Medium-1ed"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(55.296875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(87.296875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(108.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(171.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(229.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(292.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(312.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(370.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(407.125 0)"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <!-- ultimate parent LEI -->
+    <g style="fill: #002855" transform="translate(62.64 216.08) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-156" d="M 3328 0 
+L 2790 0 
+L 2790 544 
+Q 2650 282 2365 109 
+Q 2080 -64 1677 -64 
+Q 1114 -64 746 297 
+Q 378 659 378 1370 
+L 378 3328 
+L 915 3328 
+L 915 1446 
+Q 915 960 1171 694 
+Q 1427 429 1843 429 
+Q 2259 429 2524 694 
+Q 2790 960 2790 1446 
+L 2790 3328 
+L 3328 3328 
+L 3328 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-156"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(57.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(78.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(111.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(131.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(220.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(283.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(315.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(373.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(395.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(458.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(521.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(557.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(614.9375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(671.34375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(704.34375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-58" transform="translate(725.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-28" transform="translate(775.25 0)"/>
+     <use xlink:href="#VisbyCF-Medium-45" transform="translate(824.546875 0)"/>
+    </g>
+   </g>
+   <g id="patch_12">
+    <path d="M 46.8 227.52 
+L 360 227.52 
+L 360 87.84 
+L 46.8 87.84 
+L 46.8 227.52 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_20">
+    <!-- SEC N-CEN -->
+    <g style="fill: #002855" transform="translate(951.84 83.155) scale(0.17 -0.17)">
+     <use xlink:href="#VisbyCF-Bold-85"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(54.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(100.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(172.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(193.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-22c" transform="translate(264.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(304.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(376.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(426.296875 0)"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <!-- fund -->
+    <g style="fill: #002855" transform="translate(951.84 121.04) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Bold-fa"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(35.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(94.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e3" transform="translate(153.5 0)"/>
+    </g>
+   </g>
+   <g id="text_22">
+    <!-- fund descriptives -->
+    <g style="fill: #002855" transform="translate(951.84 152.72) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Medium-fa"/>
+     <use xlink:href="#VisbyCF-Medium-156" transform="translate(32.09375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(90 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(147.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(210.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(232.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(295.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(351.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-dd" transform="translate(394.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(450.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(487.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(508.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(569.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(602.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-16e" transform="translate(622.734375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(676.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(732.9375 0)"/>
+    </g>
+   </g>
+   <g id="patch_13">
+    <path d="M 936 164.16 
+L 1249.2 164.16 
+L 1249.2 56.16 
+L 936 56.16 
+L 936 164.16 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_23">
+    <!-- MARKIT SECURITIES FINANCE -->
+    <g style="fill: #002855" transform="translate(951.84 273.235) scale(0.17 -0.17)">
+     <defs>
+      <path id="VisbyCF-Bold-5e" d="M 326 4544 
+L 1293 4544 
+L 2778 1120 
+L 4262 4544 
+L 5229 4544 
+L 5229 0 
+L 4352 0 
+L 4352 2854 
+L 4320 2854 
+L 3098 0 
+L 2451 0 
+L 1235 2854 
+L 1203 2854 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-2" d="M 2746 4544 
+L 4499 0 
+L 3552 0 
+L 3251 819 
+L 1318 819 
+L 1018 0 
+L 70 0 
+L 1818 4544 
+L 2746 4544 
+z
+M 2957 1626 
+L 2285 3450 
+L 1613 1626 
+L 2957 1626 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-55" d="M 326 4544 
+L 1203 4544 
+L 1203 2470 
+L 2906 4544 
+L 3891 4544 
+L 2170 2477 
+L 4038 0 
+L 3066 0 
+L 1645 1850 
+L 1203 1318 
+L 1203 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-5e"/>
+     <use xlink:href="#VisbyCF-Bold-2" transform="translate(86.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(158.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-55" transform="translate(219.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(284.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(308.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(361.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(381.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(436.375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(482.078125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-95" transform="translate(554.578125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(618.28125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(678.875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(702.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(755.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(779.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(829.171875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(883.765625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-39" transform="translate(904.359375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(952.859375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(976.65625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-2" transform="translate(1047.359375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(1118.765625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(1189.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(1261.96875 0)"/>
+    </g>
+   </g>
+   <g id="text_24">
+    <!-- CUSIP -->
+    <g style="fill: #002855" transform="translate(951.84 311.12) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Bold-1d"/>
+     <use xlink:href="#VisbyCF-Bold-95" transform="translate(72.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(136.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(190.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(214.59375 0)"/>
+    </g>
+   </g>
+   <g id="text_25">
+    <!-- borrow fee $c_S$ -->
+    <g style="fill: #002855" transform="translate(951.84 342.8) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-db" d="M 915 4544 
+L 915 2701 
+L 934 2701 
+Q 1062 2982 1401 3187 
+Q 1741 3392 2182 3392 
+Q 2598 3392 2972 3190 
+Q 3347 2989 3580 2598 
+Q 3814 2208 3814 1664 
+Q 3814 1120 3580 729 
+Q 3347 339 2972 137 
+Q 2598 -64 2182 -64 
+Q 1741 -64 1401 141 
+Q 1062 346 934 627 
+L 915 627 
+L 915 0 
+L 378 0 
+L 378 4544 
+L 915 4544 
+z
+M 896 1664 
+Q 896 1274 1065 992 
+Q 1235 710 1507 569 
+Q 1779 429 2093 429 
+Q 2400 429 2672 569 
+Q 2944 710 3110 988 
+Q 3277 1267 3277 1664 
+Q 3277 2061 3110 2339 
+Q 2944 2618 2672 2758 
+Q 2400 2899 2093 2899 
+Q 1779 2899 1507 2758 
+Q 1235 2618 1065 2336 
+Q 896 2054 896 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmmi10-7f" d="M 750 763 
+Q 750 484 892 290 
+Q 1034 97 1300 97 
+Q 1681 97 2032 272 
+Q 2384 447 2606 756 
+Q 2625 775 2656 775 
+Q 2688 775 2720 739 
+Q 2753 703 2753 672 
+Q 2753 647 2741 634 
+Q 2506 306 2109 117 
+Q 1713 -72 1288 -72 
+Q 981 -72 747 73 
+Q 513 219 384 462 
+Q 256 706 256 1013 
+Q 256 1444 497 1869 
+Q 738 2294 1138 2561 
+Q 1538 2828 1978 2828 
+Q 2266 2828 2495 2689 
+Q 2725 2550 2725 2278 
+Q 2725 2103 2623 1979 
+Q 2522 1856 2350 1856 
+Q 2247 1856 2176 1920 
+Q 2106 1984 2106 2088 
+Q 2106 2238 2215 2344 
+Q 2325 2450 2472 2450 
+L 2484 2450 
+Q 2409 2559 2267 2611 
+Q 2125 2663 1972 2663 
+Q 1597 2663 1315 2342 
+Q 1034 2022 892 1576 
+Q 750 1131 750 763 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmmi10-43" d="M 391 -141 
+Q 372 -141 356 -119 
+Q 341 -97 341 -78 
+L 709 1416 
+Q 722 1453 763 1453 
+L 838 1453 
+Q 863 1453 877 1434 
+Q 891 1416 891 1388 
+Q 838 1169 838 997 
+Q 838 534 1156 309 
+Q 1475 84 1959 84 
+Q 2169 84 2372 187 
+Q 2575 291 2726 456 
+Q 2878 622 2968 826 
+Q 3059 1031 3059 1241 
+Q 3059 1466 2940 1642 
+Q 2822 1819 2613 1869 
+L 1831 2075 
+Q 1516 2159 1328 2414 
+Q 1141 2669 1141 2988 
+Q 1141 3372 1369 3728 
+Q 1597 4084 1964 4298 
+Q 2331 4513 2713 4513 
+Q 3006 4513 3251 4405 
+Q 3497 4297 3628 4063 
+L 3994 4494 
+Q 4031 4513 4038 4513 
+L 4078 4513 
+Q 4103 4513 4118 4491 
+Q 4134 4469 4134 4447 
+L 3763 2963 
+Q 3753 2919 3713 2919 
+L 3634 2919 
+Q 3578 2919 3578 2988 
+Q 3609 3191 3609 3341 
+Q 3609 3638 3507 3858 
+Q 3406 4078 3201 4192 
+Q 2997 4306 2694 4306 
+Q 2438 4306 2184 4159 
+Q 1931 4013 1775 3769 
+Q 1619 3525 1619 3263 
+Q 1619 3056 1739 2897 
+Q 1859 2738 2059 2681 
+L 2841 2478 
+Q 3053 2422 3211 2280 
+Q 3369 2138 3450 1942 
+Q 3531 1747 3531 1516 
+Q 3531 1213 3403 917 
+Q 3275 622 3045 378 
+Q 2816 134 2525 -3 
+Q 2234 -141 1931 -141 
+Q 1169 -141 838 306 
+L 481 -122 
+Q 444 -141 434 -141 
+L 391 -141 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-db"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(62.999939 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(123.799881 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(161.199844 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(198.599808 0)"/>
+     <use xlink:href="#VisbyCF-Medium-16f" transform="translate(259.39975 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(351.599655 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fa" transform="translate(372.999634 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(408.599594 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(466.499542 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(524.39949 0)"/>
+     <use xlink:href="#Cmmi10-7f" transform="translate(545.799469 0)"/>
+     <use xlink:href="#Cmmi10-43" transform="translate(589.01236 -14.999962) scale(0.7)"/>
+    </g>
+   </g>
+   <g id="text_26">
+    <!-- 2019–2021 -->
+    <g style="fill: #536574" transform="translate(1158.505313 342.525) scale(0.15 -0.15)">
+     <use xlink:href="#VisbyCF-Medium-1eb"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(53.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(131.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1f2" transform="translate(163.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-22e" transform="translate(218.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(278.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(332.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(413.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(467.03125 0)"/>
+    </g>
+   </g>
+   <g id="patch_14">
+    <path d="M 936 354.24 
+L 1249.2 354.24 
+L 1249.2 246.24 
+L 936 246.24 
+L 936 354.24 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #ee6677; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_27">
+    <!-- NOT IN N-PORT -->
+    <g style="fill: #536574" transform="translate(62.64 296.445) scale(0.15 -0.15)">
+     <use xlink:href="#VisbyCF-Bold-5f"/>
+     <use xlink:href="#VisbyCF-Bold-65" transform="translate(70.703125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(146.90625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(199.90625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(220.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(244.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(315 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(335.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-22c" transform="translate(406.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(446.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-65" transform="translate(504.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(585.703125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(642.296875 0)"/>
+    </g>
+   </g>
+   <g id="text_28">
+    <!-- Hedge funds, family offices -->
+    <g style="fill: #002855" transform="translate(62.64 328.4) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-41" d="M 3181 1984 
+L 928 1984 
+L 928 0 
+L 378 0 
+L 378 4544 
+L 928 4544 
+L 928 2496 
+L 3181 2496 
+L 3181 4544 
+L 3731 4544 
+L 3731 0 
+L 3181 0 
+L 3181 1984 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-184" d="M 1082 0 
+L 538 0 
+L 538 2886 
+L 154 2886 
+L 154 3328 
+L 538 3328 
+L 538 3693 
+Q 538 4237 819 4454 
+Q 1101 4672 1478 4672 
+Q 1792 4672 1997 4544 
+L 1997 4115 
+Q 1811 4205 1594 4205 
+Q 1082 4205 1082 3629 
+L 1082 3328 
+L 2451 3328 
+L 2451 3693 
+Q 2451 4237 2732 4454 
+Q 3014 4672 3392 4672 
+Q 3706 4672 3910 4544 
+L 3910 4115 
+Q 3725 4205 3507 4205 
+Q 2995 4205 2995 3629 
+L 2995 3328 
+L 3910 3328 
+L 3910 2886 
+L 2995 2886 
+L 2995 0 
+L 2451 0 
+L 2451 2886 
+L 1082 2886 
+L 1082 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-41"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(64.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(122.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(185.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(248.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(306.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fa" transform="translate(327.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-156" transform="translate(359.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(417.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(475.328125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(538.328125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(579.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(599.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fa" transform="translate(620.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(653.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(716.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(805.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(825.640625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-175" transform="translate(845.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(902.640625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(924.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-184" transform="translate(984.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(1048.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-dd" transform="translate(1069.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1123.453125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1179.859375 0)"/>
+    </g>
+   </g>
+   <g id="text_29">
+    <!-- (Archegos), proprietary desks -->
+    <g style="fill: #002855" transform="translate(62.64 354.32) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-231" d="M 966 -832 
+Q 627 -224 457 483 
+Q 288 1190 288 2048 
+Q 288 2861 457 3529 
+Q 627 4198 966 4768 
+L 1485 4768 
+Q 1165 4186 1001 3517 
+Q 838 2848 838 2048 
+Q 838 410 1485 -832 
+L 966 -832 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-2" d="M 2477 4544 
+L 4282 0 
+L 3686 0 
+L 3277 1050 
+L 1126 1050 
+L 717 0 
+L 122 0 
+L 1926 4544 
+L 2477 4544 
+z
+M 3078 1562 
+L 2202 3834 
+L 1325 1562 
+L 3078 1562 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-232" d="M 288 -832 
+Q 934 410 934 2048 
+Q 934 2848 771 3517 
+Q 608 4186 288 4768 
+L 806 4768 
+Q 1146 4198 1315 3529 
+Q 1485 2861 1485 2048 
+Q 1485 1190 1315 483 
+Q 1146 -224 806 -832 
+L 288 -832 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-231"/>
+     <use xlink:href="#VisbyCF-Medium-2" transform="translate(27.296875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(96.09375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-dd" transform="translate(132 0)"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(188 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(245.90625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(303.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(366.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(426.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-232" transform="translate(468.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(496.109375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(516.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(537.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(600.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(636.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(696.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(759.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(797.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(817.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(873.640625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(906.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(969.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-175" transform="translate(1006.546875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1063.34375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(1084.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1147.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1204.15625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-118" transform="translate(1246.859375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1297.765625 0)"/>
+    </g>
+   </g>
+   <g id="text_30">
+    <!-- sum by parent dealer -->
+    <g style="fill: #536574" transform="translate(666 356.205) scale(0.15 -0.15)">
+     <use xlink:href="#VisbyCF-Medium-147"/>
+     <use xlink:href="#VisbyCF-Medium-156" transform="translate(42.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(100.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(189.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-db" transform="translate(211.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-175" transform="translate(270.015625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(326.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(348.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(411.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(474.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(510.125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(568.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(624.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(657.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(678.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(741.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(799.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(862.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(882.953125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(940.859375 0)"/>
+    </g>
+   </g>
+   <g id="text_31">
+    <!-- ANALYSIS PANEL -->
+    <g style="fill: #002855" transform="translate(440.64 408.595) scale(0.17 -0.17)">
+     <use xlink:href="#VisbyCF-Bold-2"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(71.40625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-2" transform="translate(142.109375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(213.515625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-b4" transform="translate(252.015625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(315.8125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(370.40625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(394.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(448.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(469.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-2" transform="translate(517.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(588.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(659.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(708.90625 0)"/>
+    </g>
+   </g>
+   <g id="text_32">
+    <!-- 89,510 obs · 18,233 dealer–asset pairs -->
+    <g style="fill: #536574" transform="translate(440.64 436.125) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-1ec" d="M 1766 -64 
+Q 1222 -64 825 208 
+Q 429 480 282 915 
+L 691 1158 
+Q 826 813 1104 614 
+Q 1382 416 1760 416 
+Q 2048 416 2285 534 
+Q 2522 653 2666 883 
+Q 2810 1114 2810 1434 
+Q 2810 1894 2518 2172 
+Q 2227 2451 1779 2451 
+Q 1587 2451 1382 2394 
+L 2394 4064 
+L 544 4064 
+L 544 4544 
+L 3194 4544 
+L 2112 2790 
+Q 2432 2771 2720 2601 
+Q 3008 2432 3184 2125 
+Q 3360 1818 3360 1408 
+Q 3360 966 3149 630 
+Q 2938 294 2573 115 
+Q 2208 -64 1766 -64 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-1f1"/>
+     <use xlink:href="#VisbyCF-Medium-1f2" transform="translate(52.09375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(95.890625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ee" transform="translate(117.296875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(171.59375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1e9" transform="translate(203.59375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(285 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(306.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-db" transform="translate(367.203125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(428.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(471.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-226" transform="translate(492.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(512.3125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ea" transform="translate(533.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1f1" transform="translate(565.71875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(620.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1eb" transform="translate(642.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ec" transform="translate(695.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1ec" transform="translate(752.53125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(809.4375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(830.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(893.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(951.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(1014.75 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1034.953125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(1092.859375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-22e" transform="translate(1130.265625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(1190.265625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1253.265625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1295.96875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1338.671875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(1395.078125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1428.078125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(1449.484375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(1512.484375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(1575.484375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(1595.6875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1632.09375 0)"/>
+    </g>
+   </g>
+   <g id="text_33">
+    <!-- dealer $d$ (parent) -->
+    <g style="fill: #002855" transform="translate(440.64 470.24) scale(0.16 -0.16)">
+     <defs>
+      <path id="Cmmi10-51" d="M 1113 -72 
+Q 709 -72 476 233 
+Q 244 538 244 953 
+Q 244 1363 456 1803 
+Q 669 2244 1030 2536 
+Q 1391 2828 1806 2828 
+Q 1994 2828 2145 2723 
+Q 2297 2619 2381 2444 
+L 2741 3872 
+Q 2766 3981 2772 4044 
+Q 2772 4147 2356 4147 
+Q 2291 4147 2291 4231 
+Q 2294 4247 2305 4287 
+Q 2316 4328 2333 4350 
+Q 2350 4372 2381 4372 
+L 3244 4441 
+Q 3322 4441 3322 4359 
+L 2400 678 
+Q 2356 572 2356 372 
+Q 2356 97 2541 97 
+Q 2741 97 2845 351 
+Q 2950 606 3022 941 
+Q 3034 978 3072 978 
+L 3150 978 
+Q 3175 978 3190 956 
+Q 3206 934 3206 916 
+Q 3094 469 2961 198 
+Q 2828 -72 2528 -72 
+Q 2313 -72 2147 54 
+Q 1981 181 1941 391 
+Q 1528 -72 1113 -72 
+z
+M 1119 97 
+Q 1350 97 1567 270 
+Q 1784 444 1941 678 
+Q 1947 684 1947 703 
+L 2297 2113 
+Q 2259 2338 2131 2500 
+Q 2003 2663 1791 2663 
+Q 1575 2663 1389 2486 
+Q 1203 2309 1075 2069 
+Q 950 1813 836 1366 
+Q 722 919 722 672 
+Q 722 450 817 273 
+Q 913 97 1119 97 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-231" d="M 966 -832 
+Q 627 -224 457 483 
+Q 288 1190 288 2048 
+Q 288 2861 457 3529 
+Q 627 4198 966 4768 
+L 1811 4768 
+Q 1491 4186 1328 3517 
+Q 1165 2848 1165 2048 
+Q 1165 410 1811 -832 
+L 966 -832 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-140" d="M 326 3328 
+L 1184 3328 
+L 1184 2880 
+L 1203 2880 
+Q 1248 2982 1392 3104 
+Q 1536 3226 1763 3309 
+Q 1990 3392 2266 3392 
+Q 2669 3392 3037 3193 
+Q 3405 2995 3635 2604 
+Q 3866 2214 3866 1664 
+Q 3866 1114 3635 723 
+Q 3405 333 3037 134 
+Q 2669 -64 2266 -64 
+Q 1990 -64 1763 19 
+Q 1536 102 1392 224 
+Q 1248 346 1203 448 
+L 1184 448 
+L 1184 -1216 
+L 326 -1216 
+L 326 3328 
+z
+M 1165 1664 
+Q 1165 1363 1293 1145 
+Q 1421 928 1635 816 
+Q 1850 704 2093 704 
+Q 2336 704 2550 816 
+Q 2765 928 2893 1145 
+Q 3021 1363 3021 1664 
+Q 3021 1965 2893 2182 
+Q 2765 2400 2550 2512 
+Q 2336 2624 2093 2624 
+Q 1850 2624 1635 2512 
+Q 1421 2400 1293 2182 
+Q 1165 1965 1165 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-232" d="M 288 -832 
+Q 934 410 934 2048 
+Q 934 2848 771 3517 
+Q 608 4186 288 4768 
+L 1133 4768 
+Q 1472 4198 1641 3529 
+Q 1811 2861 1811 2048 
+Q 1811 1190 1641 483 
+Q 1472 -224 1133 -832 
+L 288 -832 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-e3" transform="translate(0 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(62.999939 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(120.099884 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-11b" transform="translate(183.099823 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(206.699799 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(263.799744 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(304.599701 0.5)"/>
+     <use xlink:href="#Cmmi10-51" transform="translate(325.199677 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(377.20163 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-231" transform="translate(397.801605 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-140" transform="translate(431.001572 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(494.001511 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(557.00145 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(597.801407 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(654.901352 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(714.101303 0.5)"/>
+     <use xlink:href="#VisbyCF-Bold-232" transform="translate(751.40126 0.5)"/>
+    </g>
+   </g>
+   <g id="text_34">
+    <!-- asset $a$ -->
+    <g style="fill: #002855" transform="translate(440.64 501.92) scale(0.16 -0.16)">
+     <defs>
+      <path id="Cmmi10-79" d="M 1113 -72 
+Q 709 -72 476 233 
+Q 244 538 244 953 
+Q 244 1363 456 1803 
+Q 669 2244 1030 2536 
+Q 1391 2828 1806 2828 
+Q 1997 2828 2147 2725 
+Q 2297 2622 2381 2444 
+Q 2453 2700 2663 2700 
+Q 2744 2700 2798 2651 
+Q 2853 2603 2853 2522 
+Q 2853 2503 2851 2493 
+Q 2850 2484 2847 2472 
+L 2400 684 
+Q 2356 494 2356 372 
+Q 2356 97 2541 97 
+Q 2741 97 2845 351 
+Q 2950 606 3022 941 
+Q 3034 978 3072 978 
+L 3150 978 
+Q 3175 978 3190 956 
+Q 3206 934 3206 916 
+Q 3094 469 2961 198 
+Q 2828 -72 2528 -72 
+Q 2313 -72 2147 54 
+Q 1981 181 1941 391 
+Q 1528 -72 1113 -72 
+z
+M 1119 97 
+Q 1350 97 1567 270 
+Q 1784 444 1941 678 
+Q 1947 684 1947 697 
+L 2291 2088 
+L 2297 2106 
+Q 2259 2334 2132 2498 
+Q 2006 2663 1791 2663 
+Q 1575 2663 1389 2486 
+Q 1203 2309 1075 2069 
+Q 950 1813 836 1366 
+Q 722 919 722 672 
+Q 722 450 817 273 
+Q 913 97 1119 97 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(0 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(62.999939 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(106.899902 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(150.799866 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(207.899811 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(245.199768 0.703125)"/>
+     <use xlink:href="#Cmmi10-79" transform="translate(265.799744 0.703125)"/>
+    </g>
+   </g>
+   <g id="text_35">
+    <!-- CUSIP for single names -->
+    <g style="fill: #536574" transform="translate(700.773281 501.645) scale(0.15 -0.15)">
+     <defs>
+      <path id="VisbyCF-Medium-1d" d="M 2630 -64 
+Q 1997 -64 1465 233 
+Q 934 531 624 1062 
+Q 314 1594 314 2272 
+Q 314 2950 624 3481 
+Q 934 4013 1465 4310 
+Q 1997 4608 2630 4608 
+Q 3123 4608 3593 4403 
+Q 4064 4198 4403 3718 
+L 4000 3424 
+Q 3738 3776 3379 3926 
+Q 3021 4077 2643 4077 
+Q 2157 4077 1753 3849 
+Q 1350 3622 1113 3212 
+Q 877 2803 877 2272 
+Q 877 1741 1113 1328 
+Q 1350 915 1753 691 
+Q 2157 467 2650 467 
+Q 3027 467 3382 617 
+Q 3738 768 4000 1120 
+L 4403 826 
+Q 4064 339 3593 137 
+Q 3123 -64 2630 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-95" d="M 2010 -64 
+Q 1542 -64 1171 134 
+Q 800 333 589 713 
+Q 378 1094 378 1626 
+L 378 4544 
+L 928 4544 
+L 928 1632 
+Q 928 1056 1232 758 
+Q 1536 461 2010 461 
+Q 2477 461 2781 758 
+Q 3085 1056 3085 1632 
+L 3085 4544 
+L 3635 4544 
+L 3635 1626 
+Q 3635 1094 3424 713 
+Q 3213 333 2841 134 
+Q 2470 -64 2010 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-85" d="M 1741 -64 
+Q 1171 -64 752 243 
+Q 333 550 218 1043 
+L 672 1254 
+Q 768 890 1053 669 
+Q 1338 448 1741 448 
+Q 2125 448 2381 653 
+Q 2637 858 2637 1229 
+Q 2637 1555 2429 1744 
+Q 2221 1933 1773 2112 
+L 1472 2227 
+Q 947 2438 675 2736 
+Q 403 3034 403 3456 
+Q 403 3802 572 4064 
+Q 742 4326 1040 4467 
+Q 1338 4608 1709 4608 
+Q 2234 4608 2582 4339 
+Q 2931 4070 3078 3661 
+L 2656 3443 
+Q 2368 4102 1722 4102 
+Q 1389 4102 1171 3926 
+Q 954 3750 954 3450 
+Q 954 3200 1123 3011 
+Q 1293 2822 1683 2669 
+L 1990 2547 
+Q 2605 2304 2902 2009 
+Q 3200 1715 3200 1222 
+Q 3200 819 2998 528 
+Q 2797 237 2464 86 
+Q 2131 -64 1741 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-7e" d="M 378 4544 
+L 1856 4544 
+Q 2336 4544 2691 4355 
+Q 3046 4166 3235 3833 
+Q 3424 3501 3424 3066 
+Q 3424 2630 3235 2294 
+Q 3046 1958 2691 1769 
+Q 2336 1581 1856 1581 
+L 928 1581 
+L 928 0 
+L 378 0 
+L 378 4544 
+z
+M 1811 2099 
+Q 2304 2099 2582 2345 
+Q 2861 2592 2861 3066 
+Q 2861 3539 2582 3785 
+Q 2304 4032 1811 4032 
+L 928 4032 
+L 928 2099 
+L 1811 2099 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-1d"/>
+     <use xlink:href="#VisbyCF-Medium-95" transform="translate(72.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-85" transform="translate(135.40625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-45" transform="translate(188.8125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-7e" transform="translate(209.21875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(266.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fa" transform="translate(288.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(320.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(381.421875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(416.828125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(438.234375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(480.9375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(501.140625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(559.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(622.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(642.25 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(700.15625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(721.5625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(779.46875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(842.46875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(931.46875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(987.875 0)"/>
+    </g>
+   </g>
+   <g id="text_36">
+    <!-- quarter $t$ -->
+    <g style="fill: #002855" transform="translate(440.64 533.6) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-142" d="M 2848 -1216 
+L 2848 448 
+L 2829 448 
+Q 2784 346 2640 224 
+Q 2496 102 2269 19 
+Q 2042 -64 1766 -64 
+Q 1363 -64 995 134 
+Q 627 333 396 723 
+Q 166 1114 166 1664 
+Q 166 2214 396 2604 
+Q 627 2995 995 3193 
+Q 1363 3392 1766 3392 
+Q 2042 3392 2269 3309 
+Q 2496 3226 2640 3104 
+Q 2784 2982 2829 2880 
+L 2848 2880 
+L 2848 3328 
+L 3706 3328 
+L 3706 -1216 
+L 2848 -1216 
+z
+M 1011 1664 
+Q 1011 1363 1139 1145 
+Q 1267 928 1481 816 
+Q 1696 704 1939 704 
+Q 2182 704 2396 816 
+Q 2611 928 2739 1145 
+Q 2867 1363 2867 1664 
+Q 2867 1965 2739 2182 
+Q 2611 2400 2396 2512 
+Q 2182 2624 1939 2624 
+Q 1696 2624 1481 2512 
+Q 1267 2400 1139 2182 
+Q 1011 1965 1011 1664 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmmi10-30" d="M 397 519 
+Q 397 613 416 697 
+L 878 2534 
+L 206 2534 
+Q 141 2534 141 2619 
+Q 166 2759 225 2759 
+L 934 2759 
+L 1191 3803 
+Q 1216 3888 1291 3947 
+Q 1366 4006 1459 4006 
+Q 1541 4006 1595 3957 
+Q 1650 3909 1650 3828 
+Q 1650 3809 1648 3798 
+Q 1647 3788 1644 3775 
+L 1388 2759 
+L 2047 2759 
+Q 2113 2759 2113 2675 
+Q 2109 2659 2100 2621 
+Q 2091 2584 2075 2559 
+Q 2059 2534 2028 2534 
+L 1331 2534 
+L 872 684 
+Q 825 503 825 372 
+Q 825 97 1013 97 
+Q 1294 97 1511 361 
+Q 1728 625 1844 941 
+Q 1869 978 1894 978 
+L 1972 978 
+Q 1997 978 2012 961 
+Q 2028 944 2028 922 
+Q 2028 909 2022 903 
+Q 1881 516 1612 222 
+Q 1344 -72 997 -72 
+Q 744 -72 570 93 
+Q 397 259 397 519 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-142" transform="translate(0 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(62.999939 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(122.19989 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(185.199829 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(225.999786 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(263.299744 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(320.399689 0.703125)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(361.199646 0.703125)"/>
+     <use xlink:href="#Cmmi10-30" transform="translate(381.799622 0.703125)"/>
+    </g>
+   </g>
+   <g id="text_37">
+    <!-- net notional $N_L-N_S$ · spreads $s_L$, $s_S$ -->
+    <g style="fill: #002855" transform="translate(440.64 565.28) scale(0.16 -0.16)">
+     <defs>
+      <path id="Cmmi10-5d" d="M 300 0 
+Q 238 0 238 84 
+Q 241 100 250 139 
+Q 259 178 276 201 
+Q 294 225 319 225 
+Q 931 225 1031 616 
+L 1900 4116 
+Q 1722 4147 1338 4147 
+Q 1275 4147 1275 4231 
+Q 1278 4247 1287 4286 
+Q 1297 4325 1314 4348 
+Q 1331 4372 1356 4372 
+L 2463 4372 
+Q 2509 4372 2522 4331 
+L 3944 947 
+L 4653 3781 
+Q 4666 3850 4666 3878 
+Q 4666 4147 4172 4147 
+Q 4109 4147 4109 4231 
+Q 4131 4313 4143 4342 
+Q 4156 4372 4219 4372 
+L 5588 4372 
+Q 5650 4372 5650 4288 
+Q 5647 4272 5637 4233 
+Q 5628 4194 5611 4170 
+Q 5594 4147 5569 4147 
+Q 4956 4147 4856 3756 
+L 3938 56 
+Q 3916 0 3872 0 
+L 3794 0 
+Q 3750 0 3738 44 
+L 2106 3916 
+L 2094 3956 
+Q 2081 3969 2081 3975 
+L 1234 588 
+Q 1228 572 1225 548 
+Q 1222 525 1216 494 
+Q 1216 328 1359 276 
+Q 1503 225 1716 225 
+Q 1778 225 1778 141 
+Q 1756 53 1740 26 
+Q 1725 0 1672 0 
+L 300 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmmi10-55" d="M 300 0 
+Q 238 0 238 84 
+Q 241 100 250 139 
+Q 259 178 276 201 
+Q 294 225 319 225 
+Q 709 225 863 269 
+Q 947 297 984 441 
+L 1863 3956 
+Q 1875 4019 1875 4044 
+Q 1875 4113 1797 4122 
+Q 1678 4147 1338 4147 
+Q 1275 4147 1275 4231 
+Q 1297 4313 1309 4342 
+Q 1322 4372 1381 4372 
+L 3272 4372 
+Q 3328 4372 3328 4288 
+Q 3319 4222 3306 4184 
+Q 3294 4147 3244 4147 
+Q 2772 4147 2613 4116 
+Q 2456 4088 2419 3928 
+L 1544 416 
+Q 1516 338 1516 275 
+Q 1516 225 1734 225 
+L 2328 225 
+Q 2831 225 3143 425 
+Q 3456 625 3606 876 
+Q 3756 1128 3857 1398 
+Q 3959 1669 4006 1678 
+L 4063 1678 
+Q 4128 1678 4128 1594 
+L 3559 44 
+Q 3550 0 3500 0 
+L 300 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmsy10-11" d="M 653 1472 
+Q 600 1472 565 1512 
+Q 531 1553 531 1600 
+Q 531 1647 565 1687 
+Q 600 1728 653 1728 
+L 4325 1728 
+Q 4375 1728 4408 1687 
+Q 4441 1647 4441 1600 
+Q 4441 1553 4408 1512 
+Q 4375 1472 4325 1472 
+L 653 1472 
+z
+" transform="scale(0.015625)"/>
+      <path id="Cmmi10-58" d="M 556 391 
+Q 728 97 1247 97 
+Q 1472 97 1675 173 
+Q 1878 250 2011 403 
+Q 2144 556 2144 775 
+Q 2144 941 2025 1047 
+Q 1906 1153 1734 1191 
+L 1388 1259 
+Q 1150 1319 997 1481 
+Q 844 1644 844 1875 
+Q 844 2159 998 2378 
+Q 1153 2597 1406 2712 
+Q 1659 2828 1931 2828 
+Q 2222 2828 2451 2689 
+Q 2681 2550 2681 2278 
+Q 2681 2131 2598 2018 
+Q 2516 1906 2369 1906 
+Q 2284 1906 2223 1961 
+Q 2163 2016 2163 2100 
+Q 2163 2175 2205 2245 
+Q 2247 2316 2317 2358 
+Q 2388 2400 2463 2400 
+Q 2406 2538 2251 2600 
+Q 2097 2663 1919 2663 
+Q 1756 2663 1593 2597 
+Q 1431 2531 1332 2404 
+Q 1234 2278 1234 2106 
+Q 1234 1991 1315 1903 
+Q 1397 1816 1516 1778 
+L 1888 1703 
+Q 2066 1666 2214 1570 
+Q 2363 1475 2448 1329 
+Q 2534 1184 2534 997 
+Q 2534 759 2401 528 
+Q 2269 297 2075 159 
+Q 1734 -72 1241 -72 
+Q 900 -72 615 84 
+Q 331 241 331 550 
+Q 331 725 432 854 
+Q 534 984 709 984 
+Q 813 984 883 921 
+Q 953 859 953 756 
+Q 953 609 843 500 
+Q 734 391 588 391 
+L 556 391 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-122"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(57.899948 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(115.799896 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(148.799866 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(170.199844 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(228.099792 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(288.899734 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(321.899704 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(342.099686 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(402.899628 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(460.799576 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(523.799515 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(543.999496 0)"/>
+     <use xlink:href="#Cmmi10-5d" transform="translate(565.399475 0)"/>
+     <use xlink:href="#Cmmi10-55" transform="translate(645.721741 -14.999962) scale(0.7)"/>
+     <use xlink:href="#Cmsy10-11" transform="translate(719.054518 0)"/>
+     <use xlink:href="#Cmmi10-5d" transform="translate(816.740122 0)"/>
+     <use xlink:href="#Cmmi10-43" transform="translate(897.062388 -14.999962) scale(0.7)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(945.678311 0)"/>
+     <use xlink:href="#VisbyCF-Medium-226" transform="translate(967.07829 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(986.578274 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1007.978253 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(1050.67822 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(1113.678159 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1151.078122 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(1208.97807 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(1271.978009 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1334.977948 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1377.677914 0)"/>
+     <use xlink:href="#Cmmi10-58" transform="translate(1399.077893 0)"/>
+     <use xlink:href="#Cmmi10-55" transform="translate(1445.855237 -14.999962) scale(0.7)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(1499.187957 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(1520.587936 0)"/>
+     <use xlink:href="#Cmmi10-58" transform="translate(1541.987914 0)"/>
+     <use xlink:href="#Cmmi10-43" transform="translate(1588.765258 -14.999962) scale(0.7)"/>
+    </g>
+   </g>
+   <g id="text_38">
+    <!-- HHI$_{a,t}$ · Credit Suisse exposure -->
+    <g style="fill: #002855" transform="translate(440.64 596.64) scale(0.16 -0.16)">
+     <defs>
+      <path id="Cmmi10-2c" d="M 634 -1153 
+Q 634 -1125 659 -1100 
+Q 891 -878 1019 -587 
+Q 1147 -297 1147 25 
+L 1147 103 
+Q 1044 0 891 0 
+Q 744 0 641 103 
+Q 538 206 538 353 
+Q 538 503 641 603 
+Q 744 703 891 703 
+Q 1119 703 1216 492 
+Q 1313 281 1313 25 
+Q 1313 -331 1170 -651 
+Q 1028 -972 769 -1228 
+Q 744 -1241 728 -1241 
+Q 697 -1241 665 -1212 
+Q 634 -1184 634 -1153 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-174" d="M 1408 1702 
+L 205 3328 
+L 826 3328 
+L 1722 2099 
+L 2618 3328 
+L 3238 3328 
+L 2029 1702 
+L 3315 0 
+L 2682 0 
+L 1722 1299 
+L 755 0 
+L 122 0 
+L 1408 1702 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-41"/>
+     <use xlink:href="#VisbyCF-Medium-41" transform="translate(64.199936 0)"/>
+     <use xlink:href="#VisbyCF-Medium-45" transform="translate(128.399872 0)"/>
+     <use xlink:href="#Cmmi10-79" transform="translate(152.804141 -14.999962) scale(0.7)"/>
+     <use xlink:href="#Cmmi10-2c" transform="translate(189.752383 -14.999962) scale(0.7)"/>
+     <use xlink:href="#Cmmi10-30" transform="translate(223.132306 -14.999962) scale(0.7)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(254.111511 0)"/>
+     <use xlink:href="#VisbyCF-Medium-226" transform="translate(275.51149 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(295.011474 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1d" transform="translate(316.411453 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(389.111389 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(426.511352 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(484.4113 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(547.411239 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(567.611221 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(600.61119 0)"/>
+     <use xlink:href="#VisbyCF-Medium-85" transform="translate(622.011169 0)"/>
+     <use xlink:href="#VisbyCF-Medium-156" transform="translate(675.411117 0)"/>
+     <use xlink:href="#VisbyCF-Medium-106" transform="translate(733.311065 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(753.511047 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(796.211013 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(838.91098 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(896.810928 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(918.210907 0)"/>
+     <use xlink:href="#VisbyCF-Medium-174" transform="translate(976.110855 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(1029.810806 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(1092.810745 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(1153.610687 0)"/>
+     <use xlink:href="#VisbyCF-Medium-156" transform="translate(1196.310653 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(1254.210601 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(1291.610565 0)"/>
+    </g>
+   </g>
+   <g id="patch_15">
+    <path d="M 424.8 608.4 
+L 871.2 608.4 
+L 871.2 381.6 
+L 424.8 381.6 
+L 424.8 608.4 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_39">
+    <!-- LSEG (REFINITIV) -->
+    <g style="fill: #002855" transform="translate(62.64 432.355) scale(0.17 -0.17)">
+     <defs>
+      <path id="VisbyCF-Bold-ad" d="M 102 4544 
+L 1050 4544 
+L 2317 1094 
+L 3584 4544 
+L 4531 4544 
+L 2778 0 
+L 1850 0 
+L 102 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-58"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(48.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(103.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-3a" transform="translate(148.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(226.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-231" transform="translate(246.890625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(280.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(341.6875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-39" transform="translate(391.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(439.890625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(463.6875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(534.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-8f" transform="translate(558.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(611.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-ad" transform="translate(634.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-232" transform="translate(707.390625 0)"/>
+    </g>
+   </g>
+   <g id="text_40">
+    <!-- dealer (subset) -->
+    <g style="fill: #002855" transform="translate(62.64 470.24) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-db" d="M 1184 4544 
+L 1184 2880 
+L 1203 2880 
+Q 1248 2982 1392 3104 
+Q 1536 3226 1763 3309 
+Q 1990 3392 2266 3392 
+Q 2669 3392 3037 3193 
+Q 3405 2995 3635 2604 
+Q 3866 2214 3866 1664 
+Q 3866 1114 3635 723 
+Q 3405 333 3037 134 
+Q 2669 -64 2266 -64 
+Q 1990 -64 1763 19 
+Q 1536 102 1392 224 
+Q 1248 346 1203 448 
+L 1184 448 
+L 1184 0 
+L 326 0 
+L 326 4544 
+L 1184 4544 
+z
+M 1165 1664 
+Q 1165 1363 1293 1145 
+Q 1421 928 1635 816 
+Q 1850 704 2093 704 
+Q 2336 704 2550 816 
+Q 2765 928 2893 1145 
+Q 3021 1363 3021 1664 
+Q 3021 1965 2893 2182 
+Q 2765 2400 2550 2512 
+Q 2336 2624 2093 2624 
+Q 1850 2624 1635 2512 
+Q 1421 2400 1293 2182 
+Q 1165 1965 1165 1664 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-e3"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(63 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(120.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-11b" transform="translate(183.09375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(206.6875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(263.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(302.578125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-231" transform="translate(323.171875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(356.375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(400.28125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-db" transform="translate(459.484375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(520.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(564.890625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(620.484375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-232" transform="translate(657.78125 0)"/>
+    </g>
+   </g>
+   <g id="text_41">
+    <!-- 6-month CDS spread $c_L$ -->
+    <g style="fill: #002855" transform="translate(62.64 501.92) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Medium-22c" d="M 288 2010 
+L 2272 2010 
+L 2272 1562 
+L 288 1562 
+L 288 2010 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Medium-23" d="M 378 4544 
+L 1741 4544 
+Q 2406 4544 2912 4259 
+Q 3418 3974 3696 3459 
+Q 3974 2944 3974 2272 
+Q 3974 1600 3696 1085 
+Q 3418 570 2912 285 
+Q 2406 0 1741 0 
+L 378 0 
+L 378 4544 
+z
+M 1722 525 
+Q 2522 525 2963 998 
+Q 3405 1472 3405 2272 
+Q 3405 3072 2963 3545 
+Q 2522 4019 1722 4019 
+L 928 4019 
+L 928 525 
+L 1722 525 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Medium-1ef"/>
+     <use xlink:href="#VisbyCF-Medium-22c" transform="translate(54.999954 0)"/>
+     <use xlink:href="#VisbyCF-Medium-121" transform="translate(94.999924 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(183.999832 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(244.799774 0)"/>
+     <use xlink:href="#VisbyCF-Medium-150" transform="translate(302.699722 0)"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(335.699692 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(393.59964 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1d" transform="translate(414.999619 0)"/>
+     <use xlink:href="#VisbyCF-Medium-23" transform="translate(487.699554 0)"/>
+     <use xlink:href="#VisbyCF-Medium-85" transform="translate(553.699493 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(607.099442 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(628.49942 0)"/>
+     <use xlink:href="#VisbyCF-Medium-140" transform="translate(671.199387 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(734.199326 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(771.599289 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(829.499237 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(892.499176 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(955.499115 0)"/>
+     <use xlink:href="#Cmmi10-7f" transform="translate(976.899094 0)"/>
+     <use xlink:href="#Cmmi10-55" transform="translate(1020.111984 -14.999962) scale(0.7)"/>
+    </g>
+   </g>
+   <g id="patch_16">
+    <path d="M 46.8 513.36 
+L 360 513.36 
+L 360 405.36 
+L 46.8 405.36 
+L 46.8 513.36 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #4477aa; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_42">
+    <!-- SEC 13F, RAW FILINGS -->
+    <g style="fill: #002855" transform="translate(951.84 432.355) scale(0.17 -0.17)">
+     <defs>
+      <path id="VisbyCF-Bold-1ea" d="M 1075 3757 
+L 339 3757 
+L 339 4544 
+L 1939 4544 
+L 1939 0 
+L 1075 0 
+L 1075 3757 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-1ec" d="M 1792 -64 
+Q 1222 -64 806 217 
+Q 390 499 230 941 
+L 864 1325 
+Q 992 1011 1232 851 
+Q 1472 691 1760 691 
+Q 2112 691 2352 912 
+Q 2592 1133 2592 1517 
+Q 2592 1888 2355 2115 
+Q 2118 2342 1741 2342 
+Q 1517 2342 1286 2259 
+L 2093 3795 
+L 480 3795 
+L 480 4544 
+L 3328 4544 
+L 2387 2848 
+Q 2675 2797 2921 2611 
+Q 3168 2426 3318 2128 
+Q 3469 1830 3469 1459 
+Q 3469 1005 3245 659 
+Q 3021 314 2637 125 
+Q 2253 -64 1792 -64 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-ae" d="M 134 4544 
+L 1056 4544 
+L 1946 1517 
+L 2918 4544 
+L 3616 4544 
+L 4582 1517 
+L 5478 4544 
+L 6400 4544 
+L 4986 0 
+L 4294 0 
+L 3264 3059 
+L 2240 0 
+L 1542 0 
+L 134 4544 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-85"/>
+     <use xlink:href="#VisbyCF-Bold-28" transform="translate(54.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1d" transform="translate(100.296875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(172.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1ea" transform="translate(193.390625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1ec" transform="translate(230.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-39" transform="translate(288.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-21e" transform="translate(332.28125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(357.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-81" transform="translate(377.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-2" transform="translate(438.375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-ae" transform="translate(496.28125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(598.375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-39" transform="translate(618.96875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(667.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-58" transform="translate(691.265625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(740.765625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5f" transform="translate(764.5625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-3a" transform="translate(835.265625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(909.765625 0)"/>
+    </g>
+   </g>
+   <g id="text_43">
+    <!-- Other Included Managers -->
+    <g style="fill: #002855" transform="translate(951.84 470.24) scale(0.16 -0.16)">
+     <defs>
+      <path id="VisbyCF-Bold-102" d="M 326 4544 
+L 1184 4544 
+L 1184 2874 
+Q 1331 3110 1587 3251 
+Q 1843 3392 2202 3392 
+Q 2752 3392 3107 3033 
+Q 3462 2675 3462 1958 
+L 3462 0 
+L 2605 0 
+L 2605 1818 
+Q 2605 2189 2416 2406 
+Q 2227 2624 1894 2624 
+Q 1568 2624 1376 2403 
+Q 1184 2182 1184 1818 
+L 1184 0 
+L 326 0 
+L 326 4544 
+z
+" transform="scale(0.015625)"/>
+      <path id="VisbyCF-Bold-fb" d="M 1952 -1331 
+Q 1658 -1331 1395 -1276 
+Q 1133 -1222 986 -1126 
+L 986 -429 
+Q 1101 -506 1331 -560 
+Q 1562 -614 1798 -614 
+Q 2285 -614 2566 -400 
+Q 2848 -186 2848 192 
+L 2848 448 
+L 2810 448 
+Q 2765 346 2624 224 
+Q 2483 102 2262 19 
+Q 2042 -64 1766 -64 
+Q 1363 -64 995 134 
+Q 627 333 396 723 
+Q 166 1114 166 1664 
+Q 166 2214 396 2604 
+Q 627 2995 995 3193 
+Q 1363 3392 1766 3392 
+Q 2042 3392 2262 3309 
+Q 2483 3226 2624 3104 
+Q 2765 2982 2810 2880 
+L 2848 2880 
+L 2848 3328 
+L 3706 3328 
+L 3706 250 
+Q 3706 -608 3181 -969 
+Q 2656 -1331 1952 -1331 
+z
+M 1011 1664 
+Q 1011 1363 1139 1145 
+Q 1267 928 1481 816 
+Q 1696 704 1939 704 
+Q 2323 704 2595 960 
+Q 2867 1216 2867 1664 
+Q 2867 2112 2595 2368 
+Q 2323 2624 1939 2624 
+Q 1696 2624 1481 2512 
+Q 1267 2400 1139 2182 
+Q 1011 1965 1011 1664 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#VisbyCF-Bold-65"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(81.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-102" transform="translate(118.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(177.703125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(234.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(273.59375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(294.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(317.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-dd" transform="translate(377.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-11b" transform="translate(432.1875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(455.78125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e3" transform="translate(514.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(577.984375 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e3" transform="translate(635.078125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-1" transform="translate(698.078125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-5e" transform="translate(718.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(805.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-122" transform="translate(868.46875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(927.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-fb" transform="translate(990.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(1053.671875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(1110.765625 0)"/>
+     <use xlink:href="#VisbyCF-Bold-147" transform="translate(1150.5625 0)"/>
+    </g>
+   </g>
+   <g id="text_44">
+    <!-- CUSIP -->
+    <g style="fill: #002855" transform="translate(951.84 501.92) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Bold-1d"/>
+     <use xlink:href="#VisbyCF-Bold-95" transform="translate(72.5 0)"/>
+     <use xlink:href="#VisbyCF-Bold-85" transform="translate(136.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-45" transform="translate(190.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-7e" transform="translate(214.59375 0)"/>
+    </g>
+   </g>
+   <g id="text_45">
+    <!-- quarter -->
+    <g style="fill: #002855" transform="translate(951.84 533.6) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Bold-142"/>
+     <use xlink:href="#VisbyCF-Bold-156" transform="translate(63 0)"/>
+     <use xlink:href="#VisbyCF-Bold-c2" transform="translate(122.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(185.203125 0)"/>
+     <use xlink:href="#VisbyCF-Bold-150" transform="translate(226 0)"/>
+     <use xlink:href="#VisbyCF-Bold-e8" transform="translate(262.796875 0)"/>
+     <use xlink:href="#VisbyCF-Bold-143" transform="translate(319.890625 0)"/>
+    </g>
+   </g>
+   <g id="text_46">
+    <!-- shares held, long only -->
+    <g style="fill: #002855" transform="translate(951.84 565.28) scale(0.16 -0.16)">
+     <use xlink:href="#VisbyCF-Medium-147"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(42.703125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-c2" transform="translate(100.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-143" transform="translate(163.609375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(199.515625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-147" transform="translate(255.921875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(298.625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-102" transform="translate(320.03125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e8" transform="translate(377.9375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(435.84375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-e3" transform="translate(456.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-21e" transform="translate(519.046875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(539.453125 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(560.859375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(581.0625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(641.859375 0)"/>
+     <use xlink:href="#VisbyCF-Medium-fb" transform="translate(699.765625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-1" transform="translate(762.765625 0)"/>
+     <use xlink:href="#VisbyCF-Medium-128" transform="translate(784.171875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-122" transform="translate(844.96875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-11b" transform="translate(902.875 0)"/>
+     <use xlink:href="#VisbyCF-Medium-175" transform="translate(923.078125 0)"/>
+    </g>
+   </g>
+   <g id="patch_17">
+    <path d="M 936 576.72 
+L 1249.2 576.72 
+L 1249.2 405.36 
+L 936 405.36 
+L 936 576.72 
+z
+" clip-path="url(#pd8dd5e59c8)" style="fill: none; stroke: #002855; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_29">
+    <defs>
+     <path id="m166f005f23" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #002855"/>
+    </defs>
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m166f005f23" x="360" y="148.32" style="fill: #002855; stroke: #002855"/>
+     <use xlink:href="#m166f005f23" x="424.8" y="148.32" style="fill: #002855; stroke: #002855"/>
+    </g>
+   </g>
+   <g id="line2d_30">
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m166f005f23" x="871.2" y="116.64" style="fill: #002855; stroke: #002855"/>
+     <use xlink:href="#m166f005f23" x="936" y="116.64" style="fill: #002855; stroke: #002855"/>
+    </g>
+   </g>
+   <g id="line2d_31">
+    <defs>
+     <path id="m0075f7a438" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #ee6677"/>
+    </defs>
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m0075f7a438" x="871.2" y="306.72" style="fill: #ee6677; stroke: #ee6677"/>
+     <use xlink:href="#m0075f7a438" x="936" y="306.72" style="fill: #ee6677; stroke: #ee6677"/>
+    </g>
+   </g>
+   <g id="line2d_32">
+    <defs>
+     <path id="mdf8047c870" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #4477aa"/>
+    </defs>
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#mdf8047c870" x="360" y="465.84" style="fill: #4477aa; stroke: #4477aa"/>
+     <use xlink:href="#mdf8047c870" x="424.8" y="465.84" style="fill: #4477aa; stroke: #4477aa"/>
+    </g>
+   </g>
+   <g id="line2d_33">
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m166f005f23" x="871.2" y="465.84" style="fill: #002855; stroke: #002855"/>
+     <use xlink:href="#m166f005f23" x="936" y="465.84" style="fill: #002855; stroke: #002855"/>
+    </g>
+   </g>
+   <g id="line2d_34">
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m166f005f23" x="871.2" y="497.52" style="fill: #002855; stroke: #002855"/>
+     <use xlink:href="#m166f005f23" x="936" y="497.52" style="fill: #002855; stroke: #002855"/>
+    </g>
+   </g>
+   <g id="line2d_35">
+    <g clip-path="url(#pd8dd5e59c8)">
+     <use xlink:href="#m166f005f23" x="871.2" y="529.2" style="fill: #002855; stroke: #002855"/>
+     <use xlink:href="#m166f005f23" x="936" y="529.2" style="fill: #002855; stroke: #002855"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd8dd5e59c8">
+   <rect x="0" y="0" width="1296" height="640.8"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,86 @@
+project:
+  type: default
+  render:
+    - discussion.qmd
+  output-dir: docs
+  resources:
+    - theme/fonts.css
+    - theme/fonts/*.woff2
+    - theme/assets/*.svg
+    # MathJax loads TeX extensions, font tables and WOFF2 ranges lazily. Quarto
+    # cannot infer those JavaScript-created requests, so copy the complete local
+    # runtime explicitly for cold-cache playback.
+    - vendor/mathjax/**
+    - vendor/mathjax-fonts/**
+
+# Preserve TeX after Quarto's own filters run (see theme/MATH.md).
+filters:
+  - quarto
+  - theme/math-preserve.lua
+  - theme/select-math.lua
+
+# Shared across every deck in this directory. Per-deck overrides go in the
+# deck's own YAML front matter.
+format:
+  revealjs:
+    logo: theme/assets/logo_carre_hec_montreal_bleu_web.svg
+    theme: [default, theme/custom.scss, theme/hec.scss]
+    template-partials:
+      - theme/title-slide.html
+    include-in-header:
+      - text: '<link rel="stylesheet" href="theme/fonts.css">'
+    include-after-body:
+      - theme/tooltips.html
+      - theme/section-progress.html
+
+    # --- math -------------------------------------------------------------
+    # The header loads MathJax 4 with New Computer Modern SVG math. Plain output
+    # bypasses Reveal's legacy plugin; math-preserve.lua retains TeX and macros.
+    html-math-method: plain
+
+    # --- navigation & links ----------------------------------------------
+    hash: true                 # every slide gets a stable #/id -> deep-linkable
+    hash-one-based-index: false
+    history: true              # slides land in browser history (back button works)
+    slide-number: c/t
+    menu:
+      side: left
+      numbers: true
+    preview-links: auto        # external links open in an in-deck iframe overlay
+    link-external-icon: true
+    link-external-newwindow: true
+
+    # --- presentation aids ------------------------------------------------
+    chalkboard:                # `b` = chalkboard, `c` = draw on slide
+      buttons: true
+    controls: true
+    progress: true
+    touch: true
+    transition: fade
+    background-transition: fade
+    view-distance: 5           # pre-render neighbours so animations are smooth
+
+    # --- layout -----------------------------------------------------------
+    width: 1280
+    height: 780
+    margin: 0.06
+    center: false
+    fig-align: center
+    fig-responsive: true
+
+    # --- code -------------------------------------------------------------
+    highlight-style: github
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: true
+
+    # --- references -------------------------------------------------------
+    bibliography: references.bib
+    citations-hover: true      # hover a citation -> popup with the full entry
+    link-citations: true
+
+execute:
+  echo: true
+  warning: false
+  freeze: auto                 # cache cell output; re-run only when the cell changes
+  cache: true

@@ -1,0 +1,99 @@
+<script>
+(() => {
+  const start = () => {
+    const deck = window.Reveal;
+    if (!deck || document.querySelector('.hec-section-progress')) return;
+    const root = deck.getRevealElement();
+    const indicator = document.createElement('div');
+    indicator.className = 'hec-section-progress';
+    indicator.hidden = true;
+    const label = document.createElement('span');
+    label.className = 'hec-section-label';
+    const position = document.createElement('span');
+    position.className = 'hec-section-position';
+    indicator.append(label, position);
+    root.append(indicator);
+
+    const contexts = new Map();
+    let section;
+    for (const slide of deck.getSlides()) {
+      if (slide.matches('.section-divider, .title-slide.level1')) {
+        const heading = slide.querySelector(':scope > h1, :scope > h2');
+        section = {
+          label: slide.dataset.sectionLabel || heading?.textContent.trim() || '',
+          total: 0
+        };
+        contexts.set(slide, { section, index: 0 });
+      } else if (section && slide.id !== 'title-slide') {
+        contexts.set(slide, { section, index: ++section.total });
+      }
+    }
+
+    const intersects = (a, b) => a.top < b.bottom && a.bottom > b.top;
+    const place = () => {
+      const number = root.querySelector('.slide-number');
+      if (!number || !number.offsetWidth || !number.offsetHeight) {
+        indicator.hidden = true;
+        return;
+      }
+      const context = contexts.get(deck.getCurrentSlide());
+      number.classList.toggle('hec-number', Boolean(context));
+      number.style.removeProperty('right');
+      number.style.removeProperty('bottom');
+      indicator.hidden = !context;
+      if (!context) return;
+      label.textContent = context.section.label;
+      position.textContent = context.index ? `${context.index}/${context.section.total}` : '';
+      indicator.title = `${context.section.label}${context.index ? ` · ${context.index} of ${context.section.total}` : ''}`;
+      const bounds = root.getBoundingClientRect();
+      let nr = number.getBoundingClientRect();
+      // Quarto's edge controls container spans the viewport; only the actual
+      // visible buttons are obstacles, and only when their rectangles overlap.
+      for (const button of root.querySelectorAll('.controls button')) {
+        const style = getComputedStyle(button);
+        const cr = button.getBoundingClientRect();
+        if (style.display !== 'none' && style.visibility !== 'hidden' &&
+            Number(style.opacity) > 0 && cr.width && cr.height &&
+            intersects(nr, cr) && nr.left < cr.right && nr.right > cr.left) {
+          number.style.right = `${Math.max(16, bounds.right - cr.left + 14)}px`;
+          nr = number.getBoundingClientRect();
+        }
+      }
+      let left = bounds.left + 16;
+      const footer = root.querySelector('.footer');
+      if (footer && footer.offsetHeight) {
+        const range = document.createRange();
+        range.selectNodeContents(footer);
+        const fr = range.getBoundingClientRect();
+        if (intersects(nr, fr)) {
+          left = Math.max(left, fr.right + 20);
+          if (nr.left - left < 230) {
+            number.style.bottom = `${bounds.bottom - fr.top + 12}px`;
+            nr = number.getBoundingClientRect();
+            left = bounds.left + 16;
+          }
+        }
+      }
+      indicator.style.maxWidth = `${Math.max(0, Math.min(420, nr.left - left - 10))}px`;
+      indicator.style.right = `${bounds.right - nr.left + 10}px`;
+      indicator.style.bottom = `${bounds.bottom - nr.bottom + (nr.height - indicator.offsetHeight) / 2}px`;
+    };
+    let frame;
+    const update = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(place);
+    };
+    deck.on('slidechanged', update);
+    deck.on('resize', update);
+    window.addEventListener('resize', update);
+    document.fonts?.ready.then(update);
+    update();
+  };
+  const connect = () => {
+    if (window.Reveal?.isReady()) start();
+    else window.Reveal?.on('ready', start);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', connect, { once: true });
+  else connect();
+})();
+</script>
