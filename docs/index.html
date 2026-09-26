@@ -151,7 +151,7 @@
     },
     options: {
       worker: {
-        path: 'vendor/mathjax/sre'
+        path: new URL('vendor/mathjax/sre', document.baseURI).href
       }
     },
     startup: {
