@@ -295,7 +295,7 @@
 <tr class="odd">
 <td style="text-align: left;"><strong>N-PORT</strong></td>
 <td style="text-align: right;"><strong>$0.38tn</strong></td>
-<td style="text-align: left;">Equity swap notional in Q2 2026</td>
+<td style="text-align: left;">Equity swap notional, SEC’s 2026 Q2 file</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>SEC</strong></td>
@@ -310,7 +310,7 @@
 </tbody>
 </table>
 <p><span class="muted">SEC and BIS: December 2025.</span></p>
-<p><strong>N-PORT / SEC = 11.3%, N-PORT / BIS = 6.0%.</strong></p>
+<p><strong>N-PORT / SEC = 3.2–11.3%</strong> (without / with index swaps), <strong>N-PORT / BIS = 6.0%.</strong></p>
 </div></div>
 <div class="takeaway missing-clients fragment unfold">
 <p><strong>Missing hedge funds, family offices and prop desks → how representative is dealer net exposure?</strong><span class="fragment alarm-switch"></span></p>
@@ -324,7 +324,7 @@
 </section>
 <section id="separate-books" class="slide level2 separate-books-slide">
 <h2>Strong qualitative support for theory—despite incomplete coverage</h2>
-<p>Could registered funds trade with <span class="tol-blue"><strong>separate dealer books</strong></span>?<br>
+<p>Could registered funds trade with <strong>separate dealer books</strong>?<br>
 N-PORT might capture the <strong>relevant</strong> inventory.</p>
 <h3 id="anecdotal-evidence">Anecdotal evidence…</h3>
 <table class="caption-top">
@@ -361,9 +361,9 @@ N-PORT might capture the <strong>relevant</strong> inventory.</p>
 </div>
 </section>
 <section id="nport-underlyings" class="slide level2 underlyings-slide">
-<h2>N-PORT, 2026 Q2: underlying assets</h2>
+<h2>N-PORT 2026 Q2 file: underlying assets</h2>
 <div class="lead">
-<p>Single stocks are 89% of positions but 22% of gross notional; indices and baskets more economically important at 71%.</p>
+<p>Single stocks are 89% of positions but only 22% of gross notional; indices and baskets carry 71%.</p>
 </div>
 <table class="caption-top" style="width:100%;">
 <colgroup>
@@ -435,7 +435,7 @@ N-PORT might capture the <strong>relevant</strong> inventory.</p>
 </tbody>
 </table>
 <div class="smaller muted">
-<p>Notional in $bn. Data from 2026 Q2, 1,120 funds reporting between February and April 2026. Data source: <a href="https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets">SEC N-PORT data</a>, <a href="https://www.sec.gov/files/formn-port.pdf">Form N-PORT</a>; own calculation.</p>
+<p>Notional in $bn. SEC’s 2026 Q2 N-PORT file: 1,120 funds, report dates February–April 2026. Data source: <a href="https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets">SEC N-PORT data</a>, <a href="https://www.sec.gov/files/formn-port.pdf">Form N-PORT</a>; own calculation.</p>
 </div>
 </section>
 <section id="index-lab" class="slide level2 index-lab-slide">
@@ -459,14 +459,14 @@ N-PORT might capture the <strong>relevant</strong> inventory.</p>
 </ul>
 </div>
 <div class="lab-point fragment">
-<p><strong>Additional tests</strong></p>
+<p><strong>Additionaler tests</strong></p>
 <ul>
 <li><strong>Hedge-cost ladder:</strong> hard-to-borrow → easy-to-borrow stocks → ETFs → indices; we should see effects <strong>shrink</strong></li>
 <li><strong>Table 2: compare dealers serving both long and short clients</strong> in the same asset. Does the <span class="term-spread">spread difference</span> between <span class="term-long">net long</span> and <span class="term-short">net short</span> demand persist with <span class="nowrap">asset × quarter FE</span>?</li>
 <li><strong>Leveraged and inverse ETFs:</strong> bull and bear funds on <strong>one index, one sponsor, shared dealers</strong>
 <ul>
 <li><span class="term-long">bull</span> demand dominates → <span class="term-short">bear</span> funds should <span class="term-spread">pay the least</span>, or even be paid</li>
-<li>bear funds should <strong>route their swaps</strong> to the dealers whose books lean long</li>
+<li>bear funds should <strong>route their swaps</strong> to dealers facing <span class="term-long">net long</span> demand</li>
 <li>the bull–bear <span class="term-spread">pricing gap</span> should widen from index funds to single-stock funds</li>
 </ul></li>
 </ul>
@@ -485,8 +485,8 @@ R = bF + \varepsilon
 </ul></li>
 <li>More likely for:
 <ul>
-<li>dealers with high <span class="term-cost">cost of leverage</span> when <span class="term-long">net long</span> → less gross balance sheet</li>
-<li>stocks with high <span class="term-cost">borrow cost</span> <strong>relative to residual risk</strong> when <span class="term-short">net short</span> → short cheap-to-borrow stocks with the same loadings</li>
+<li>dealers with high <span class="term-cost">cost of leverage</span> when demand is <span class="term-long">net long</span> → less gross balance sheet</li>
+<li>stocks with high <span class="term-cost">borrow cost</span> <strong>relative to residual risk</strong> when demand is <span class="term-short">net short</span> → short cheap-to-borrow stocks with the same loadings</li>
 </ul></li>
 </ul>
 <div class="factor-model">
@@ -495,7 +495,7 @@ R = bF + \varepsilon
 <p><span class="factor-old">Honkanen, equation (4): single-asset inventory cost</span> <span class="factor-new">Proposed extension: penalize remaining portfolio risk</span></p>
 </div>
 <div class="factor-equation">
-<p><span class="factor-objective factor-old"><span class="math inline">\(O(H_L,H_S)\)</span></span> <span class="factor-objective factor-new"><span class="math inline">\(O(\mathbf H_L,\mathbf H_S)\)</span></span> <span class="factor-fixed"><span class="math inline">\(=\Pi-\)</span></span> <span class="factor-penalty factor-old"><span class="math inline">\(\gamma P^2\)</span></span> <span class="factor-penalty factor-new tol-red"><span class="math inline">\(\frac{\rho}{2}\underbrace{\mathbf P^\top\Sigma\mathbf P}_{\mkern-36mu\text{portfolio variance}\mkern-36mu}\)</span></span></p>
+<p><span class="factor-objective factor-old"><span class="math inline">\(O(H_L,H_S)\)</span></span> <span class="factor-objective factor-new"><span class="math inline">\(O(\mathbf H_L,\mathbf H_S)\)</span></span> <span class="factor-fixed"><span class="math inline">\(=\Pi-\)</span></span> <span class="factor-penalty factor-old"><span class="math inline">\(\gamma P^2\)</span></span> <span class="factor-penalty factor-new term-cost"><span class="math inline">\(\frac{\rho}{2}\underbrace{\mathbf P^\top\Sigma\mathbf P}_{\mkern-36mu\text{portfolio variance}\mkern-36mu}\)</span></span></p>
 </div>
 <div class="factor-definitions">
 <p><span class="factor-old"><span class="math inline">\(P\)</span>: remaining exposure after hedging</span> <span class="factor-new"><span class="math inline">\(\mathbf P\)</span>: stacked dealer positions for every stock; <span class="math inline">\(\Sigma\)</span>: return covariance; <span class="math inline">\(\rho\)</span>: risk aversion</span></p>
@@ -545,14 +545,20 @@ R = bF + \varepsilon
 <div class="typo-list">
 <ul>
 <li><span class="muted">p.&nbsp;2, fn. 4</span> “Eisfeldt et al.&nbsp;(2022) finds” → <em>find</em></li>
+<li><span class="muted">p.&nbsp;4</span> “reasonable creditworthy” → <em>reasonably</em></li>
+<li><span class="muted">p.&nbsp;5</span> “Shaeffler AG” → <em>Schaeffler</em></li>
 <li><span class="muted">p.&nbsp;6</span> “the traded would pay” → <em>trader</em></li>
 <li><span class="muted">p.&nbsp;7</span> “the trades pays” → <em>trader pays</em></li>
 <li><span class="muted">p.&nbsp;19</span> “the dealer’s switches” → <em>dealer switches</em></li>
 <li><span class="muted">p.&nbsp;21</span> “fixed fixed” → <em>fixed effects</em></li>
 <li><span class="muted">p.&nbsp;21</span> “coefficients this identify” → <em>thus</em></li>
 <li><span class="muted">p.&nbsp;24, fn. 20</span> “between, S&amp;P 500” → <em>no comma</em></li>
+<li><span class="muted">p.&nbsp;26</span> “Lehman Brothers in 2007” → <em>2008</em></li>
+<li><span class="muted">p.&nbsp;29</span> “show the study effects” → <em>show the effects</em></li>
 <li><span class="muted">p.&nbsp;33</span> Geczy et al.: stray “Limits on Arbitrage.”</li>
-<li><span class="muted">p.&nbsp;33</span> Goodman and Fabozzi: “2005, Sept.&nbsp;2005”
+<li><span class="muted">p.&nbsp;33</span> Goodman and Fabozzi: “2005, Sept.&nbsp;2005”</li>
+<li><span class="muted">Table 3 note</span> “are obtain” → <em>obtained</em></li>
+<li><span class="muted">Table 4 note</span> “short and long swap spreads” → <em>long and short</em>
 <ul>
 <li>But hey: this is definitely an organic, artisanal, human-written paper!</li>
 </ul></li>

@@ -122,13 +122,13 @@ Smaller fund groups enter
 
 | | Size | Scope |
 |:----|---:|:-----------------|
-| **N-PORT** | **$0.38tn** | Equity swap notional in Q2 2026 |
+| **N-PORT** | **$0.38tn** | Equity swap notional, SEC's 2026 Q2 file |
 | **SEC** | **$3.33tn** | Equity TRS with a US connection, excl. broad indices |
 | **BIS** | **$6.30tn** | Global equity swap and fwd market |
 
 [SEC and BIS: December 2025.]{.muted}
 
-**N-PORT / SEC = 11.3%, N-PORT / BIS = 6.0%.**
+**N-PORT / SEC = 3.2–11.3%** (without / with index swaps), **N-PORT / BIS = 6.0%.**
 :::
 ::::
 
@@ -148,7 +148,7 @@ Sources: [SEC reform](https://www.sec.gov/rules/final/2016/33-10231.pdf), [repor
 
 ## Strong qualitative support for theory—despite incomplete coverage {#separate-books .separate-books-slide}
 
-Could registered funds trade with [**separate dealer books**]{.tol-blue}?  
+Could registered funds trade with **separate dealer books**?  
 N-PORT might capture the **relevant** inventory.
 
 
@@ -172,11 +172,11 @@ The central concern is about the **sign of net demand**.
 :::
 
 
-## N-PORT, 2026 Q2: underlying assets {#nport-underlyings .underlyings-slide}
+## N-PORT 2026 Q2 file: underlying assets {#nport-underlyings .underlyings-slide}
 
 ::: {.lead}
-Single stocks are 89% of positions but 22%
-of gross notional; indices and baskets more economically important at 71%.
+Single stocks are 89% of positions but only 22%
+of gross notional; indices and baskets carry 71%.
 :::
 
 | Underlying | Positions | Gross | Fund long | Fund short | Unresolved | Net demand |
@@ -188,8 +188,8 @@ of gross notional; indices and baskets more economically important at 71%.
 | **All** | **33,092** | **376.5** | **309.3** | **50.2** | **17.0** | **259.1** |
 
 ::: {.smaller .muted}
-Notional in \$bn. Data from 2026 Q2, 1,120 funds reporting between
-February and April 2026. Data source: [SEC N-PORT data](https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets),
+Notional in \$bn. SEC's 2026 Q2 N-PORT file: 1,120 funds, report dates
+February–April 2026. Data source: [SEC N-PORT data](https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets),
 [Form N-PORT](https://www.sec.gov/files/formn-port.pdf); own calculation.
 :::
 
@@ -222,7 +222,7 @@ February and April 2026. Data source: [SEC N-PORT data](https://www.sec.gov/data
 :::
 
 ::: {.lab-point .fragment}
-**Additional tests**
+**Additionaler tests**
 
 - **Hedge-cost ladder:** hard-to-borrow → easy-to-borrow stocks → ETFs → indices; we should see effects **shrink**
 - **Table 2: compare dealers serving both long and short clients** in the same asset.
@@ -231,7 +231,7 @@ February and April 2026. Data source: [SEC N-PORT data](https://www.sec.gov/data
 - **Leveraged and inverse ETFs:** bull and bear funds on **one index, one sponsor, shared dealers**
   - [bull]{.term-long} demand dominates → [bear]{.term-short} funds should
     [pay the least]{.term-spread}, or even be paid
-  - bear funds should **route their swaps** to the dealers whose books lean long
+  - bear funds should **route their swaps** to dealers facing [net long]{.term-long} demand
   - the bull–bear [pricing gap]{.term-spread} should widen from index funds to single-stock funds
 :::
 
@@ -247,8 +247,8 @@ $$
   - **net** factor exposure across client positions in different stocks
   - hedge the rest with **factor portfolios**; keep a **partial** stock hedge for the residual
 - More likely for:
-  - dealers with high [cost of leverage]{.term-cost} when [net long]{.term-long} → less gross balance sheet
-  - stocks with high [borrow cost]{.term-cost} **relative to residual risk** when [net short]{.term-short}
+  - dealers with high [cost of leverage]{.term-cost} when demand is [net long]{.term-long} → less gross balance sheet
+  - stocks with high [borrow cost]{.term-cost} **relative to residual risk** when demand is [net short]{.term-short}
     → short cheap-to-borrow stocks with the same loadings
 
 :::: {.factor-model}
@@ -260,7 +260,7 @@ $$
 :::
 
 ::: {.factor-equation}
-[$O(H_L,H_S)$]{.factor-objective .factor-old} [$O(\mathbf H_L,\mathbf H_S)$]{.factor-objective .factor-new} [$=\Pi-$]{.factor-fixed} [$\gamma P^2$]{.factor-penalty .factor-old} [$\frac{\rho}{2}\underbrace{\mathbf P^\top\Sigma\mathbf P}_{\mkern-36mu\text{portfolio variance}\mkern-36mu}$]{.factor-penalty .factor-new .tol-red}
+[$O(H_L,H_S)$]{.factor-objective .factor-old} [$O(\mathbf H_L,\mathbf H_S)$]{.factor-objective .factor-new} [$=\Pi-$]{.factor-fixed} [$\gamma P^2$]{.factor-penalty .factor-old} [$\frac{\rho}{2}\underbrace{\mathbf P^\top\Sigma\mathbf P}_{\mkern-36mu\text{portfolio variance}\mkern-36mu}$]{.factor-penalty .factor-new .term-cost}
 :::
 
 ::: {.factor-definitions}
@@ -288,14 +288,20 @@ Dealer **"faces"** net long demand seems better. Referring to **demand** seems b
 
 ::: {.typo-list}
 - [p. 2, fn. 4]{.muted} "Eisfeldt et al. (2022) finds" → *find*
+- [p. 4]{.muted} "reasonable creditworthy" → *reasonably*
+- [p. 5]{.muted} "Shaeffler AG" → *Schaeffler*
 - [p. 6]{.muted} "the traded would pay" → *trader*
 - [p. 7]{.muted} "the trades pays" → *trader pays*
 - [p. 19]{.muted} "the dealer's switches" → *dealer switches*
 - [p. 21]{.muted} "fixed fixed" → *fixed effects*
 - [p. 21]{.muted} "coefficients this identify" → *thus*
 - [p. 24, fn. 20]{.muted} "between, S&P 500" → *no comma*
+- [p. 26]{.muted} "Lehman Brothers in 2007" → *2008*
+- [p. 29]{.muted} "show the study effects" → *show the effects*
 - [p. 33]{.muted} Geczy et al.: stray "Limits on Arbitrage."
 - [p. 33]{.muted} Goodman and Fabozzi: "2005, Sept. 2005"
+- [Table 3 note]{.muted} "are obtain" → *obtained*
+- [Table 4 note]{.muted} "short and long swap spreads" → *long and short*
   - But hey: this is definitely an organic, artisanal, human-written paper!
 :::
 
